@@ -1,0 +1,58 @@
+.container-carrousel {
+  width: 100%;
+  height: 100%;
+  // margin: 0 auto;
+  .carrousel {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 1s;
+    section {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .controls {
+    position: sticky;
+    bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    .arrow {
+      cursor: pointer;
+      padding: 0 32px;
+    }
+ 
+    ul{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      list-style: none;
+      display: flex;
+      li{
+        width: 16px;
+        height: 16px;
+        padding: 4px;
+        margin: 8px;
+        border: 2px solid $blue;
+        border-radius:50%;
+        background: $blue;
+        cursor: pointer;
+      }
+      .selected{
+        background: transparent;
+      }
+      
+    }
+  }
+}
