@@ -14,8 +14,8 @@ header {
     border-bottom: 1px solid $blue;
     border-right: 1px solid $blue;
   }
-  button {
-    font-family: $font-titles;
+  a {
+    font-family: $font-sans-serif;
     font-size: 14px;
     color: $blue;
     line-height: 44px;
@@ -29,13 +29,10 @@ header {
       background-color: $blue-darken;
       letter-spacing: 1px;
       transition: ease 1s;
+      color: $cream;
+      background-color: $blue;
     }
   }
-}
-.menu-selected button {
-  color: $cream;
-  background-color: $blue;
-  
 }
 
 /* HAMBURGUESA */
