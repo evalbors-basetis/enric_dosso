@@ -45,8 +45,16 @@ html {
 }
 
 header {
+  position: sticky;
+  text-align: center;
+}
+header .logo {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
-  position: fixed;
+  border-bottom: 1px solid #001B31;
 }
 
 .home {
@@ -114,10 +122,6 @@ header {
 
 .inside-pages {
   background-color: #efe8e0;
-}
-
-header {
-  text-align: center;
 }
 
 .menu-mobile {
