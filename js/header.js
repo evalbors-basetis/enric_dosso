@@ -8,12 +8,12 @@ class MyHeader extends HTMLElement {
     </div>
     <div>
       <ul class="menu">
-        <li class="menu-selected"><a href="./1_vinebre.html">Vinebre</a></li>
-        <li><button>Tortosa</button></li>
-        <li><button>Monteserrat</button></li>
-        <li><button>Tarragona</button></li>
-        <li><button>Barcelona</button></li>
-        <li><button>Castellón</button></li>
+        <li><a class="menu-selected" href="./1_vinebre.html">Vinebre</a></li>
+        <li><a href="">Tortosa</a></li>
+        <li><a href="">Monteserrat</a></li>
+        <li><a href="">Tarragona</a></li>
+        <li><a href="">Barcelona</a></li>
+        <li><a href="">Castellón</a></li>
       </ul>
     </div>
   </header>
