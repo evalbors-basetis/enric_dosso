@@ -1,15 +1,15 @@
 .container-carrousel {
   width: 100%;
   height: 100%;
-  // margin: 0 auto;
+
   .carrousel {
-    height: 100vh;
     position: relative;
     overflow: hidden;
   }
   .slider {
     height: 100%;
     display: flex;
+    align-items: flex-start;
     width: 400%;
     transition: all 1s;
     section {
@@ -30,7 +30,11 @@
     overflow-x:hidden;
     .arrow {
       cursor: pointer;
-      padding: 0 32px;
+      padding: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      fill:$brown;
     }
  
     ul{
@@ -40,17 +44,25 @@
       list-style: none;
       display: flex;
       li{
-        width: 16px;
-        height: 16px;
+        font-size: 14px;
+        font-family: $font-serif;
+        font-style: italic;
+        color: $brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
         padding: 4px;
         margin: 8px;
-        border: 2px solid $blue;
+        border: 1px solid $brown;
         border-radius:50%;
-        background: $blue;
+        background: transparent;
         cursor: pointer;
       }
-      .selected{
-        background: transparent;
+      .selected {
+        color: $cream;
+        background: $brown;
       }
       
     }

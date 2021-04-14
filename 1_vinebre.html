@@ -8,83 +8,103 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <my-header-mobile></my-header-mobile>
-    <my-header></my-header>
+    <my-header-mobile class="just-mobile"></my-header-mobile>
+    <my-header class="just-desktop"></my-header>
 
-    <div class="main-title">
-      <h1>Vinebre</h1>
-    </div>
-    <div class="container-carrousel">
-      <div class="carrousel">
-        <div class="slider">
-          <section class="section">
-            <div class="image-container transition__left">
-              <img src="./images/1_vinebre/01_vista_aerea.jpg" alt="" />
-            </div>
-            <div class="text-container transition__right">
-              <div class="transition__top">
+    <main>
+      <div class="title">
+        <h1>Vinebre</h1>
+      </div>
+      <div class="container-carrousel">
+        <div class="carrousel">
+          <div class="slider">
+            <section class="section">
+              <div class="image-container transition__left">
+                <img src="./images/1_vinebre/01_vista_aerea.jpg" alt="" />
+              </div>
+              <div class="text-container transition__right">
+                <!-- <div class="transition__top">
                 <h1 class="back-type">E0°37'49.37"</h1>
+              </div> -->
+                <p>
+                  Este pequeño municipio agrícola del suroeste de Cataluña se
+                  localiza a unos 170 kilómetros de Barcelona, junto al río
+                  Ebro, entre las ciudades de Lleida y Tarragona. Hoy, se puede
+                  ir en el tren desde Tarragona a Ascó y, en esta población
+                  agarrar un taxi o el autocar de la compañía HIFE. Otra opción
+                  es saliendo de Lleida también con HIFE (ruta Lleida-Tortosa).
+                </p>
               </div>
-              <p>
-                Este pequeño municipio agrícola del suroeste de Cataluña se
-                localiza a unos 170 kilómetros de Barcelona, junto al río Ebro,
-                entre las ciudades de Lleida y Tarragona. Hoy, se puede ir en el
-                tren desde Tarragona a Ascó y, en esta población agarrar un taxi
-                o el autocar de la compañía HIFE. Otra opción es saliendo de
-                Lleida también con HIFE (ruta Lleida-Tortosa).
-              </p>
-            </div>
-          </section>
-          <section class="section align__center">
-            <div class="image-container">
-              <img
-                src="./images/1_vinebre/02_vista_del_valle_llegando_a_vinebre.JPG"
-                alt=""
-              />
-            </div>
-            <div class="text-container">
-              <p>
-                El acceso a Vinebre siempre ha sido un poco dificultoso.
-                Antiguamente se debía utilizar una gran barcaza para cruzar de
-                una orilla a otra del río. Actualmente, el tren sólo llega hasta
-                la vecina población de Ascó. Esta difícil comunicación con
-                Vinebre motivó que la actual comunidad teresiana se trasladara
-                -hace unas décadas- de este municipio a la cercana población de
-                Flix.
-              </p>
-              <!-- Trigger/Open The Modal -->
-              <button id="myBtn">Experiencia espiritual</button>
-
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <p>Some text in the Modal..</p>
-                </div>
+            </section>
+            <section class="section">
+              <div class="image-container transition__left">
+                <img
+                  src="./images/1_vinebre/02_vista_del_valle_llegando_a_vinebre.JPG"
+                  alt=""
+                />
               </div>
-            </div>
-          </section>
-          <section class="section">content secction 3</section>
-          <section class="section">content secction 4</section>
+              <div class="text-container transition__right">
+                <p>
+                  El acceso a Vinebre siempre ha sido un poco dificultoso.
+                  Antiguamente se debía utilizar una gran barcaza para cruzar de
+                  una orilla a otra del río. Actualmente, el tren sólo llega
+                  hasta la vecina población de Ascó. Esta difícil comunicación
+                  con Vinebre motivó que la actual comunidad teresiana se
+                  trasladara -hace unas décadas- de este municipio a la cercana
+                  población de Flix.
+                </p>
+              </div>
+            </section>
+            <section class="section-vertical">
+              <div class="image-container transition__left">
+                <img
+                  src="./images/1_vinebre/6.VINEBRE casa sant enric calle.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="text-container transition__right">
+                <p class="title-slide">Casa natal de Enric d'Osso</p>
+                <br>
+                <p>
+                  Aquí nació y vivió Enrique. Hoy es una casa-museo donde
+                  podemos contemplar sus estancias, muchas de ellas con los
+                  muebles originales. Frente a la casa, la familia tenía las
+                  viñas La Burreta, donde él solía jugar o ir a vendimiar. La
+                  familia de Ossó poseía tierras y viñedos y producía el vino
+                  dulce típico de la localidad que se llama Vinblanc. Para
+                  concertar una visita a la casa es necesario ponerse en
+                  contacto con el ayuntamiento por email o teléfono:
+                  ajuntament@vinebre.cat, (+34) 977 405 781.
+                </p>
+              </div>
+            </section>
+            <section class="section">content secction 4</section>
+          </div>
+        </div>
+        <div class="controls">
+          <span class="arrow left"
+            ><img
+              src="./images/arrow-left-brown.svg"
+              alt="flecha a la izquierda"
+          /></span>
+          <ul>
+            <li class="selected">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+          <span class="arrow right"
+            ><img
+              src="./images/arrow-right-brown.svg"
+              alt="flecha a la derecha"
+          /></span>
         </div>
       </div>
-      <div class="controls">
-        <span class="arrow left"><i>anterior</i></span>
-        <ul>
-          <li class="selected"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <span class="arrow right"><i>siguiente</i></span>
-      </div>
-    </div>
-  </body>
+    </main>
 
-  <footer></footer>
+    <my-footer></my-footer>
+  </body>
 
   <script src="js/header.js"></script>
   <script src="js/carrousel.js"></script>
-  <script src="js/modal.js"></script>
 </html>

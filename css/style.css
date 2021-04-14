@@ -20,8 +20,12 @@ h3 {
   line-height: 1.4;
 }
 
-h2 {
+h1 {
   font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 p,
@@ -46,8 +50,6 @@ html {
 
 header {
   text-align: center;
-  height: 66px;
-  border-bottom: 1px solid #001B31;
 }
 header .logo {
   display: -webkit-box;
@@ -61,6 +63,7 @@ header .logo {
           justify-content: center;
   width: 100vw;
   height: 66px;
+  border-bottom: 1px solid #001B31;
 }
 
 .home {
@@ -172,10 +175,26 @@ header .logo {
   -webkit-transform: translate(-260px, 260px);
           transform: translate(-260px, 260px);
 }
+.horizontal-scroll .waves-container .wave:nth-child(3) p {
+  left: 44%;
+  bottom: 115%;
+}
+.horizontal-scroll .waves-container .wave:nth-child(3) .vertical-line {
+  left: 50%;
+  top: 0;
+}
 .horizontal-scroll .waves-container .wave:nth-child(4) {
   top: 0;
   -webkit-transform: translateX(-390px);
           transform: translateX(-390px);
+}
+.horizontal-scroll .waves-container .wave:nth-child(4) p {
+  left: 43%;
+  top: 115%;
+}
+.horizontal-scroll .waves-container .wave:nth-child(4) .vertical-line {
+  left: 50%;
+  bottom: 0;
 }
 
 .inside-pages {
@@ -196,9 +215,17 @@ header .logo {
   border-bottom: 1px solid #2a599f;
 }
 
-.main-title {
+.title {
   text-align: center;
-  padding: 40px 0 32px 0;
+  padding: 5vh 0 24px 0;
+}
+
+.title-slide {
+  font-family: "Poppins";
+  font-size: 18px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .section {
@@ -211,26 +238,46 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 400px;
-}
-.align .section__left {
-  margin: 0 80px 0 0;
-}
-.section__center {
-  margin: 0 80px;
+  padding: 0 2vw;
 }
 .section .image-container {
-  width: 60%;
+  text-align: right;
 }
 .section .image-container img {
-  width: 100%;
-  height: 500px;
+  width: auto;
+  height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .section .text-container {
   width: 40%;
-  padding: 0 40px;
+  padding-left: 40px;
+}
+
+.section-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 2vw;
+}
+.section-vertical .text-container {
+  width: 40%;
+  padding: 40px 0 0 40px;
+}
+.section-vertical .image-container {
+  text-align: right;
+}
+.section-vertical .image-container img {
+  width: 50vh;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .vertical-line {
@@ -260,6 +307,14 @@ footer img {
 
 /* TABLET + MOBILE */
 @media screen and (max-width: 768px) {
+  .just-desktop {
+    display: none;
+  }
+
+  .just-mobile {
+    display: none;
+  }
+
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -288,6 +343,27 @@ footer img {
        object-fit: cover;
   }
   .section .text-container {
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .section-vertical {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px 0;
+  }
+  .section-vertical .image-container {
+    width: 100%;
+  }
+  .section-vertical .image-container img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section-vertical .text-container {
     width: 100%;
     padding: 16px 0;
   }
@@ -472,7 +548,6 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
   height: 100%;
 }
 .container-carrousel .carrousel {
-  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -481,6 +556,9 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 400%;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -516,7 +594,17 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
 }
 .container-carrousel .controls .arrow {
   cursor: pointer;
-  padding: 0 32px;
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #8d6331;
 }
 .container-carrousel .controls ul {
   position: absolute;
@@ -529,17 +617,31 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
   display: flex;
 }
 .container-carrousel .controls ul li {
-  width: 16px;
-  height: 16px;
+  font-size: 14px;
+  font-family: "Francis";
+  font-style: italic;
+  color: #8d6331;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
   padding: 4px;
   margin: 8px;
-  border: 2px solid #2a599f;
+  border: 1px solid #8d6331;
   border-radius: 50%;
-  background: #2a599f;
+  background: transparent;
   cursor: pointer;
 }
 .container-carrousel .controls ul .selected {
-  background: transparent;
+  color: #efe8e0;
+  background: #8d6331;
 }
 
 @-webkit-keyframes transitionInLeft {

@@ -4,7 +4,7 @@ class MyHeader extends HTMLElement {
     this.innerHTML = `
   <header>
     <div class="logo">
-      <a href="./index.html"><img src="images/logo_Ruta_EDO_01.png" alt="logotipo" width="240" height="auto"></a>
+      <a href="./index.html"><img src="images/logo-responsive.svg" alt="logotipo" width="30" height="auto"></a>
     </div>
     <div>
       <ul class="menu">
