@@ -108,9 +108,14 @@ header .logo {
   width: 35%;
   position: relative;
 }
+.horizontal-scroll .waves-container .wave .blend-mode {
+  background-blend-mode: multiply;
+}
 .horizontal-scroll .waves-container .wave img {
   position: relative;
   z-index: -10;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 .horizontal-scroll .waves-container .wave p {
   position: absolute;
@@ -122,6 +127,22 @@ header .logo {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.horizontal-scroll .waves-container .wave:hover p {
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.horizontal-scroll .waves-container .wave:hover img {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.horizontal-scroll .waves-container .wave:hover .vertical-line {
+  border-left: 1px solid white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
 .horizontal-scroll .waves-container .wave:nth-child(1) {
   -webkit-transform: translateY(260px);
           transform: translateY(260px);
@@ -129,6 +150,10 @@ header .logo {
 .horizontal-scroll .waves-container .wave:nth-child(1) p {
   left: 44%;
   bottom: 115%;
+}
+.horizontal-scroll .waves-container .wave:nth-child(1) .vertical-line {
+  left: 50%;
+  top: 0;
 }
 .horizontal-scroll .waves-container .wave:nth-child(2) {
   top: 0;
@@ -138,6 +163,10 @@ header .logo {
 .horizontal-scroll .waves-container .wave:nth-child(2) p {
   left: 43%;
   top: 115%;
+}
+.horizontal-scroll .waves-container .wave:nth-child(2) .vertical-line {
+  left: 50%;
+  bottom: 0;
 }
 .horizontal-scroll .waves-container .wave:nth-child(3) {
   -webkit-transform: translate(-260px, 260px);
@@ -172,37 +201,6 @@ header .logo {
   padding: 40px 0 32px 0;
 }
 
-.container {
-  margin: 0 80px 100px 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.container__image {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-}
-.container__image img {
-  max-height: 487px;
-  width: 100%;
-}
-.container__text {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 40px;
-}
-
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,6 +231,12 @@ header .logo {
 .section .text-container {
   width: 40%;
   padding: 0 40px;
+}
+
+.vertical-line {
+  position: absolute;
+  border-left: 1px solid #8d6331;
+  height: 194px;
 }
 
 footer {
