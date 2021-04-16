@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://use.typekit.net/lyn8bgo.css");
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +14,10 @@
 h1,
 h2,
 h3 {
-  font-family: "Francis";
+  font-family: "kumlien-pro";
+  font-weight: lighter;
   color: #2a599f;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 h1 {
@@ -30,13 +30,13 @@ h2 {
 
 p,
 small {
-  font-family: "Francis";
+  font-family: "futura-pt";
   color: #2a599f;
   line-height: 1.4;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .back-type {
@@ -63,7 +63,7 @@ header .logo {
           justify-content: center;
   width: 100vw;
   height: 66px;
-  border-bottom: 1px solid #001B31;
+  border-bottom: 1px solid #2a599f;
 }
 
 .home {
@@ -101,6 +101,9 @@ header .logo {
   padding: 0 5%;
   min-width: 25%;
 }
+.horizontal-scroll .intro h1 {
+  padding-bottom: 16px;
+}
 .horizontal-scroll .waves-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,7 +128,7 @@ header .logo {
   z-index: 10;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  font-family: "Poppins";
+  font-family: "futura-pt";
   color: #8d6331;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -221,7 +224,7 @@ header .logo {
 }
 
 .title-slide {
-  font-family: "Poppins";
+  font-family: "futura-pt";
   font-size: 18px;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -249,35 +252,18 @@ header .logo {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section .text-container {
-  width: 40%;
-  padding-left: 40px;
-}
-
-.section-vertical {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 0 2vw;
-}
-.section-vertical .text-container {
-  width: 40%;
-  padding: 40px 0 0 40px;
-}
-.section-vertical .image-container {
+.section .image-container-vertical {
   text-align: right;
 }
-.section-vertical .image-container img {
+.section .image-container-vertical img {
   width: 50vh;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.section .text-container {
+  width: 40%;
+  padding-left: 40px;
 }
 
 .vertical-line {
@@ -416,11 +402,11 @@ header {
   cursor: pointer;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #001B31;
-  border-right: 1px solid #001B31;
+  border-bottom: 1px solid #2a599f;
+  border-right: 1px solid #2a599f;
 }
 .menu a {
-  font-family: "Poppins";
+  font-family: "futura-pt";
   font-size: 14px;
   color: #2a599f;
   line-height: 44px;
@@ -618,7 +604,7 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
 }
 .container-carrousel .controls ul li {
   font-size: 14px;
-  font-family: "Francis";
+  font-family: "kumlien-pro";
   font-style: italic;
   color: #8d6331;
   display: -webkit-box;
@@ -737,52 +723,4 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
   -webkit-animation-name: transitionInTop;
           animation-name: transitionInTop;
   padding-bottom: 40px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
