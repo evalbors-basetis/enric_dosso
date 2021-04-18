@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrousel</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide/glide.theme.min.css" />
   </head>
   <body>
     <my-header-mobile class="just-mobile"></my-header-mobile>
@@ -17,84 +19,100 @@
       </div>
       <div class="container-carrousel">
         <div class="carrousel">
-          <div class="slider">
-            <section class="section">
-              <div class="image-container transition__left">
-                <img src="./images/1_vinebre/01_vista_aerea.jpg" alt="" />
-              </div>
-              <div class="text-container transition__right">
-                <p>
-                  Este pequeño municipio agrícola del suroeste de Cataluña se
-                  localiza a unos 170 kilómetros de Barcelona, junto al río
-                  Ebro, entre las ciudades de Lleida y Tarragona. Hoy, se puede
-                  ir en el tren desde Tarragona a Ascó y, en esta población
-                  agarrar un taxi o el autocar de la compañía HIFE. Otra opción
-                  es saliendo de Lleida también con HIFE (ruta Lleida-Tortosa).
-                </p>
-              </div>
-            </section>
-            <section class="section">
-              <div class="image-container transition__left">
-                <img
-                  src="./images/1_vinebre/02_vista_del_valle_llegando_a_vinebre.JPG"
-                  alt=""
-                />
-              </div>
-              <div class="text-container transition__right">
-                <p>
-                  El acceso a Vinebre siempre ha sido un poco dificultoso.
-                  Antiguamente se debía utilizar una gran barcaza para cruzar de
-                  una orilla a otra del río. Actualmente, el tren sólo llega
-                  hasta la vecina población de Ascó. Esta difícil comunicación
-                  con Vinebre motivó que la actual comunidad teresiana se
-                  trasladara -hace unas décadas- de este municipio a la cercana
-                  población de Flix.
-                </p>
-              </div>
-            </section>
-            <section class="section">
-              <div class="image-container-vertical transition__left">
-                <img
-                  src="./images/1_vinebre/6.VINEBRE casa sant enric calle.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="text-container transition__right">
-                <p class="title-slide">Casa natal de Enric d'Osso</p>
-                <br>
-                <p>
-                  Aquí nació y vivió Enrique. Hoy es una casa-museo donde
-                  podemos contemplar sus estancias, muchas de ellas con los
-                  muebles originales. Frente a la casa, la familia tenía las
-                  viñas La Burreta, donde él solía jugar o ir a vendimiar. La
-                  familia de Ossó poseía tierras y viñedos y producía el vino
-                  dulce típico de la localidad que se llama Vinblanc. Para
-                  concertar una visita a la casa es necesario ponerse en
-                  contacto con el ayuntamiento por email o teléfono:
-                  ajuntament@vinebre.cat, (+34) 977 405 781.
-                </p>
-              </div>
-            </section>
-            <section class="section">content secction 4</section>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="section">
+                    <img src="images/1_vinebre/01_vista_aerea.jpg" alt="" />
+                  <p>
+                    Este pequeño municipio agrícola del suroeste de Cataluña se
+                    localiza a unos 170 kilómetros de Barcelona, junto al río
+                    Ebro, entre las ciudades de Lleida y Tarragona. Hoy, se
+                    puede ir en el tren desde Tarragona a Ascó y, en esta
+                    población agarrar un taxi o el autocar de la compañía HIFE.
+                    Otra opción es saliendo de Lleida también con HIFE (ruta
+                    Lleida-Tortosa).
+                  </p>
+                  </div>
+                  
+                </li>
+                <li class="glide__slide">
+                  <div class="section">
+                    <img
+                    src="images/1_vinebre/02_vista_del_valle_llegando_a_vinebre.JPG"
+                    alt=""
+                  />
+                  <p>
+                    El acceso a Vinebre siempre ha sido un poco dificultoso.
+                    Antiguamente se debía utilizar una gran barcaza para cruzar
+                    de una orilla a otra del río. Actualmente, el tren sólo
+                    llega hasta la vecina población de Ascó. Esta difícil
+                    comunicación con Vinebre motivó que la actual comunidad
+                    teresiana se trasladara -hace unas décadas- de este
+                    municipio a la cercana población de Flix.
+                  </p>
+                  </div>
+                  
+                </li>
+                <li class="glide__slide">
+                  <div class="section">
+                    <img
+                    src="images/1_vinebre/3.Barca de Vinebre a Ascó (1).jpg"
+                    alt=""
+                  />
+                  <p>
+                    19 de julio de 1967. Con motivo de la inauguración del
+                    monumento a Enrique de Ossó en la plaza 1 de Octubre (antes
+                    de la Constitución), las hermanas teresianas cruzan el río
+                    con la barcaza para llegar a Vinebre. La embarcación
+                    permaneció hasta los años 70 del pasado siglo, cuando se
+                    construyó el puente para facilitar la conexión con la
+                    Central Nuclear de Ascó.
+                  </p>
+                  </div>
+                  
+                </li>
+                <li class="glide__slide">
+                  <div class="section">
+                    <img
+                    src="images/1_vinebre/4.dibujo Vinebre de  EO.jpg"
+                    alt=""
+                  />
+                  <p>
+                    Dibujo de Vinebre realizado por Enrique en 1860. Su casa
+                    natal es una de las que se encuentra en la zona izquierda de
+                    la imagen. Puedes tratar de identificarla con la fotografía
+                    de la fachada de la casa que encontrarás más adelante
+                    (imagen n.6).
+                  </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button
+                class="glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+              >
+                <span class=""
+                  ><img
+                    src="./images/arrow-left-brown.svg"
+                    alt="flecha a la izquierda"
+                /></span>
+              </button>
+              <button
+                class="glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+              >
+                <span class=""
+                  ><img
+                    src="./images/arrow-right-brown.svg"
+                    alt="flecha a la derecha"
+                /></span>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="controls">
-          <span class="arrow left"
-            ><img
-              src="./images/arrow-left-brown.svg"
-              alt="flecha a la izquierda"
-          /></span>
-          <ul>
-            <li class="number selected">1</li>
-            <li class="number">2</li>
-            <li class="number">3</li>
-            <li class="number">4</li>
-          </ul>
-          <span class="arrow right"
-            ><img
-              src="./images/arrow-right-brown.svg"
-              alt="flecha a la derecha"
-          /></span>
         </div>
       </div>
     </main>
@@ -103,5 +121,16 @@
   </body>
 
   <script src="js/header.js"></script>
-  <script src="js/carrousel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    const config = {
+      type: "carousel",
+      startAt: 0,
+      perView: 1,
+      focusAt: "center"
+    };
+
+    new Glide(".glide", config).mount();
+  </script>
+
 </html>

@@ -8,7 +8,7 @@ class MyHeader extends HTMLElement {
     </div>
     <div>
       <ul class="menu">
-        <li><a class="menu-selected" href="./1_vinebre.html">Vinebre</a></li>
+        <li><a class="menu-selected" href="./1_vinebre_v2.html">Vinebre</a></li>
         <li><a href="">Tortosa</a></li>
         <li><a href="">Monteserrat</a></li>
         <li><a href="">Tarragona</a></li>
