@@ -1,6 +1,13 @@
 header {
   width: 100vw;
 }
+.header-container {
+  padding: 20px;
+  text-align: right;
+  a {
+    padding: 10px;
+  }
+}
 
 .menu {
   width: 100%;
@@ -38,6 +45,62 @@ header {
     background-color: $blue-darken;
     pointer-events: none;
     letter-spacing: 1px;
+  }
+}
+
+.ruta {
+position: absolute;
+top:24px;
+left: 50%;
+transform: translateX(-50%);
+  li {
+    position: relative;
+    display: inline;
+    align-items: start;
+    text-align: right;
+
+    .little-wave {
+      position: absolute;
+      display: flex;
+      align-items: center;
+    }
+    a {
+      transform: rotate(180deg);
+      writing-mode: vertical-lr;
+      font-family: $font-sans-serif;
+      font-size: 16px;
+      line-height: 0;
+      text-transform: uppercase;
+
+      p {
+        color: $brown;
+        padding-bottom: 8px;
+      }
+    }
+  }
+  .vinebre {
+    left: 0;
+    bottom: 0;
+  }
+  .tortosa {
+    right: -28px;
+    top: -70px;
+  }
+  .montserrat {
+    right: -8px;
+    top: -116px;
+  }
+  .tarragona {
+    right:12px;
+    top: -95px;
+  }
+  .barcelona {
+    right: 32px;
+    top: -108px;
+  }
+  .castellon {
+    right: 52px;
+    top: -84px;
   }
 }
 

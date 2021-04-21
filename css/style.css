@@ -188,8 +188,8 @@ header .logo {
 }
 
 .title {
-  text-align: center;
-  padding: 5vh 0 24px 0;
+  text-align: left;
+  padding: 5vh 0 24px 5vw;
 }
 
 .title-slide {
@@ -339,6 +339,14 @@ header {
   width: 100vw;
 }
 
+.header-container {
+  padding: 20px;
+  text-align: right;
+}
+.header-container a {
+  padding: 10px;
+}
+
 .menu {
   width: 100%;
   list-style: none;
@@ -376,6 +384,61 @@ header {
   background-color: #001B31;
   pointer-events: none;
   letter-spacing: 1px;
+}
+
+.ruta {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ruta li {
+  position: relative;
+  display: inline;
+  align-items: start;
+  text-align: right;
+}
+.ruta li .little-wave {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.ruta li a {
+  transform: rotate(180deg);
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  font-family: "futura-pt";
+  font-size: 16px;
+  line-height: 0;
+  text-transform: uppercase;
+}
+.ruta li a p {
+  color: #8d6331;
+  padding-bottom: 8px;
+}
+.ruta .vinebre {
+  left: 0;
+  bottom: 0;
+}
+.ruta .tortosa {
+  right: -28px;
+  top: -70px;
+}
+.ruta .montserrat {
+  right: -8px;
+  top: -116px;
+}
+.ruta .tarragona {
+  right: 12px;
+  top: -95px;
+}
+.ruta .barcelona {
+  right: 32px;
+  top: -108px;
+}
+.ruta .castellon {
+  right: 52px;
+  top: -84px;
 }
 
 /* HAMBURGUESA */
