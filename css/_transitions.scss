@@ -32,16 +32,16 @@
     transform: translateY(0);
   }
 }
-.image-container {
-  animation-duration: 2s;
+.transition__left {
+  animation-duration: 1s;
   animation-name: transitionInLeft;
 }
-.text-container {
+.transition__right {
   animation-duration: 1s;
   animation-name: transitionInRight; 
 }
 
-.back{
+.transition__top {
   animation-duration: 2s;
   animation-name: transitionInTop; 
   padding-bottom: 40px;
