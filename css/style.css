@@ -386,24 +386,24 @@ header {
   letter-spacing: 1px;
 }
 
-.ruta {
+.menu-ruta {
   position: absolute;
-  top: 24px;
+  top: 32px;
   left: 50%;
   transform: translateX(-50%);
 }
-.ruta li {
+.menu-ruta li {
   position: relative;
   display: inline;
   align-items: start;
   text-align: right;
 }
-.ruta li .little-wave {
+.menu-ruta li .little-wave {
   position: absolute;
   display: flex;
   align-items: center;
 }
-.ruta li a {
+.menu-ruta li a {
   transform: rotate(180deg);
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
@@ -412,32 +412,45 @@ header {
   line-height: 0;
   text-transform: uppercase;
 }
-.ruta li a p {
+.menu-ruta li a p {
   color: #8d6331;
   padding-bottom: 8px;
+  font-size: 16px;
 }
-.ruta .vinebre {
+.menu-ruta li a :hover p {
+  color: #6F3E0B;
+}
+.menu-ruta li a :hover circle {
+  stroke: #6F3E0B;
+}
+.menu-ruta li .menu-selected p {
+  color: #2a599f;
+}
+.menu-ruta li .menu-selected circle {
+  stroke: #2a599f;
+}
+.menu-ruta .vinebre {
   left: 0;
   bottom: 0;
 }
-.ruta .tortosa {
-  right: -28px;
+.menu-ruta .tortosa {
+  right: -53px;
   top: -70px;
 }
-.ruta .montserrat {
-  right: -8px;
-  top: -116px;
+.menu-ruta .montserrat {
+  right: -26px;
+  top: -125px;
 }
-.ruta .tarragona {
-  right: 12px;
+.menu-ruta .tarragona {
+  right: 2px;
   top: -95px;
 }
-.ruta .barcelona {
-  right: 32px;
-  top: -108px;
+.menu-ruta .barcelona {
+  right: 29px;
+  top: -117px;
 }
-.ruta .castellon {
-  right: 52px;
+.menu-ruta .castellon {
+  right: 56px;
   top: -84px;
 }
 
