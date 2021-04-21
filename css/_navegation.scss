@@ -2,6 +2,7 @@ header {
   width: 100vw;
 }
 
+
 .menu {
   width: 100%;
   list-style: none;
@@ -9,33 +10,110 @@ header {
   li {
     cursor: pointer;
     width: 100%;
-    height: 44px;
     text-align: center;
-    border-bottom: 1px solid $blue;
-    border-right: 1px solid $blue;
+    border-top: 1px solid $brown;
   }
-  button {
-    font-family: $font-titles;
+  a {
+    font-family: $font-sans-serif;
     font-size: 14px;
-    color: $blue;
+    color: $brown;
     line-height: 44px;
     height: 44px;
     width: 100%;
-    background-color: $cream;
     cursor: pointer;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
     &:hover {
-      color: $cream;
-      background-color: $blue-darken;
+      color: $brown-darken;
       letter-spacing: 1px;
-      transition: ease 1s;
+      transition: ease 0.5s;
+      border-top: 4px solid $brown-darken;
+
     }
   }
+  .menu-selected {
+    color: $brown-darken;
+    pointer-events: none;
+    letter-spacing: 1px;
+    border-top: 4px solid $brown;
+  }
 }
-.menu-selected button {
-  color: $cream;
-  background-color: $blue;
+
+.menu-ruta {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  li {
+    position: relative;
+    display: inline;
+    align-items: start;
+    text-align: right;
+    
+
+    .little-wave {
+      position: absolute;
+      display: flex;
+      align-items: center;
+    }
+    a {
+      transform: rotate(180deg);
+      writing-mode: vertical-lr;
+      font-family: $font-sans-serif;
+      font-size: 16px;
+      line-height: 0;
+      text-transform: uppercase;
+      
+      p {
+        color: $brown;
+        padding-bottom: 8px;
+        font-size: 16px;
+      }
+      :hover{
+        p{
+          color: $brown-darken;
+        }
+        circle {
+          stroke: $brown-darken;
+        }
+      }
+    }
   
+    .menu-selected {
+      p{
+        color: $blue;
+      }
+      circle {
+        stroke: $blue;
+      }
+    }
+
+  }
+  .vinebre {
+    left: 0;
+    bottom: 0;
+  }
+  .tortosa {
+    right: -53px;
+    top: -70px;
+  }
+  .montserrat {
+    right: -26px;
+    top: -125px;
+  }
+  .tarragona {
+    right: 2px;
+    top: -95px;
+  }
+  .barcelona {
+    right: 29px;
+    top: -117px;
+  }
+  .castellon {
+    right: 56px;
+    top: -84px;
+  }
 }
 
 /* HAMBURGUESA */

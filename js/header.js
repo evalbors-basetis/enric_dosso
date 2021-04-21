@@ -3,17 +3,17 @@ class MyHeader extends HTMLElement {
     super();
     this.innerHTML = `
   <header>
-    <div class="logo">
-      <a href="./index.html"><img src="images/logo_Ruta_EDO_01.png" alt="logotipo" width="240" height="auto"></a>
+    <div class="logo-center">
+      <a href="./index.html"><img src="images/logo-responsive.svg" alt="logotipo" width="30" height="auto"></a>
     </div>
     <div>
       <ul class="menu">
-        <li class="menu-selected"><button class="menu-selected><a href="./1_vinebre.html">Vinebre</a></button></li>
-        <li><button>Tortosa</button></li>
-        <li><button>Monteserrat</button></li>
-        <li><button>Tarragona</button></li>
-        <li><button>Barcelona</button></li>
-        <li><button>Castellón</button></li>
+        <li><a class="menu-selected" href="./1_vinebre_v2.html">Vinebre</a></li>
+        <li><a href="">Tortosa</a></li>
+        <li><a href="">Monteserrat</a></li>
+        <li><a href="">Tarragona</a></li>
+        <li><a href="">Barcelona</a></li>
+        <li><a href="">Castellón</a></li>
       </ul>
     </div>
   </header>
