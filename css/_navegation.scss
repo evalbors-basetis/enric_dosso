@@ -17,13 +17,12 @@ header {
     cursor: pointer;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid $blue;
-    border-right: 1px solid $blue;
+    border-top: 1px solid $brown;
   }
   a {
     font-family: $font-sans-serif;
     font-size: 14px;
-    color: $blue;
+    color: $brown;
     line-height: 44px;
     height: 44px;
     width: 100%;
@@ -32,19 +31,18 @@ header {
     display: flex;
     justify-content: center;
     &:hover {
-      color: $cream;
-      background-color: $blue-darken;
+      color: $brown-darken;
       letter-spacing: 1px;
-      transition: ease 1s;
-      color: $cream;
-      background-color: $blue;
+      transition: ease 0.5s;
+      border-top: 4px solid $brown-darken;
+
     }
   }
   .menu-selected {
-    color: $cream;
-    background-color: $blue-darken;
+    color: $brown-darken;
     pointer-events: none;
     letter-spacing: 1px;
+    border-top: 4px solid $brown;
   }
 }
 

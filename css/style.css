@@ -56,7 +56,6 @@ header .logo {
   justify-content: center;
   width: 100vw;
   height: 66px;
-  border-bottom: 1px solid #2a599f;
 }
 
 .home {
@@ -356,13 +355,12 @@ header {
   cursor: pointer;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #2a599f;
-  border-right: 1px solid #2a599f;
+  border-top: 1px solid #8d6331;
 }
 .menu a {
   font-family: "futura-pt";
   font-size: 14px;
-  color: #2a599f;
+  color: #8d6331;
   line-height: 44px;
   height: 44px;
   width: 100%;
@@ -372,18 +370,16 @@ header {
   justify-content: center;
 }
 .menu a:hover {
-  color: #efe8e0;
-  background-color: #001B31;
+  color: #6F3E0B;
   letter-spacing: 1px;
-  transition: ease 1s;
-  color: #efe8e0;
-  background-color: #2a599f;
+  transition: ease 0.5s;
+  border-top: 4px solid #6F3E0B;
 }
 .menu .menu-selected {
-  color: #efe8e0;
-  background-color: #001B31;
+  color: #6F3E0B;
   pointer-events: none;
   letter-spacing: 1px;
+  border-top: 4px solid #8d6331;
 }
 
 .menu-ruta {
