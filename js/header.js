@@ -3,7 +3,7 @@ class MyHeader extends HTMLElement {
     super();
     this.innerHTML = `
   <header>
-    <div class="logo">
+    <div class="logo-center">
       <a href="./index.html"><img src="images/logo-responsive.svg" alt="logotipo" width="30" height="auto"></a>
     </div>
     <div>

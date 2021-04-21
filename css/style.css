@@ -47,15 +47,19 @@ body {
   background-color: #efe8e0;
 }
 
-header {
-  text-align: center;
-}
-header .logo {
+header .logo-center {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 66px;
+}
+header .logo-right {
+  text-align: right;
+  padding: 20px;
+}
+header .logo-right a {
+  padding: 10px;
 }
 
 .home {
@@ -186,9 +190,13 @@ header .logo {
   border-bottom: 1px solid #2a599f;
 }
 
-.title {
+.title__left {
   text-align: left;
   padding: 5vh 0 24px 5vw;
+}
+.title__center {
+  text-align: center;
+  padding: 5vh 0 24px 0;
 }
 
 .title-slide {
@@ -336,14 +344,6 @@ footer img {
 }
 header {
   width: 100vw;
-}
-
-.header-container {
-  padding: 20px;
-  text-align: right;
-}
-.header-container a {
-  padding: 10px;
 }
 
 .menu {

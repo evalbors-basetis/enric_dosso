@@ -3,7 +3,7 @@ class MyHeaderRuta extends HTMLElement {
     super();
     this.innerHTML = `
     <header>
-    <div class="header-container">
+    <div class="logo-right">
       <a href="./index.html"
         ><img
           src="images/logo-responsive.svg"
