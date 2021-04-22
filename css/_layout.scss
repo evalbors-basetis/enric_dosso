@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: $cream;
 }
@@ -184,22 +185,6 @@ header {
   justify-content: center;
   align-items: flex-start;
   padding: 0 2vw;
-  .image-container {
-    text-align: right;
-    img {
-      width: auto;
-      height: 50vh;
-      object-fit: cover;
-    }
-  }
-  .image-container-vertical {
-    text-align: right;
-    img {
-      width: 50vh;
-      height: auto;
-      object-fit: cover;
-    }
-  }
   .text-container {
     width: 40%;
     padding-left: 40px;
