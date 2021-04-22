@@ -17,6 +17,33 @@
   p{
     padding: 5% 3%;
   }
+  .image-container {
+    position: relative;
+    .link-map{
+      height: 40px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top:60px;
+      left: -80px;
+      .vertical-line{
+        height: 40px;
+        top:80px;
+      }
+      a {
+        transform: rotate(270deg);
+        color: $brown;
+        font-weight: 600;
+        font-family: $font-sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 0 0 0 8px;
+      }
+    }
+  }
+
 }
 
 .glide__arrows{
