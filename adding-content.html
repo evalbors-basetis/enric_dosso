@@ -6,34 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vinebre</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide/glide.theme.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
 <body>
-
-  <div id="app">
-    <ul id="list" class="glide__slides">
-      <li class="glide__slide">
-      </li>
-    </ul>
+  <div class="title__center">
+    <h1>Vinebre</h1>
   </div>
-</div>
+  <main>
+    <div class="container-carrousel">
+      <div class="carrousel">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul id="list" class="glide__slides"></ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button
+              class="glide__arrow glide__arrow--left"
+              data-glide-dir="<"
+            >
+              <span class=""
+                ><img
+                  src="./images/arrow-left-brown.svg"
+                  alt="flecha a la izquierda"
+              /></span>
+            </button>
+            <button
+              class="glide__arrow glide__arrow--right"
+              data-glide-dir=">"
+            >
+              <span class=""
+                ><img
+                  src="./images/arrow-right-brown.svg"
+                  alt="flecha a la derecha"
+              /></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
 
-<script src="js/header.js"></script>
-<script src="js/accordion.js"></script>
 <script src="js/content.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-<script>
-  const config = {
-    type: "carousel",
-    startAt: 0,
-    perView: 1,
-    focusAt: "center",
-  };
-
-  new Glide(".glide", config).mount();
-</script>
-</body>
 </html>
