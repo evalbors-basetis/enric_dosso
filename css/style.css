@@ -27,6 +27,10 @@ h2 {
   font-size: 32px;
 }
 
+p {
+  font-size: 18px !important;
+}
+
 p,
 small {
   font-family: "futura-pt";
@@ -195,8 +199,12 @@ header .logo-right a {
 .title__left {
   text-align: left;
   padding: 5vh 0 24px 5vw;
+  font-family: "kumlien-pro";
+  color: #2a599f;
 }
 .title__center {
+  font-family: "kumlien-pro";
+  color: #2a599f;
   text-align: center;
   padding: 5vh 0 24px 0;
 }
@@ -210,14 +218,50 @@ header .logo-right a {
 }
 
 .section {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 2vw;
 }
 .section .text-container {
   width: 40%;
   padding-left: 40px;
+}
+.section .text-container p {
+  padding: 5% 3%;
+  font-size: 18px !important;
+}
+.section .image-container {
+  position: relative;
+}
+.section .image-container img {
+  width: auto;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .image-container .link-map {
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: -80px;
+}
+.section .image-container .link-map .vertical-line {
+  height: 40px;
+  top: 80px;
+}
+.section .image-container .link-map a {
+  transform: rotate(270deg);
+  color: #8d6331;
+  font-weight: 600;
+  font-family: "futura-pt";
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 0 0 8px;
 }
 
 .vertical-line {
@@ -611,45 +655,6 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
 .container-carrousel .carrousel {
   position: relative;
   overflow: hidden;
-}
-
-.section {
-  padding: 0 5%;
-}
-.section img {
-  width: auto;
-  height: 60vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.section p {
-  padding: 5% 3%;
-}
-.section .image-container {
-  position: relative;
-}
-.section .image-container .link-map {
-  height: 40px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 60px;
-  left: -80px;
-}
-.section .image-container .link-map .vertical-line {
-  height: 40px;
-  top: 80px;
-}
-.section .image-container .link-map a {
-  transform: rotate(270deg);
-  color: #8d6331;
-  font-weight: 600;
-  font-family: "futura-pt";
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 0 0 0 8px;
 }
 
 .glide__arrows .glide__arrow {
