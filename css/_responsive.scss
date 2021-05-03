@@ -1,11 +1,117 @@
 /* TABLET + MOBILE */
 
 @media screen and (max-width: 768px) {
+  .home {
+    main {
+      top: none;
+      transform: none;
+    }
+  }
   .just-desktop {
     display: none;
   }
   .just-mobile {
     display: none;
+  }
+
+  .horizontal-scroll {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .intro {
+      width: 80%;
+      h1 {
+        padding-bottom: 16px;
+      }
+    }
+    .waves-container {
+      transform: rotate(90deg);
+      display: flex;
+      justify-content: start;
+      .wave {
+        width: 35%;
+        position: relative;
+        .blend-mode {
+          background-blend-mode: multiply;
+        }
+        img {
+          position: relative;
+          z-index: -10;
+          filter: grayscale(100%);
+        }
+        p {
+          position: absolute;
+          z-index: 10;
+          transform: rotate(270deg);
+          font-family: $font-sans-serif;
+          color: $brown;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      }
+
+      .wave:hover {
+        p {
+          color: white;
+          transition: 1s;
+        }
+        img {
+          filter: none;
+          transition: 1s;
+        }
+        .vertical-line {
+          border-left: 1px solid white;
+          transition: 1s;
+        }
+      }
+
+      .wave:nth-child(1) {
+        transform: translateY(260px);
+        p {
+          left: 44%;
+          bottom: 115%;
+        }
+        .vertical-line {
+          left: 50%;
+          top: 0;
+        }
+      }
+      .wave:nth-child(2) {
+        top: 0;
+        transform: translateX(-130px);
+        p {
+          left: 43%;
+          top: 115%;
+        }
+        .vertical-line {
+          left: 50%;
+          bottom: 0;
+        }
+      }
+      .wave:nth-child(3) {
+        transform: translate(-260px, 260px);
+        p {
+          left: 44%;
+          bottom: 115%;
+        }
+        .vertical-line {
+          left: 50%;
+          top: 0;
+        }
+      }
+      .wave:nth-child(4) {
+        top: 0;
+        transform: translateX(-390px);
+        p {
+          left: 43%;
+          top: 115%;
+        }
+        .vertical-line {
+          left: 50%;
+          bottom: 0;
+        }
+      }
+    }
   }
   .container {
     flex-direction: column;
