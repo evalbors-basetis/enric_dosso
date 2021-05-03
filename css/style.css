@@ -76,7 +76,7 @@ header .logo-right a {
   justify-content: center;
 }
 .home header .logo-home {
-  margin: 5% 0 24px 0;
+  margin-top: 56px;
 }
 .home p,
 .home h1 {
@@ -88,8 +88,11 @@ header .logo-right a {
 }
 
 .horizontal-scroll {
+  height: 100%;
   display: flex;
   align-items: center;
+  top: 30%;
+  transform: translateY(30%);
 }
 .horizontal-scroll .intro {
   top: 50%;
@@ -102,7 +105,6 @@ header .logo-right a {
 }
 .horizontal-scroll .waves-container {
   display: flex;
-  margin-left: 0;
 }
 .horizontal-scroll .waves-container .wave {
   width: 35%;
@@ -164,8 +166,8 @@ header .logo-right a {
   transform: translate(-260px, 260px);
 }
 .horizontal-scroll .waves-container .wave:nth-child(3) p {
-  left: 44%;
-  bottom: 115%;
+  left: 39%;
+  bottom: 124%;
 }
 .horizontal-scroll .waves-container .wave:nth-child(3) .vertical-line {
   left: 50%;
@@ -176,10 +178,33 @@ header .logo-right a {
   transform: translateX(-390px);
 }
 .horizontal-scroll .waves-container .wave:nth-child(4) p {
-  left: 43%;
-  top: 115%;
+  left: 40%;
+  top: 121%;
 }
 .horizontal-scroll .waves-container .wave:nth-child(4) .vertical-line {
+  left: 50%;
+  bottom: 0;
+}
+.horizontal-scroll .waves-container .wave:nth-child(5) {
+  transform: translate(-520px, 260px);
+}
+.horizontal-scroll .waves-container .wave:nth-child(5) p {
+  left: 40%;
+  bottom: 122%;
+}
+.horizontal-scroll .waves-container .wave:nth-child(5) .vertical-line {
+  left: 50%;
+  top: 0;
+}
+.horizontal-scroll .waves-container .wave:nth-child(6) {
+  top: 0;
+  transform: translateX(-650px);
+}
+.horizontal-scroll .waves-container .wave:nth-child(6) p {
+  left: 41%;
+  top: 118%;
+}
+.horizontal-scroll .waves-container .wave:nth-child(6) .vertical-line {
   left: 50%;
   bottom: 0;
 }
@@ -285,12 +310,113 @@ footer img {
 
 /* TABLET + MOBILE */
 @media screen and (max-width: 768px) {
+  .home main {
+    top: none;
+    transform: none;
+  }
+
   .just-desktop {
     display: none;
   }
 
   .just-mobile {
     display: none;
+  }
+
+  .horizontal-scroll {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .horizontal-scroll .intro {
+    width: 80%;
+  }
+  .horizontal-scroll .intro h1 {
+    padding-bottom: 16px;
+  }
+  .horizontal-scroll .waves-container {
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: start;
+  }
+  .horizontal-scroll .waves-container .wave {
+    width: 35%;
+    position: relative;
+  }
+  .horizontal-scroll .waves-container .wave .blend-mode {
+    background-blend-mode: multiply;
+  }
+  .horizontal-scroll .waves-container .wave img {
+    position: relative;
+    z-index: -10;
+    filter: grayscale(100%);
+  }
+  .horizontal-scroll .waves-container .wave p {
+    position: absolute;
+    z-index: 10;
+    transform: rotate(270deg);
+    font-family: "futura-pt";
+    color: #8d6331;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .horizontal-scroll .waves-container .wave:hover p {
+    color: white;
+    transition: 1s;
+  }
+  .horizontal-scroll .waves-container .wave:hover img {
+    filter: none;
+    transition: 1s;
+  }
+  .horizontal-scroll .waves-container .wave:hover .vertical-line {
+    border-left: 1px solid white;
+    transition: 1s;
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(1) {
+    transform: translateY(260px);
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(1) p {
+    left: 44%;
+    bottom: 115%;
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(1) .vertical-line {
+    left: 50%;
+    top: 0;
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(2) {
+    top: 0;
+    transform: translateX(-130px);
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(2) p {
+    left: 43%;
+    top: 115%;
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(2) .vertical-line {
+    left: 50%;
+    bottom: 0;
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(3) {
+    transform: translate(-260px, 260px);
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(3) p {
+    left: 44%;
+    bottom: 115%;
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(3) .vertical-line {
+    left: 50%;
+    top: 0;
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(4) {
+    top: 0;
+    transform: translateX(-390px);
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(4) p {
+    left: 43%;
+    top: 115%;
+  }
+  .horizontal-scroll .waves-container .wave:nth-child(4) .vertical-line {
+    left: 50%;
+    bottom: 0;
   }
 
   .container {

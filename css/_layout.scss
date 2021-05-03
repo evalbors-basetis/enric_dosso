@@ -33,10 +33,9 @@ header {
     align-items: center;
     justify-content: center;
     .logo-home {
-      margin: 5% 0 24px 0;
+      margin-top: 56px;
     }
   }
-
   p,
   h1 {
     color: $cream;
@@ -48,8 +47,11 @@ header {
 }
 
 .horizontal-scroll {
+  height: 100%;
   display: flex;
   align-items: center;
+  top: 30%;
+  transform: translateY(30%);
   .intro {
     top: 50%;
     transform: translateY(50%);
@@ -61,7 +63,6 @@ header {
   }
   .waves-container {
     display: flex;
-    margin-left: 0;
     .wave {
       width: 35%;
       position: relative;
@@ -125,8 +126,8 @@ header {
     .wave:nth-child(3) {
       transform: translate(-260px, 260px);
       p {
-        left: 44%;
-        bottom: 115%;
+        left: 39%;
+        bottom: 124%;
       }
       .vertical-line {
         left: 50%;
@@ -137,8 +138,31 @@ header {
       top: 0;
       transform: translateX(-390px);
       p {
-        left: 43%;
-        top: 115%;
+        left: 40%;
+        top: 121%;
+      }
+      .vertical-line {
+        left: 50%;
+        bottom: 0;
+      }
+    }
+    .wave:nth-child(5) {
+      transform: translate(-520px, 260px);
+      p {
+        left: 40%;
+        bottom: 122%;
+      }
+      .vertical-line {
+        left: 50%;
+        top: 0;
+      }
+    }
+    .wave:nth-child(6) {
+      top: 0;
+      transform: translateX(-650px);
+      p {
+        left: 41%;
+        top: 118%;
       }
       .vertical-line {
         left: 50%;
@@ -161,7 +185,6 @@ header {
 }
 
 .title {
-  
   &__left {
     text-align: left;
     padding: 5vh 0 24px 5vw;
