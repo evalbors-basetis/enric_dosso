@@ -56,7 +56,6 @@ header .logo-center {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 66px;
 }
 header .logo-right {
   text-align: right;
@@ -76,7 +75,7 @@ header .logo-right a {
   justify-content: center;
 }
 .home header .logo-home {
-  margin-top: 56px;
+  margin-top: 2.5%;
 }
 .home p,
 .home h1 {
@@ -88,11 +87,8 @@ header .logo-right a {
 }
 
 .horizontal-scroll {
-  height: 100%;
   display: flex;
   align-items: center;
-  top: 30%;
-  transform: translateY(30%);
 }
 .horizontal-scroll .intro {
   top: 50%;
@@ -107,13 +103,11 @@ header .logo-right a {
   display: flex;
 }
 .horizontal-scroll .waves-container .wave {
-  width: 35%;
+  max-width: 35%;
   position: relative;
 }
-.horizontal-scroll .waves-container .wave .blend-mode {
-  background-blend-mode: multiply;
-}
 .horizontal-scroll .waves-container .wave img {
+  opacity: 0.5;
   position: relative;
   z-index: -10;
   filter: grayscale(100%);
@@ -134,6 +128,7 @@ header .logo-right a {
 .horizontal-scroll .waves-container .wave:hover img {
   filter: none;
   transition: 1s;
+  opacity: 1;
 }
 .horizontal-scroll .waves-container .wave:hover .vertical-line {
   border-left: 1px solid white;
@@ -330,91 +325,86 @@ footer img {
   }
   .horizontal-scroll .intro {
     width: 80%;
+    margin-bottom: 180px;
   }
   .horizontal-scroll .intro h1 {
     padding-bottom: 16px;
   }
-  .horizontal-scroll .waves-container {
-    transform: rotate(90deg);
+  .horizontal-scroll .routes {
+    position: relative;
+    transform: scale(0.8) rotate(90deg);
     display: flex;
-    justify-content: start;
+    align-items: center;
   }
-  .horizontal-scroll .waves-container .wave {
-    width: 35%;
-    position: relative;
-  }
-  .horizontal-scroll .waves-container .wave .blend-mode {
-    background-blend-mode: multiply;
-  }
-  .horizontal-scroll .waves-container .wave img {
-    position: relative;
-    z-index: -10;
-    filter: grayscale(100%);
-  }
-  .horizontal-scroll .waves-container .wave p {
+  .horizontal-scroll .routes .waves-container {
     position: absolute;
-    z-index: 10;
-    transform: rotate(270deg);
-    font-family: "futura-pt";
-    color: #8d6331;
-    text-transform: uppercase;
-    letter-spacing: 1px;
   }
-  .horizontal-scroll .waves-container .wave:hover p {
-    color: white;
-    transition: 1s;
+  .horizontal-scroll .routes .waves-container .wave:nth-child(1) {
+    transform: translateY(140px);
   }
-  .horizontal-scroll .waves-container .wave:hover img {
-    filter: none;
-    transition: 1s;
-  }
-  .horizontal-scroll .waves-container .wave:hover .vertical-line {
-    border-left: 1px solid white;
-    transition: 1s;
-  }
-  .horizontal-scroll .waves-container .wave:nth-child(1) {
-    transform: translateY(260px);
-  }
-  .horizontal-scroll .waves-container .wave:nth-child(1) p {
+  .horizontal-scroll .routes .waves-container .wave:nth-child(1) p {
     left: 44%;
     bottom: 115%;
   }
-  .horizontal-scroll .waves-container .wave:nth-child(1) .vertical-line {
+  .horizontal-scroll .routes .waves-container .wave:nth-child(1) .vertical-line {
     left: 50%;
     top: 0;
   }
-  .horizontal-scroll .waves-container .wave:nth-child(2) {
-    top: 0;
+  .horizontal-scroll .routes .waves-container .wave:nth-child(2) {
+    top: -120px;
     transform: translateX(-130px);
   }
-  .horizontal-scroll .waves-container .wave:nth-child(2) p {
+  .horizontal-scroll .routes .waves-container .wave:nth-child(2) p {
     left: 43%;
     top: 115%;
   }
-  .horizontal-scroll .waves-container .wave:nth-child(2) .vertical-line {
+  .horizontal-scroll .routes .waves-container .wave:nth-child(2) .vertical-line {
     left: 50%;
     bottom: 0;
   }
-  .horizontal-scroll .waves-container .wave:nth-child(3) {
-    transform: translate(-260px, 260px);
+  .horizontal-scroll .routes .waves-container .wave:nth-child(3) {
+    transform: translate(-260px, 140px);
   }
-  .horizontal-scroll .waves-container .wave:nth-child(3) p {
-    left: 44%;
-    bottom: 115%;
+  .horizontal-scroll .routes .waves-container .wave:nth-child(3) p {
+    left: 39%;
+    bottom: 125%;
   }
-  .horizontal-scroll .waves-container .wave:nth-child(3) .vertical-line {
+  .horizontal-scroll .routes .waves-container .wave:nth-child(3) .vertical-line {
     left: 50%;
     top: 0;
   }
-  .horizontal-scroll .waves-container .wave:nth-child(4) {
-    top: 0;
+  .horizontal-scroll .routes .waves-container .wave:nth-child(4) {
+    top: -120px;
     transform: translateX(-390px);
   }
-  .horizontal-scroll .waves-container .wave:nth-child(4) p {
-    left: 43%;
-    top: 115%;
+  .horizontal-scroll .routes .waves-container .wave:nth-child(4) p {
+    left: 39%;
+    top: 125%;
   }
-  .horizontal-scroll .waves-container .wave:nth-child(4) .vertical-line {
+  .horizontal-scroll .routes .waves-container .wave:nth-child(4) .vertical-line {
+    left: 50%;
+    bottom: 0;
+  }
+  .horizontal-scroll .routes .waves-container .wave:nth-child(5) {
+    transform: translate(-520px, 140px);
+  }
+  .horizontal-scroll .routes .waves-container .wave:nth-child(5) p {
+    left: 40%;
+    bottom: 122%;
+  }
+  .horizontal-scroll .routes .waves-container .wave:nth-child(5) .vertical-line {
+    left: 50%;
+    top: 0;
+  }
+  .horizontal-scroll .routes .waves-container .wave:nth-child(6) {
+    top: -120px;
+    transform: translateX(-650px);
+  }
+  .horizontal-scroll .routes .waves-container .wave:nth-child(6) p {
+    left: 41%;
+    top: 118%;
+  }
+  .horizontal-scroll .routes .waves-container .wave:nth-child(6) .vertical-line {
     left: 50%;
     bottom: 0;
   }
@@ -488,12 +478,6 @@ footer img {
 
   .full-width {
     height: 200px;
-  }
-}
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
   }
 }
 header {

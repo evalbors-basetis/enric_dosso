@@ -12,7 +12,6 @@ header {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 66px;
     //border-bottom: 1px solid $blue;
   }
 
@@ -33,7 +32,7 @@ header {
     align-items: center;
     justify-content: center;
     .logo-home {
-      margin-top: 56px;
+      margin-top:2.5%;
     }
   }
   p,
@@ -47,11 +46,8 @@ header {
 }
 
 .horizontal-scroll {
-  height: 100%;
   display: flex;
   align-items: center;
-  top: 30%;
-  transform: translateY(30%);
   .intro {
     top: 50%;
     transform: translateY(50%);
@@ -64,12 +60,11 @@ header {
   .waves-container {
     display: flex;
     .wave {
-      width: 35%;
+      max-width: 35%;
       position: relative;
-      .blend-mode {
-        background-blend-mode: multiply;
-      }
+
       img {
+        opacity: 0.5;
         position: relative;
         z-index: -10;
         filter: grayscale(100%);
@@ -93,6 +88,7 @@ header {
       img {
         filter: none;
         transition: 1s;
+        opacity: 1;
       }
       .vertical-line {
         border-left: 1px solid white;
