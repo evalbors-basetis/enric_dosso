@@ -51,6 +51,7 @@ html {
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 main {
@@ -580,12 +581,17 @@ footer img {
 .glide__slide p {
   transition: all ease-in-out 2s;
   opacity: 0;
+  font-size: 18px !important;
+}
+.glide__slide h1, .glide__slide .link-map, .glide__slide .accordion {
+  transition: all ease-in-out 2s;
+  opacity: 0;
 }
 
 .glide__slide.glide__slide--active img {
   opacity: 1;
 }
-.glide__slide.glide__slide--active p {
+.glide__slide.glide__slide--active p, .glide__slide.glide__slide--active h1, .glide__slide.glide__slide--active .link-map, .glide__slide.glide__slide--active .accordion {
   opacity: 1;
 }
 
@@ -604,23 +610,16 @@ footer img {
   text-align: left;
   outline: none;
   font-size: 16px;
-  background-color: #efe8e0;
-}
-.accordion .icon {
-  width: 24px;
-  height: auto;
-  margin-left: 8px;
-}
-.accordion img {
-  width: 40px;
-  height: auto;
-}
-.accordion .static {
-  position: absolute;
-  background-color: #efe8e0;
+  background-color: transparent;
+  transition: all ease-in-out 2s;
 }
 .accordion :hover .static {
   opacity: 0;
+}
+.accordion p {
+  font-size: 16px;
+  color: #8d6331;
+  padding-right: 8px;
 }
 
 .panel {
