@@ -338,6 +338,9 @@ footer img {
 header {
   width: 100vw;
 }
+header .logo-center {
+  padding: 8px 0;
+}
 
 .menu {
   width: 100%;

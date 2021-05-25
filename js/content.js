@@ -1,4 +1,4 @@
-fetch("./content/1_vinebre.json")
+fetch("./content/vinebre.json")
   .then(function (resp) {
     return resp.json();
   })
