@@ -1,6 +1,7 @@
 header {
   z-index: 200 !important;
   width: 100vw;
+  padding: 32px;
   .fixed {
     position: fixed;
   }
@@ -9,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 32px;
+    
     .menu-items {
       opacity: 1;
       display: flex;
@@ -17,7 +18,7 @@ header {
       font-family: $font-sans-serif;
       font-size: 16px;
       text-transform: uppercase;
-      margin: 0 32px 0 0;
+      margin: 0 56px 0 0;
       li {
         padding: 16px;
 
@@ -33,6 +34,7 @@ header {
             transition: 0.2s;
             color: $blue;
             border-bottom: none;
+
           }
         }
 
@@ -53,10 +55,12 @@ header {
         }
       }
       .dropdown-content {
+        z-index: 300;
         display: none;
         position: absolute;
         background-color: $cream;
-        padding: 16px 8px;
+        padding: 16px 24px;
+        transform: translateX(-24px);
         a {
           display: block;
           font-size: 16px;

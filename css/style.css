@@ -47,6 +47,7 @@ html {
 }
 
 .inside-pages {
+  overflow-x: hidden;
   background-color: #efe8e0;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
@@ -339,6 +340,7 @@ i {
 header {
   z-index: 200 !important;
   width: 100vw;
+  padding: 32px;
 }
 header .fixed {
   position: fixed;
@@ -348,7 +350,6 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 32px;
 }
 header nav .menu-items {
   opacity: 1;
@@ -357,7 +358,7 @@ header nav .menu-items {
   font-family: "futura-pt";
   font-size: 16px;
   text-transform: uppercase;
-  margin: 0 32px 0 0;
+  margin: 0 56px 0 0;
 }
 header nav .menu-items li {
   padding: 16px;
@@ -387,10 +388,12 @@ header nav .menu-items .dark-mode .dropdown-content {
   background-color: rgba(0, 27, 49, 0.8);
 }
 header nav .menu-items .dropdown-content {
+  z-index: 300;
   display: none;
   position: absolute;
   background-color: #efe8e0;
-  padding: 16px 8px;
+  padding: 16px 24px;
+  transform: translateX(-24px);
 }
 header nav .menu-items .dropdown-content a {
   display: block;
@@ -637,6 +640,7 @@ footer img {
 
 .home {
   background-color: #001B31;
+  overflow-y: hidden;
 }
 .home p,
 .home h1 {
@@ -659,6 +663,7 @@ footer img {
   padding-bottom: 16px;
 }
 .horizontal-scroll .waves-container {
+  cursor: url("../images/cursor-scrolling-home.svg"), auto;
   z-index: 0;
   display: flex;
 }
@@ -679,6 +684,9 @@ footer img {
   color: #8d6331;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.horizontal-scroll .waves-container .wave:hover {
+  cursor: url("../images/cursor-scrolling-home.svg"), auto;
 }
 .horizontal-scroll .waves-container .wave:hover p {
   color: white;
