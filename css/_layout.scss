@@ -12,7 +12,6 @@ header {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 66px;
     //border-bottom: 1px solid $blue;
   }
 
@@ -25,131 +24,57 @@ header {
   }
 }
 
-.home {
-  background-color: $blue-darken;
-  header {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .logo-home {
-      margin: 5% 0 24px 0;
-    }
-  }
-  
-  p,
-  h1 {
-    color: $cream;
-  }
-  main {
-    top: 50%;
-    transform: translateY(50%);
-  }
-}
-
-.horizontal-scroll {
-  display: flex;
-  align-items: center;
-  .intro {
-    top: 50%;
-    transform: translateY(50%);
-    padding: 0 5%;
-    min-width: 30%;
-    h1 {
-      padding-bottom: 16px;
-    }
-  }
-  .waves-container {
-    display: flex;
-    margin-left: 0;
-    .wave {
-      width: 35%;
-      position: relative;
-      .blend-mode {
-        background-blend-mode: multiply;
-      }
-      img {
-        position: relative;
-        z-index: -10;
-        filter: grayscale(100%);
-      }
-      p {
-        position: absolute;
-        z-index: 10;
-        transform: rotate(270deg);
-        font-family: $font-sans-serif;
-        color: $brown;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-    }
-
-    .wave:hover {
-      p {
-        color: white;
-        transition: 1s;
-      }
-      img {
-        filter: none;
-        transition: 1s;
-      }
-      .vertical-line {
-        border-left: 1px solid white;
-        transition: 1s;
-      }
-    }
-
-    .wave:nth-child(1) {
-      transform: translateY(260px);
-      p {
-        left: 44%;
-        bottom: 115%;
-      }
-      .vertical-line {
-        left: 50%;
-        top: 0;
-      }
-    }
-    .wave:nth-child(2) {
-      top: 0;
-      transform: translateX(-130px);
-      p {
-        left: 43%;
-        top: 115%;
-      }
-      .vertical-line {
-        left: 50%;
-        bottom: 0;
-      }
-    }
-    .wave:nth-child(3) {
-      transform: translate(-260px, 260px);
-      p {
-        left: 44%;
-        bottom: 115%;
-      }
-      .vertical-line {
-        left: 50%;
-        top: 0;
-      }
-    }
-    .wave:nth-child(4) {
-      top: 0;
-      transform: translateX(-390px);
-      p {
-        left: 43%;
-        top: 115%;
-      }
-      .vertical-line {
-        left: 50%;
-        bottom: 0;
-      }
-    }
-  }
-}
-
 .inside-pages {
   background-color: $cream;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  //padding: 0 5%;
+  //padding: 0 2vw;
+  .text-container {
+    width: 40%;
+    padding-left: 40px;
+    p {
+      padding: 5% 3%;
+      font-size: 18px !important;
+    }
+  }
+
+  .image-container {
+    position: relative;
+    img {
+      width: auto;
+      height: 60vh;
+      object-fit: cover;
+    }
+    .link-map {
+      height: 40px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60px;
+      left: -80px;
+      .vertical-line {
+        height: 40px;
+        top: 80px;
+      }
+      a {
+        transform: rotate(270deg);
+        color: $brown;
+        font-weight: 600;
+        font-family: $font-sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 0 0 0 8px;
+      }
+    }
+  }
 }
 
 .menu-mobile {
@@ -161,40 +86,26 @@ header {
 }
 
 .title {
-
-  &__left{
+  &__left {
     text-align: left;
     padding: 5vh 0 24px 5vw;
+    font-family: $font-serif;
+    color: $blue;
   }
-  &__center{
+  &__center {
+    font-family: $font-serif;
+    color: $blue;
     text-align: center;
     padding: 5vh 0 24px 0;
-  } 
-  
+  }
 }
+
 .title-slide {
   font-family: $font-sans-serif;
   font-size: 18px;
   letter-spacing: 0;
   text-transform: uppercase;
   font-weight: 600;
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 2vw;
-  .text-container {
-    width: 40%;
-    padding-left: 40px;
-  }
-}
-
-.vertical-line {
-  position: absolute;
-  border-left: 1px solid $brown;
-  height: 194px;
 }
 
 footer {

@@ -18,11 +18,13 @@
   touch-action: pan-Y;
   overflow: hidden;
   padding: 0;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  white-space: normal;
   display: flex;
   flex-wrap: nowrap;
   will-change: transform;
 }
+
 .glide__slides--dragging {
   user-select: none;
 }
