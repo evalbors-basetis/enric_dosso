@@ -701,10 +701,25 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 32px;
 }
-.home header .logo-home {
-  margin-top: 2.5%;
+.home header ul {
+  display: flex;
+  flex-direction: row;
+  font-family: "futura-pt";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.home header ul li {
+  padding: 0 0 0 32px;
+}
+.home header ul li a {
+  color: #8d6331;
+  letter-spacing: 1px;
+}
+.home header img {
+  padding: 0 0 0 24px;
 }
 .home p,
 .home h1 {
