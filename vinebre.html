@@ -11,14 +11,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <my-header-mobile class="just-mobile"></my-header-mobile>
-    <my-header class="just-desktop"></my-header>
-
+    <header>
+      <nav>
+        <a class="logo" href="index.html">
+          <img class="logo-home" src="images/logo-background-dark.svg" alt="" />
+        </a>
+        <ul class="menu-items">
+          <li><a href="#">El proyecto</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">La ruta</a>
+            <div class="dropdown-content">
+              <a href="vinebre.html">Vinebre</a>
+              <a href="#">Tortosa</a>
+              <a href="#">Montserrat</a>
+              <a href="#">Tarragona</a>
+              <a href="#">Barcelona</a>
+              <a href="#">Castellón</a>
+            </div>
+          </li>
+          <li><a href="#">Personaliza tu experiencia</a></li>
+        </ul>
+        <span class="btn_menu">
+          <a href="">
+            <i class="fa fa-bars"></i>
+          </a>
+          
+        </span>
+      </nav>
+    </header>
+    
     <main>
-      <div class="title__center">
-        <h1>Vinebre</h1>
-      </div>
-      
       <div class="container-carrousel">
         <div class="carrousel">
           <div class="glide">
@@ -35,6 +57,7 @@
                       </div>
                     </div>
                     <div class="text-container">
+                      <h1>Vinebre</h1>
                       <p>
                         Este pequeño municipio agrícola del suroeste de Cataluña
                         se localiza a unos 170 kilómetros de Barcelona, junto al

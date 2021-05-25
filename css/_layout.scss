@@ -6,24 +6,6 @@ body {
   background-color: $cream;
 }
 
-header {
-  .logo-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    //border-bottom: 1px solid $blue;
-  }
-
-  .logo-right {
-    text-align: right;
-    padding: 20px;
-    a {
-      padding: 10px;
-    }
-  }
-}
-
 .inside-pages {
   background-color: $cream;
 }

@@ -2,16 +2,35 @@
 
 @media screen and (max-width: 768px) {
   .home {
+    .logo-home {
+      width: 200px;
+      height: auto;
+    }
+    nav {
+      .menu-items {
+        // display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+        top:-100vh;
+        transition:all 0.4s;
+        flex-direction: column;
+        li{
+          margin: 24px 0;
+        }
+        .dropdown-content{
+          z-index: 10;
+        }
+      }
+    }
+    .btn_menu {
+      display: inline-flex;
+    }
+
     main {
       top: none;
       transform: none;
     }
-  }
-  .just-desktop {
-    display: none;
-  }
-  .just-mobile {
-    display: none;
   }
 
   .horizontal-scroll {
@@ -23,7 +42,7 @@
       h1 {
         padding-bottom: 16px;
       }
-     margin-bottom: 180px;
+      margin-bottom: 180px;
     }
 
     .routes {
@@ -143,9 +162,6 @@
       width: 100%;
       padding: 16px 0;
     }
-  }
-  .menu ul {
-    display: none;
   }
 }
 

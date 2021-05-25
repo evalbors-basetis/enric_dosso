@@ -6,21 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enric D'ossó</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/38498bb387.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body class="home">
-
-    <header>
-      <img class="logo-home" src="images/logo-monochrome_cream.svg" alt="" />
-      <ul>
-        <li><a href="index.html">La ruta</a></li>
-        <li><a href="#">Personaliza tu experiencia</a></li>
-        <li><a href="#">El proyecto</a></li>
-
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <header class="fixed">
+      <nav>
+        <a class="logo" href="index.html">
+          <img class="logo-home" src="images/logo-background-dark.svg" alt="" />
+        </a>
+        <ul class="menu-items">
+          <li><a href="#">El proyecto</a></li>
+          <li class="dropdown dark-mode">
+            <a href="javascript:void(0)" class="dropbtn">La ruta</a>
+            <div class="dropdown-content">
+              <a href="vinebre.html">Vinebre</a>
+              <a href="#">Tortosa</a>
+              <a href="#">Montserrat</a>
+              <a href="#">Tarragona</a>
+              <a href="#">Barcelona</a>
+              <a href="#">Castellón</a>
+            </div>
+          </li>
+          <li><a href="#">Personaliza tu experiencia</a></li>
+        </ul>
+        <span class="btn_menu">
+          <a href="">
+            <i class="fa fa-bars"></i>
+          </a>
+          
+        </span>
+      </nav>
     </header>
 
     <main>
@@ -38,7 +58,6 @@
         </div>
         <div class="routes">
           <div class="waves-container">
-          
             <a class="wave" href="vinebre.html">
               <div class="blend-mode">
                 <p>Vinebre</p>
@@ -46,7 +65,7 @@
                 <img src="images/wave-1-color.png" alt="" />
               </div>
             </a>
-  
+
             <a class="wave" href="">
               <div class="blend-mode">
                 <p>Tortosa</p>
@@ -54,7 +73,7 @@
                 <img src="images/wave-2-color.png" alt="" />
               </div>
             </a>
-  
+
             <a class="wave" href="">
               <div class="blend-mode">
                 <p>Montserrat</p>
@@ -62,15 +81,15 @@
                 <img src="images/wave-1-color.png" alt="" />
               </div>
             </a>
-  
+
             <a class="wave" href="">
               <div class="blend-mode">
                 <p>Tarragona</p>
                 <div class="vertical-line"></div>
                 <img src="images/wave-2-color.png" alt="" />
-              </div>  
+              </div>
             </a>
-  
+
             <a class="wave" href="">
               <div class="blend-mode">
                 <p>Barcelona</p>
@@ -78,27 +97,22 @@
                 <img src="images/wave-1-color.png" alt="" />
               </div>
             </a>
-  
+
             <a class="wave" href="">
               <div class="blend-mode">
                 <p>Castellón</p>
                 <div class="vertical-line"></div>
                 <img src="images/wave-2-color.png" alt="" />
-              </div>  
+              </div>
             </a>
-  
-  
           </div>
         </div>
-        
       </div>
     </main>
 
     <my-footer></my-footer>
-
   </body>
 
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
-
 </html>
