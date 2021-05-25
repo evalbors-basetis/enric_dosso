@@ -4,9 +4,26 @@
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: center;
-    .logo-home {
-      margin-top: 2.5%;
+    justify-content: space-between;
+    padding: 32px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      font-family: $font-sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      
+      li{
+        padding: 0 0 0 32px;
+        a{
+          color:$brown;
+          letter-spacing: 1px;
+        }
+      }
+     
+    }
+    img{
+      padding: 0 0 0 24px;
     }
   }
   p,
@@ -146,7 +163,6 @@
     }
   }
 }
-
 
 .vertical-line {
   z-index: 30;
