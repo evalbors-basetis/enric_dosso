@@ -1,5 +1,7 @@
 .home {
   background-color: $blue-darken;
+  overflow-y: hidden; 
+
   p,
   h1 {
     color: $cream;
@@ -22,6 +24,7 @@
     }
   }
   .waves-container {
+    cursor: url('../images/cursor-scrolling-home.svg'), auto;
     z-index: 0;
     display: flex;
     .wave {
@@ -45,6 +48,7 @@
     }
 
     .wave:hover {
+      cursor: url('../images/cursor-scrolling-home.svg'), auto;
       p {
         color: white;
         transition: 1s;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="67px" viewBox="0 0 75 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <g id="Visual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="F_01_home-Copy" transform="translate(-596.000000, -249.000000)" fill="#9B632A">
+            <g id="Group-7" transform="translate(596.000000, 249.000000)">
+                <g id="Group-10" transform="translate(0.000000, 0.000000)">
+                    <g id="Path-2" transform="translate(37.110583, 19.110583) rotate(180.000000) translate(-37.110583, -19.110583) translate(18.000000, -0.000000)" fill-rule="nonzero">
+                        <path d="M32.6238058,6.38891662 C32.6238058,5.95175206 32.2694139,5.59736017 31.8322494,5.59736017 L23.9166849,5.59736017 C23.4795203,5.59736017 23.1251284,5.95175206 23.1251284,6.38891662 C23.1251284,6.82608118 23.4795203,7.18047307 23.9166849,7.18047307 L29.9214321,7.18047307 L5.82951261,31.2708095 C5.62929312,31.4710289 5.5510985,31.7628552 5.62438392,32.0363601 C5.69766934,32.309865 5.91130099,32.5234967 6.18480589,32.5967821 C6.4583108,32.6700675 6.75013706,32.5918729 6.95035654,32.3916534 L31.0406929,8.2997339 L31.0406929,14.3044811 C31.0406929,14.7416457 31.3950848,15.0960376 31.8322494,15.0960376 C32.2694139,15.0960376 32.6238058,14.7416457 32.6238058,14.3044811 L32.6238058,6.38891662 Z" id="Path" transform="translate(19.110583, 19.110583) rotate(-135.000000) translate(-19.110583, -19.110583) "></path>
+                    </g>
+                    <g id="Group-14-Copy" transform="translate(0.000000, 38.221166)" font-family="FuturaPT-Demi, Futura PT" font-size="16" font-weight="400" line-spacing="28">
+                        <text id="DESCUBRE">
+                            <tspan x="0" y="16">DESCUBRE</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
