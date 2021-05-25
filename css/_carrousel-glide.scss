@@ -1,13 +1,12 @@
 .container-carrousel {
-  width: 100%;
+  width: 85%;
+  float: right;
   height: 100%;
-
   .carrousel {
     position: relative;
     overflow: hidden;
   }
 }
-
 
 .glide__arrows{
   .glide__arrow {

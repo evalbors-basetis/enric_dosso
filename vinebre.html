@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/glide/glide.core.min.css" />
     <link rel="stylesheet" href="css/glide/glide.theme.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/38498bb387.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -19,7 +23,7 @@
         <ul class="menu-items">
           <li><a href="#">El proyecto</a></li>
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">La ruta</a>
+            <a href="javascript:void(0)" class="dropbtn active">La ruta</a>
             <div class="dropdown-content">
               <a href="vinebre.html">Vinebre</a>
               <a href="#">Tortosa</a>
@@ -35,12 +39,117 @@
           <a href="">
             <i class="fa fa-bars"></i>
           </a>
-          
         </span>
       </nav>
     </header>
-    
-    <main>
+
+    <main class="ruta-pages">
+      <div class="sidenav">
+        <ul class="menu-ruta">
+          <li class="ruta">
+            <a class="selected" href="">
+              <div class="little-wave">
+                <svg width="24" height="48">
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="16"
+                    stroke="#8d6331"
+                    stroke-width="8"
+                    fill="transparent"
+                  />
+                </svg>
+                <small>Vinebre</small>
+              </div>
+            </a>
+          </li>
+          <li class="ruta">
+            <a class="" href="">
+              <div class="little-wave">
+                <svg width="24" height="48">
+                  <circle
+                    cx="0"
+                    cy="24"
+                    r="16"
+                    stroke="#8d6331"
+                    stroke-width="8"
+                    fill="transparent"
+                  />
+                </svg>
+                <small>Tortosa</small>
+              </div>
+            </a>
+          </li>
+          <li class="ruta">
+            <a class="" href="">
+              <div class="little-wave">
+                <svg width="24" height="48">
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="16"
+                    stroke="#8d6331"
+                    stroke-width="8"
+                    fill="transparent"
+                  />
+                </svg>
+                <small>Montserrat</small>
+              </div>
+            </a>
+          </li>
+          <li class="ruta">
+            <a class="" href="">
+              <div class="little-wave">
+                <svg width="24" height="48">
+                  <circle
+                    cx="0"
+                    cy="24"
+                    r="16"
+                    stroke="#8d6331"
+                    stroke-width="8"
+                    fill="transparent"
+                  />
+                </svg>
+                <small>Tarragona</small>
+              </div>
+            </a>
+          </li>
+          <li class="ruta">
+            <a class="" href="">
+              <div class="little-wave">
+                <svg width="24" height="48">
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="16"
+                    stroke="#8d6331"
+                    stroke-width="8"
+                    fill="transparent"
+                  />
+                </svg>
+                <small>Barcelona</small>
+              </div>
+            </a>
+          </li>
+          <li class="ruta">
+            <a class="" href="">
+              <div class="little-wave">
+                <svg width="24" height="48">
+                  <circle
+                    cx="0"
+                    cy="24"
+                    r="16"
+                    stroke="#8d6331"
+                    stroke-width="8"
+                    fill="transparent"
+                  />
+                </svg>
+                <small>Castellón</small>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="container-carrousel">
         <div class="carrousel">
           <div class="glide">
@@ -52,8 +161,12 @@
                       <img src="images/1_vinebre/vinebre_01.jpg" alt="" />
 
                       <div class="link-map">
-                        <div class="vertical-line"></div>
-                        <a>Ver en el mapa</a>
+                        <a
+                          href="https://goo.gl/maps/KWt6Dd1UqqJBsYG96"
+                          target="_blank"
+                          ><i class="fas fa-map-marked-alt"></i>Ver en el
+                          mapa</a
+                        >
                       </div>
                     </div>
                     <div class="text-container">
@@ -67,10 +180,27 @@
                         HIFE. Otra opción es saliendo de Lleida también con HIFE
                         (ruta Lleida-Tortosa).
                       </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="section">
+                    <div class="image-container">
+                      <img src="images/1_vinebre/vinebre_02.jpg" alt="" />
+                    </div>
+                    <div class="text-container">
+                      <p>
+                        El acceso a Vinebre siempre ha sido un poco dificultoso.
+                        Antiguamente se debía utilizar una gran barcaza para
+                        cruzar de una orilla a otra del río. Actualmente, el
+                        tren sólo llega hasta la vecina población de Ascó. Esta
+                        difícil comunicación con Vinebre motivó que la actual
+                        comunidad teresiana se trasladara -hace unas décadas- de
+                        este municipio a la cercana población de Flix.
+                      </p>
                       <button class="accordion">
-                        <img class="static" src="images/eye.png" alt="" />
-                        <img class="active" src="images/eye.gif" alt="" />
-                        Experiencia espiritual
+                        <i class="fas fa-history"></i>
+                        Contexto histórico
                         <img
                           class="icon"
                           src="images/icon-arrow.svg"
@@ -86,24 +216,6 @@
                           ex ea commodo consequat.
                         </p>
                       </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="section">
-                    <div class="image-container">
-                      <img src="images/1_vinebre/vinebre_02.jpg" alt="" />
-                     
-                    </div>                    <div class="text-container">
-                      <p>
-                        El acceso a Vinebre siempre ha sido un poco dificultoso.
-                        Antiguamente se debía utilizar una gran barcaza para
-                        cruzar de una orilla a otra del río. Actualmente, el
-                        tren sólo llega hasta la vecina población de Ascó. Esta
-                        difícil comunicación con Vinebre motivó que la actual
-                        comunidad teresiana se trasladara -hace unas décadas- de
-                        este municipio a la cercana población de Flix.
-                      </p>
                     </div>
                   </div>
                 </li>
@@ -131,8 +243,12 @@
                       <img src="images/1_vinebre/vinebre_04.jpg" alt="" />
 
                       <div class="link-map">
-                        <div class="vertical-line"></div>
-                        <a>Ver en el mapa</a>
+                        <a
+                          href="https://goo.gl/maps/KWt6Dd1UqqJBsYG96"
+                          target="_blank"
+                          ><i class="fas fa-map-marked-alt"></i>Ver en el
+                          mapa</a
+                        >
                       </div>
                     </div>
                     <div class="text-container">

@@ -1,5 +1,5 @@
 header {
-  z-index: 100;
+  z-index: 200 !important;
   width: 100vw;
   .fixed {
     position: fixed;
@@ -17,10 +17,12 @@ header {
       font-family: $font-sans-serif;
       font-size: 16px;
       text-transform: uppercase;
-      margin: 16px 40px 0 0;
+      margin: 0 32px 0 0;
       li {
+        padding: 16px;
+
         a {
-          padding: 16px;
+          font-size: 16px;
           color: $brown;
           letter-spacing: 1px;
           i {
@@ -46,41 +48,112 @@ header {
       }
 
       .dark-mode {
-        .dropdown-content{
-          background-color: $blue-darken;
+        .dropdown-content {
+          background-color: rgba($blue-darken, 0.8);
         }
       }
       .dropdown-content {
-        z-index: 200;
         display: none;
         position: absolute;
         background-color: $cream;
         padding: 16px 8px;
         a {
           display: block;
-          font-size: 14px;
-          padding-top: 16px;
+          font-size: 16px;
+          padding-top: 8px;
+          text-transform: none;
+          letter-spacing: 0;
         }
       }
     }
-  }
-  .btn_menu {
-    display: none;
-    position: fixed;
-    right: 0;
-    top: 0;
-    a {
-      i {
-        font-size: 24px;
-        padding: 44px;
-        color: $brown;
-      }
-      &:hover {
+    .btn_menu {
+      display: none;
+      position: fixed;
+      right: 0;
+      top: 0;
+      a {
         i {
-          color: $blue;
-          transition: 0.5s;
+          font-size: 24px;
+          padding: 44px;
+          color: $brown;
+        }
+        &:hover {
+          i {
+            color: $blue;
+            transition: 0.5s;
+          }
         }
       }
+    }
+
+  }
+}
+
+footer {
+  padding: 20px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin-right: 40px;
+    // he tenido que añadir este margin
+  }
+}
+
+.sidenav {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+  overflow-x: hidden;
+  top: 50%;
+  transform: translateY(50%);
+  .menu-ruta {
+    small {
+      color: $brown;
+      font-family: $font-sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding-left: 8px;
+    }
+    a:hover, .selected {
+      small {
+        color: $blue;
+        transition: 0.2s;
+      }
+      .little-wave {
+        svg {
+          circle{
+            stroke: $blue;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+    .little-wave {
+      display: flex;
+      align-items: center;
+    }
+    .ruta:nth-child(2) {
+      transform: translate(26px, -16px);
+    }
+    .ruta:nth-child(3) {
+      transform: translate(0, -32px);
+    }
+    .ruta:nth-child(4) {
+      transform: translate(26px, -48px);
+    }
+    .ruta:nth-child(5) {
+      transform: translate(0, -64px);
+    }
+    .ruta:nth-child(6) {
+      transform: translate(26px, -80px);
     }
   }
 }
