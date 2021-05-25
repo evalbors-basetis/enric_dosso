@@ -65,176 +65,8 @@ header .logo-right a {
   padding: 10px;
 }
 
-.home {
-  background-color: #001B31;
-}
-.home header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home header .logo-home {
-  margin-top: 2.5%;
-}
-.home p,
-.home h1 {
-  color: #efe8e0;
-}
-.home main {
-  top: 50%;
-  transform: translateY(50%);
-}
-
-.horizontal-scroll {
-  display: flex;
-  align-items: center;
-}
-.horizontal-scroll .intro {
-  top: 50%;
-  transform: translateY(50%);
-  padding: 0 5%;
-  min-width: 30%;
-}
-.horizontal-scroll .intro h1 {
-  padding-bottom: 16px;
-}
-.horizontal-scroll .waves-container {
-  display: flex;
-}
-.horizontal-scroll .waves-container .wave {
-  max-width: 35%;
-  position: relative;
-}
-.horizontal-scroll .waves-container .wave img {
-  opacity: 0.5;
-  position: relative;
-  z-index: -10;
-  filter: grayscale(100%);
-}
-.horizontal-scroll .waves-container .wave p {
-  position: absolute;
-  z-index: 10;
-  transform: rotate(270deg);
-  font-family: "futura-pt";
-  color: #8d6331;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.horizontal-scroll .waves-container .wave:hover p {
-  color: white;
-  transition: 1s;
-}
-.horizontal-scroll .waves-container .wave:hover img {
-  filter: none;
-  transition: 1s;
-  opacity: 1;
-}
-.horizontal-scroll .waves-container .wave:hover .vertical-line {
-  border-left: 1px solid white;
-  transition: 1s;
-}
-.horizontal-scroll .waves-container .wave:nth-child(1) {
-  transform: translateY(260px);
-}
-.horizontal-scroll .waves-container .wave:nth-child(1) p {
-  left: 44%;
-  bottom: 115%;
-}
-.horizontal-scroll .waves-container .wave:nth-child(1) .vertical-line {
-  left: 50%;
-  top: 0;
-}
-.horizontal-scroll .waves-container .wave:nth-child(2) {
-  top: 0;
-  transform: translateX(-130px);
-}
-.horizontal-scroll .waves-container .wave:nth-child(2) p {
-  left: 43%;
-  top: 115%;
-}
-.horizontal-scroll .waves-container .wave:nth-child(2) .vertical-line {
-  left: 50%;
-  bottom: 0;
-}
-.horizontal-scroll .waves-container .wave:nth-child(3) {
-  transform: translate(-260px, 260px);
-}
-.horizontal-scroll .waves-container .wave:nth-child(3) p {
-  left: 39%;
-  bottom: 124%;
-}
-.horizontal-scroll .waves-container .wave:nth-child(3) .vertical-line {
-  left: 50%;
-  top: 0;
-}
-.horizontal-scroll .waves-container .wave:nth-child(4) {
-  top: 0;
-  transform: translateX(-390px);
-}
-.horizontal-scroll .waves-container .wave:nth-child(4) p {
-  left: 40%;
-  top: 121%;
-}
-.horizontal-scroll .waves-container .wave:nth-child(4) .vertical-line {
-  left: 50%;
-  bottom: 0;
-}
-.horizontal-scroll .waves-container .wave:nth-child(5) {
-  transform: translate(-520px, 260px);
-}
-.horizontal-scroll .waves-container .wave:nth-child(5) p {
-  left: 40%;
-  bottom: 122%;
-}
-.horizontal-scroll .waves-container .wave:nth-child(5) .vertical-line {
-  left: 50%;
-  top: 0;
-}
-.horizontal-scroll .waves-container .wave:nth-child(6) {
-  top: 0;
-  transform: translateX(-650px);
-}
-.horizontal-scroll .waves-container .wave:nth-child(6) p {
-  left: 41%;
-  top: 118%;
-}
-.horizontal-scroll .waves-container .wave:nth-child(6) .vertical-line {
-  left: 50%;
-  bottom: 0;
-}
-
 .inside-pages {
   background-color: #efe8e0;
-}
-
-.menu-mobile {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #2a599f;
-}
-
-.title__left {
-  text-align: left;
-  padding: 5vh 0 24px 5vw;
-  font-family: "kumlien-pro";
-  color: #2a599f;
-}
-.title__center {
-  font-family: "kumlien-pro";
-  color: #2a599f;
-  text-align: center;
-  padding: 5vh 0 24px 0;
-}
-
-.title-slide {
-  font-family: "futura-pt";
-  font-size: 18px;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  font-weight: 600;
 }
 
 .section {
@@ -284,10 +116,33 @@ header .logo-right a {
   padding: 0 0 0 8px;
 }
 
-.vertical-line {
-  position: absolute;
-  border-left: 1px solid #8d6331;
-  height: 194px;
+.menu-mobile {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a599f;
+}
+
+.title__left {
+  text-align: left;
+  padding: 5vh 0 24px 5vw;
+  font-family: "kumlien-pro";
+  color: #2a599f;
+}
+.title__center {
+  font-family: "kumlien-pro";
+  color: #2a599f;
+  text-align: center;
+  padding: 5vh 0 24px 0;
+}
+
+.title-slide {
+  font-family: "futura-pt";
+  font-size: 18px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 footer {
@@ -834,4 +689,106 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
   color: #6F3E0B;
   font-size: 16px;
   transition: 0.4s;
+}
+
+.home {
+  background-color: #001B31;
+}
+.home header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home header .logo-home {
+  margin-top: 2.5%;
+}
+.home p,
+.home h1 {
+  color: #efe8e0;
+}
+
+.horizontal-scroll {
+  display: flex;
+  align-items: center;
+}
+.horizontal-scroll .intro {
+  top: 50%;
+  transform: translateY(50%);
+  padding: 0 5%;
+  min-width: 30%;
+}
+.horizontal-scroll .intro h1 {
+  padding-bottom: 16px;
+}
+.horizontal-scroll .waves-container {
+  display: flex;
+}
+.horizontal-scroll .waves-container .wave {
+  position: relative;
+}
+.horizontal-scroll .waves-container .wave img {
+  opacity: 0.5;
+  position: relative;
+  z-index: -10;
+  filter: grayscale(100%);
+}
+.horizontal-scroll .waves-container .wave p {
+  position: absolute;
+  z-index: 10;
+  transform: rotate(270deg);
+  font-family: "futura-pt";
+  color: #8d6331;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.horizontal-scroll .waves-container .wave:hover p {
+  color: white;
+  transition: 1s;
+}
+.horizontal-scroll .waves-container .wave:hover img {
+  filter: none;
+  transition: 1s;
+  opacity: 1;
+}
+.horizontal-scroll .waves-container .wave:hover .vertical-line {
+  border-left: 1px solid white;
+  transition: 1s;
+}
+.horizontal-scroll .waves-container .wave:nth-child(1) p {
+  left: 215px;
+  top: 190px;
+  z-index: 20;
+}
+.horizontal-scroll .waves-container .wave:nth-child(1) .vertical-line {
+  left: 250px;
+  bottom: 50px;
+}
+
+.vertical-line {
+  z-index: 30;
+  position: absolute;
+  border-left: 1px solid #8d6331;
+  height: 200px;
+}
+
+.form-wave {
+  position: relative;
+}
+.form-wave .circle-on {
+  margin: 125px;
+  z-index: 10;
+  border-radius: 50%;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #001B31;
+}
+.form-wave img {
+  z-index: -10;
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
