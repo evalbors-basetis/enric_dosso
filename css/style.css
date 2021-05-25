@@ -46,8 +46,11 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.inside-pages {
   background-color: #efe8e0;
+  background-image: url("../images/background-waves.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 main {
