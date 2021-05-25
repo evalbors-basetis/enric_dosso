@@ -119,6 +119,31 @@
         bottom: 0;
       }
     }
+    .wave:nth-child(5) {
+      transform: translate(-520px, 260px);
+      p {
+        left: 39%;
+        bottom: 125%;
+        text-align: left;
+      }
+      .vertical-line {
+        left: 50%;
+        top: 0;
+      }
+    }
+    .wave:nth-child(6) {
+      top: 0;
+      transform: translateX(-650px);
+      p {
+        left: 40%;
+        top: 120%;
+        text-align: left;
+      }
+      .vertical-line {
+        left: 50%;
+        bottom: 0;
+      }
+    }
   }
 }
 

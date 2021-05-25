@@ -809,6 +809,31 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
   left: 50%;
   bottom: 0;
 }
+.horizontal-scroll .waves-container .wave:nth-child(5) {
+  transform: translate(-520px, 260px);
+}
+.horizontal-scroll .waves-container .wave:nth-child(5) p {
+  left: 39%;
+  bottom: 125%;
+  text-align: left;
+}
+.horizontal-scroll .waves-container .wave:nth-child(5) .vertical-line {
+  left: 50%;
+  top: 0;
+}
+.horizontal-scroll .waves-container .wave:nth-child(6) {
+  top: 0;
+  transform: translateX(-650px);
+}
+.horizontal-scroll .waves-container .wave:nth-child(6) p {
+  left: 40%;
+  top: 120%;
+  text-align: left;
+}
+.horizontal-scroll .waves-container .wave:nth-child(6) .vertical-line {
+  left: 50%;
+  bottom: 0;
+}
 
 .vertical-line {
   z-index: 30;
