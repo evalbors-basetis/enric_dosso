@@ -2,8 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.inside-pages {
   background-color: $cream;
+  background-image: url("../images/background-waves.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 main {
