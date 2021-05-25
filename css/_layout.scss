@@ -6,8 +6,13 @@ body {
   background-color: $cream;
 }
 
-.inside-pages {
-  background-color: $cream;
+main {
+  top: 50%;
+  transform: translateY(50%);
+}
+
+i{
+  padding-right: 8px;
 }
 
 .section {
@@ -15,14 +20,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  //padding: 0 5%;
-  //padding: 0 2vw;
+
   .text-container {
     width: 40%;
+    padding-top: 40px;
     padding-left: 40px;
     p {
-      padding: 5% 3%;
-      font-size: 18px !important;
+      font-size: 18px;
+    }
+    h1{
+      padding-bottom: 24px;
     }
   }
 
@@ -34,26 +41,19 @@ body {
       object-fit: cover;
     }
     .link-map {
-      height: 40px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 60px;
-      left: -80px;
-      .vertical-line {
-        height: 40px;
-        top: 80px;
-      }
       a {
-        transform: rotate(270deg);
         color: $brown;
-        font-weight: 600;
+        font-weight: 500;
         font-family: $font-sans-serif;
         font-size: 16px;
         text-transform: uppercase;
-        padding: 0 0 0 8px;
+        cursor: pointer;
+      &:hover{
+        color: $blue;
+        i{
+          color: $blue;
+        }
+      }
       }
     }
   }
@@ -90,16 +90,3 @@ body {
   font-weight: 600;
 }
 
-footer {
-  padding: 20px;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  img {
-    margin-right: 40px;
-    // he tenido que añadir este margin
-  }
-}

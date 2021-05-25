@@ -5,15 +5,13 @@
     color: $cream;
   }
 
-  main {
-    top: 50%;
-    transform: translateY(50%);
-  }
 }
 
 .horizontal-scroll {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  align-items:center;
+  z-index: 0;
   .intro {
     top: 50%;
     transform: translateY(50%);
@@ -24,6 +22,7 @@
     }
   }
   .waves-container {
+    z-index: 0;
     display: flex;
     .wave {
       position: relative;

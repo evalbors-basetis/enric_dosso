@@ -14,8 +14,8 @@
   </head>
 
   <body class="home">
-    <header class="fixed">
-      <nav>
+    <header>
+      <nav class="fixed">
         <a class="logo" href="index.html">
           <img class="logo-home" src="images/logo-background-dark.svg" alt="" />
         </a>
@@ -113,6 +113,18 @@
     <my-footer></my-footer>
   </body>
 
-  <script src="js/header.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+
+ <!-- <script src="js/header.js"></script> -->
   <script src="js/footer.js"></script>
 </html>
