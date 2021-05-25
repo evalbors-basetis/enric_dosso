@@ -13,10 +13,10 @@
   h1 {
     color: $cream;
   }
-  //main {
-    //top: 50%;
-    //transform: translateY(50%);
-  //}
+  main {
+    top: 50%;
+    transform: translateY(50%);
+  }
 }
 
 .horizontal-scroll {
@@ -70,6 +70,7 @@
     }
 
     .wave:nth-child(1) {
+    
       p {
         left: 215px;
         top: 190px;
@@ -83,30 +84,10 @@
   }
 }
 }
+
 .vertical-line {
   z-index: 30;
   position: absolute;
   border-left: 1px solid $brown;
   height: 200px;
-}
-
-.form-wave {
-  position: relative;
-  .circle-on {
-    margin:125px;
-    z-index: 10;
-    border-radius: 50%;
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background-color: $blue-darken;
-  }
-  img {
-    z-index: -10;
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
 }

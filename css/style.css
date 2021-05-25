@@ -707,6 +707,10 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
 .home h1 {
   color: #efe8e0;
 }
+.home main {
+  top: 50%;
+  transform: translateY(50%);
+}
 
 .horizontal-scroll {
   display: flex;
@@ -770,25 +774,4 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
   position: absolute;
   border-left: 1px solid #8d6331;
   height: 200px;
-}
-
-.form-wave {
-  position: relative;
-}
-.form-wave .circle-on {
-  margin: 125px;
-  z-index: 10;
-  border-radius: 50%;
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  background-color: #001B31;
-}
-.form-wave img {
-  z-index: -10;
-  width: 500px;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
