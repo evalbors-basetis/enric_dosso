@@ -1,11 +1,109 @@
 /* TABLET + MOBILE */
 
 @media screen and (max-width: 768px) {
+  .home {
+    main {
+      top: none;
+      transform: none;
+    }
+  }
   .just-desktop {
     display: none;
   }
   .just-mobile {
     display: none;
+  }
+
+  .horizontal-scroll {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .intro {
+      width: 80%;
+      h1 {
+        padding-bottom: 16px;
+      }
+     margin-bottom: 180px;
+    }
+
+    .routes {
+      position: relative;
+      transform: scale(0.8) rotate(90deg);
+      display: flex;
+      align-items: center;
+      .waves-container {
+        position: absolute;
+        .wave:nth-child(1) {
+          transform: translateY(140px);
+          p {
+            left: 44%;
+            bottom: 115%;
+          }
+          .vertical-line {
+            left: 50%;
+            top: 0;
+          }
+        }
+        .wave:nth-child(2) {
+          top: -120px;
+          transform: translateX(-130px);
+          p {
+            left: 43%;
+            top: 115%;
+          }
+          .vertical-line {
+            left: 50%;
+            bottom: 0;
+          }
+        }
+        .wave:nth-child(3) {
+          transform: translate(-260px, 140px);
+          p {
+            left: 39%;
+            bottom: 125%;
+          }
+          .vertical-line {
+            left: 50%;
+            top: 0;
+          }
+        }
+        .wave:nth-child(4) {
+          top: -120px;
+          transform: translateX(-390px);
+          p {
+            left: 39%;
+            top: 125%;
+          }
+          .vertical-line {
+            left: 50%;
+            bottom: 0;
+          }
+        }
+        .wave:nth-child(5) {
+          transform: translate(-520px, 140px);
+          p {
+            left: 40%;
+            bottom: 122%;
+          }
+          .vertical-line {
+            left: 50%;
+            top: 0;
+          }
+        }
+        .wave:nth-child(6) {
+          top: -120px;
+          transform: translateX(-650px);
+          p {
+            left: 41%;
+            top: 118%;
+          }
+          .vertical-line {
+            left: 50%;
+            bottom: 0;
+          }
+        }
+      }
+    }
   }
   .container {
     flex-direction: column;
@@ -73,12 +171,5 @@
 
   .full-width {
     height: 200px;
-  }
-}
-
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
   }
 }
