@@ -78,9 +78,7 @@ i {
   align-items: flex-start;
 }
 .section .text-container {
-  width: 40%;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 40px;
 }
 .section .text-container p {
   font-size: 18px;
@@ -186,6 +184,10 @@ i {
 .inside-pages main {
     top: 0 !important;
     transform: none !important;
+  }
+  .home main .intro,
+.inside-pages main .intro {
+    width: 90%;
   }
 
   .horizontal-scroll {
@@ -458,7 +460,7 @@ footer img {
 .sidenav {
   display: flex;
   justify-content: center;
-  width: 15%;
+  width: 10%;
   position: fixed;
   z-index: 1;
   background-color: transparent;
