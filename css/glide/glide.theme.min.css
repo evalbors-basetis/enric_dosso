@@ -24,21 +24,21 @@
   border-color: white;
 }
 .glide__arrow--left {
-  left: 0;
+  left: 2em;
 }
 .glide__arrow--right {
-  right: 0;
+  right: 2em;
 }
 .glide__arrow--disabled {
   opacity: 0.33;
 }
 .glide__bullets {
-  position: absolute;
-  bottom: 0;
+  position: sticky;
   z-index: 2;
+  bottom: 0;
+  left: 50%;
   display: inline-flex;
   list-style: none;
-  left: 50%;
   transform: translateX(-50%);
 }
 .glide__bullet {

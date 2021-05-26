@@ -7,13 +7,21 @@ html {
   background-color: $cream;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
+  
 }
 
 main {
   top: 50%;
   transform: translateY(50%);
+  .intro {    
+    padding: 0 5%;
+    width: 30%;
+    h1 {
+      padding-bottom: 16px;
+    }
+  }
 }
 
 i{
@@ -42,7 +50,7 @@ i{
     position: relative;
     img {
       width: auto;
-      height: 60vh;
+      max-height: 70vh;
       object-fit: cover;
     }
     .link-map {

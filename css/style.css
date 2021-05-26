@@ -51,13 +51,20 @@ html {
   background-color: #efe8e0;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
 }
 
 main {
   top: 50%;
   transform: translateY(50%);
+}
+main .intro {
+  padding: 0 5%;
+  width: 30%;
+}
+main .intro h1 {
+  padding-bottom: 16px;
 }
 
 i {
@@ -86,7 +93,7 @@ i {
 }
 .section .image-container img {
   width: auto;
-  height: 60vh;
+  max-height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -385,7 +392,7 @@ header nav .menu-items .dropdown:hover .dropdown-content {
   display: block;
 }
 header nav .menu-items .dark-mode .dropdown-content {
-  background-color: rgba(0, 27, 49, 0.8);
+  background-color: rgba(10, 50, 84, 0.8);
 }
 header nav .menu-items .dropdown-content {
   z-index: 300;
@@ -562,13 +569,13 @@ footer img {
 }
 
 .container-carrousel {
-  width: 85%;
+  width: 90%;
+  height: 100vh;
   float: right;
-  height: 100%;
 }
 .container-carrousel .carrousel {
   position: relative;
-  overflow: hidden;
+  max-height: 100vh !important;
 }
 
 .glide__arrows .glide__arrow {
@@ -639,7 +646,7 @@ footer img {
 }
 
 .home {
-  background-color: #001B31;
+  background-color: #0A3254;
   overflow-y: hidden;
 }
 .home p,
