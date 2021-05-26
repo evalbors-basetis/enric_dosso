@@ -27,6 +27,33 @@ main {
 i{
   padding-right: 8px;
 }
+a{
+  color: $brown;
+  &:hover{
+    color: $blue;
+
+  }
+}
+.btn {
+  cursor: pointer;
+  display: inline;
+  padding: 12px 40px;
+  color: $cream;
+  background-color: $brown;
+  font-family: $font-sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius:40px;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  &:hover{
+    color: $cream;
+    text-decoration: none;
+    background-color:$blue;
+    transition: 0.5s;
+  }
+}
 
 .section {
   width: 100%;

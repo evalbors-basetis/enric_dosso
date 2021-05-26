@@ -25,7 +25,7 @@
           <li class="dropdown">
             <a class="active" href="javascript:void(0)" class="dropbtn">La ruta</a>
             <div class="dropdown-content">
-              <a href="vinebre.html">Vinebre</a>
+              <a class="active-n2" href="vinebre.html">Vinebre</a>
               <a href="#">Tortosa</a>
               <a href="#">Montserrat</a>
               <a href="#">Tarragona</a>
@@ -318,5 +318,9 @@
     };
 
     new Glide(".glide", config).mount();
+
+    $(window).trigger('resize', {})
+
+    window.dispatchEvent(new Event('resize'));
   </script>
 </html>
