@@ -1,10 +1,10 @@
 .container-carrousel {
-  width: 85%;
+  width: 90%;
+  height: 100vh;
   float: right;
-  height: 100%;
   .carrousel {
     position: relative;
-    overflow: hidden;
+    max-height: 100vh !important;
   }
 }
 

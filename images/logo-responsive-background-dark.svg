@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="46px" viewBox="0 0 35 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g id="Visual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="F_02_template_vinebre_2" transform="translate(-32.000000, -32.000000)">
+            <g id="Group-5" transform="translate(32.000000, 32.000000)">
+                <path d="M17.5001998,13 C26.6066188,13 35,19.5671642 35,28.9253731 C35,38.9402985 27.6557914,46 17.5001998,46 C7.34420857,46 0,38.9402985 0,28.9253731 C0,19.5671642 8.39338122,13 17.5001998,13 Z M17.5001998,20.7985075 C12.5900718,20.7985075 8.56084916,24.6977612 8.56084916,28.9664179 C8.56084916,34.3022388 12.5900718,38.2014925 17.5001998,38.2014925 C22.4099282,38.2014925 26.4387512,34.3022388 26.4387512,28.9664179 C26.4387512,24.6977612 22.4099282,20.7985075 17.5001998,20.7985075 Z" id="Shape" fill="#F1E8E0"></path>
+                <polygon id="Path" fill="#9B632A" points="26 0 26 9 9 9 9 2.99987337"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
