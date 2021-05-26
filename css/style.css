@@ -331,6 +331,9 @@ i {
   .inside-pages .container-carrousel {
     width: 100%;
   }
+  .inside-pages .glide__arrows {
+    display: none;
+  }
 }
 /* MOBILE */
 @media screen and (max-width: 480px) {

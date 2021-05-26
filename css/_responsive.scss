@@ -183,13 +183,15 @@
       padding: 16px 0;
     }
   }
-
   .inside-pages {
     .sidenav {
       display: none;
     }
     .container-carrousel {
       width: 100%;
+    }
+    .glide__arrows{
+      display: none;
     }
   }
 }
