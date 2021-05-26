@@ -1,5 +1,5 @@
 header {
-  z-index: 200 !important;
+  z-index: 600 !important;
   width: 100vw;
   padding: 32px;
   .fixed {
@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    
+
     .menu-items {
       opacity: 1;
       display: flex;
@@ -34,13 +34,15 @@ header {
             transition: 0.2s;
             color: $blue;
             border-bottom: none;
-
           }
         }
 
         .active {
           color: $blue;
           border-bottom: 1px solid $blue;
+        }
+        .active-n2 {
+          color: $blue;
         }
       }
       .dropdown:hover {
@@ -51,11 +53,11 @@ header {
 
       .dark-mode {
         .dropdown-content {
-          background-color: rgba($blue-darken, 0.8);
+          background-color: $blue-darken;
         }
       }
       .dropdown-content {
-        z-index: 300;
+        z-index: 800;
         display: none;
         position: absolute;
         background-color: $cream;
@@ -88,10 +90,15 @@ header {
           }
         }
       }
+      #close {
+        position: absolute;
+        display: none;
+      }
     }
-
   }
-}
+} 
+
+
 
 footer {
   padding: 20px;
@@ -126,14 +133,15 @@ footer {
       font-weight: 500;
       padding-left: 8px;
     }
-    a:hover, .selected {
+    a:hover,
+    .selected {
       small {
         color: $blue;
         transition: 0.2s;
       }
       .little-wave {
         svg {
-          circle{
+          circle {
             stroke: $blue;
             transition: 0.2s;
           }

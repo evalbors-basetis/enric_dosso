@@ -1,7 +1,6 @@
 .home {
   background-color: $blue-darken;
   overflow-y: hidden;
-
   p,
   h1 {
     color: $cream;
@@ -12,17 +11,21 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  z-index: 0;
+  z-index: -100 !important;
   .intro {
-    top: 50%;
-    transform: translateY(50%);
     padding: 0 5%;
     min-width: 30%;
     h1 {
-      padding-bottom: 16px;
+      padding-bottom: 8px;
+    }
+    p{
+      margin-bottom: 40px;
     }
   }
+ 
   .waves-container {
+    top: 50%;
+    transform: translateY(-50%); 
     cursor: url("../images/cursor-scrolling-home.svg"), auto;
     z-index: 0;
     display: flex;

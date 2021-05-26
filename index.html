@@ -16,12 +16,20 @@
   </head>
 
   <body class="home">
-    <header>
+  <header class="" id="header-responsive">
       <nav class="fixed">
         <a class="logo" href="index.html">
           <img class="logo-home" src="images/logo-background-dark.svg" alt="" />
         </a>
-        <ul class="menu-items">
+        <span class="btn_menu" onclick="myFunction()">
+          <a id="open">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a id="close" class="hide" href="">
+            <i class="fas fa-times"></i>
+          </a>
+        </span>
+        <ul class="menu-items" id="menu-responsive">
           <li><a href="el-proyecto.html">El proyecto</a></li>
           <li class="dropdown dark-mode">
             <a href="javascript:void(0)" class="dropbtn">La ruta</a>
@@ -40,25 +48,24 @@
             >
           </li>
         </ul>
-        <span class="btn_menu">
-          <a href="">
-            <i class="fa fa-bars"></i>
-          </a>
-        </span>
+        
       </nav>
-    </header>
+  </header>
+    
+    
     <main>
       <div class="horizontal-scroll">
         <div class="intro">
           <h1>Lorem ipsum dolorsit amet</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            lacus ante, tempor eget leo nec, vehicula luctus erat. Vestibulum
+            lacus ante, tempor eget leo nec, <a href="el-proyecto.html">proyecto</a> vehicula luctus erat. Vestibulum
             fermentum, orci vitae porta congue, metus turpis vestibulum libero,
-            et aliquam est purus eleifend purus. Donec placerat magna lacinia,
+            et aliquam est purus eleifend purus. <a href="personaliza-experiencia.html">Personaliza tu experiencia</a> lacinia,
             condimentum nisl eu, bibendum eros. Sed eu nulla vitae nulla
             tristique varius.
           </p>
+          <a class="btn" href="vinebre.html">Empezar la ruta</a>
         </div>
         <div class="routes">
           <div class="waves-container">
@@ -130,4 +137,5 @@
 
   <!-- <script src="js/header.js"></script> -->
   <script src="js/footer.js"></script>
+  <script src="js/menu-responsive.js"></script>
 </html>
