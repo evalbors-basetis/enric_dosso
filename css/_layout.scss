@@ -4,7 +4,7 @@ html {
 
 .inside-pages {
   overflow-x:hidden;
-  background-color: rgba($blue, 0.1);
+  background-color: $blue-light;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -16,7 +16,6 @@ main {
   top: 50%;
   transform: translateY(50%);
   .intro {    
-    padding: 0 5%;
     width: 30%;
     h1 {
       padding-bottom: 16px;
