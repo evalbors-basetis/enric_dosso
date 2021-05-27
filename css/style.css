@@ -488,8 +488,14 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-footer img {
+footer a i {
+  color: #8d6331;
   margin-right: 40px;
+  font-size: 32px;
+}
+footer a:hover i {
+  transition: 0.2s;
+  color: #2a599f;
 }
 
 .sidenav {

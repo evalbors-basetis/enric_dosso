@@ -6,7 +6,7 @@ class MyFooter extends HTMLElement {
       <p>
         Enric d’Osso® 2021
       </p> 
-      <img src="images/instagram-icon.svg" alt="">
+      <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
     </footer>
   `
   ;
