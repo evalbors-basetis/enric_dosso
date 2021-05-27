@@ -160,7 +160,8 @@ a:hover {
 }
 
 /* TABLET + MOBILE */
-.hide, .icon {
+.hide,
+.icon {
   display: none;
 }
 
@@ -170,38 +171,38 @@ a:hover {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
   }
-  .home .original,
-.inside-pages .original {
+  .home header .original,
+.inside-pages header .original {
     display: none !important;
   }
-  .home .icon,
-.inside-pages .icon {
+  .home header .icon,
+.inside-pages header .icon {
     display: inline-flex;
   }
-  .home .responsive,
-.inside-pages .responsive {
+  .home header .responsive,
+.inside-pages header .responsive {
     overflow-y: hidden !important;
     width: 100vw !important;
     height: 100vh !important;
     background-color: #0A3254;
     flex-direction: column;
   }
-  .home .responsive nav,
-.inside-pages .responsive nav {
+  .home header .responsive nav,
+.inside-pages header .responsive nav {
     flex-direction: column;
   }
-  .home .responsive nav .menu-items,
-.inside-pages .responsive nav .menu-items {
+  .home header .responsive nav .menu-items,
+.inside-pages header .responsive nav .menu-items {
     flex-direction: column;
     top: 50%;
     transform: translateY(50%);
   }
-  .home .menu-items,
-.inside-pages .menu-items {
+  .home header .menu-items,
+.inside-pages header .menu-items {
     display: none;
   }
-  .home .btn_menu,
-.inside-pages .btn_menu {
+  .home header .btn_menu,
+.inside-pages header .btn_menu {
     display: inline-flex;
     cursor: pointer;
   }
@@ -384,6 +385,10 @@ a:hover {
 
   .full-width {
     height: 200px;
+  }
+
+  footer {
+    position: relative !important;
   }
 }
 header {
@@ -658,7 +663,7 @@ footer img {
 
 .accordion {
   z-index: -50;
-  padding: 8px 0 0 0;
+  padding: 16px 0 0 0;
   display: flex;
   align-items: center;
   font-family: "futura-pt";
@@ -673,19 +678,24 @@ footer img {
   background-color: transparent;
   transition: all ease-in-out 2s;
 }
-.accordion :hover .static {
-  opacity: 0;
-}
-.accordion p {
+.accordion a {
   font-size: 16px;
   color: #8d6331;
-  padding: 4px 8px 0 0;
+  padding: 0 8px 0 0;
+}
+.accordion:hover {
+  transition: none !important;
+}
+.accordion:hover a,
+.accordion:hover i {
+  color: #2a599f;
 }
 
 .panel {
   position: relative;
   display: none;
   overflow: hidden;
+  padding: 16px 0;
 }
 .panel p {
   font-family: "kumlien-pro";
