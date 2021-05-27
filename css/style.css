@@ -48,7 +48,7 @@ html {
 
 .inside-pages {
   overflow-x: hidden;
-  background-color: #efe8e0;
+  background-color: rgba(42, 89, 159, 0.1);
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -171,38 +171,20 @@ a:hover {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
   }
-  .home header .original,
-.inside-pages header .original {
+  .home header nav .original,
+.inside-pages header nav .original {
     display: none !important;
   }
-  .home header .icon,
-.inside-pages header .icon {
+  .home header nav .icon,
+.inside-pages header nav .icon {
     display: inline-flex;
   }
-  .home header .responsive,
-.inside-pages header .responsive {
-    overflow-y: hidden !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    background-color: #0A3254;
-    flex-direction: column;
-  }
-  .home header .responsive nav,
-.inside-pages header .responsive nav {
-    flex-direction: column;
-  }
-  .home header .responsive nav .menu-items,
-.inside-pages header .responsive nav .menu-items {
-    flex-direction: column;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  .home header .menu-items,
-.inside-pages header .menu-items {
+  .home header nav .menu-items,
+.inside-pages header nav .menu-items {
     display: none;
   }
-  .home header .btn_menu,
-.inside-pages header .btn_menu {
+  .home header nav .btn_menu,
+.inside-pages header nav .btn_menu {
     display: inline-flex;
     cursor: pointer;
   }
@@ -218,94 +200,94 @@ a:hover {
     margin: auto;
   }
 
-  .horizontal-scroll {
+  .scroll {
     position: relative;
     display: flex;
     flex-direction: column;
   }
-  .horizontal-scroll .intro {
+  .scroll .intro {
     width: 80%;
     margin-top: 64px;
   }
-  .horizontal-scroll .intro h1 {
+  .scroll .intro h1 {
     padding-bottom: 16px;
   }
-  .horizontal-scroll .routes {
+  .scroll .routes {
     margin-top: 56px;
     position: relative;
     transform: scale(0.8) rotate(90deg);
     display: flex;
     align-items: center;
   }
-  .horizontal-scroll .routes .waves-container {
+  .scroll .routes .waves-container {
     position: absolute;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(1) {
+  .scroll .routes .waves-container .wave:nth-child(1) {
     transform: translateY(140px);
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(1) p {
+  .scroll .routes .waves-container .wave:nth-child(1) p {
     left: 44%;
     bottom: 115%;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(1) .vertical-line {
+  .scroll .routes .waves-container .wave:nth-child(1) .vertical-line {
     left: 50%;
     top: 0;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(2) {
+  .scroll .routes .waves-container .wave:nth-child(2) {
     top: -120px;
     transform: translateX(-130px);
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(2) p {
+  .scroll .routes .waves-container .wave:nth-child(2) p {
     left: 43%;
     top: 115%;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(2) .vertical-line {
+  .scroll .routes .waves-container .wave:nth-child(2) .vertical-line {
     left: 50%;
     bottom: 0;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(3) {
+  .scroll .routes .waves-container .wave:nth-child(3) {
     transform: translate(-260px, 140px);
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(3) p {
+  .scroll .routes .waves-container .wave:nth-child(3) p {
     left: 39%;
     bottom: 125%;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(3) .vertical-line {
+  .scroll .routes .waves-container .wave:nth-child(3) .vertical-line {
     left: 50%;
     top: 0;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(4) {
+  .scroll .routes .waves-container .wave:nth-child(4) {
     top: -120px;
     transform: translateX(-390px);
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(4) p {
+  .scroll .routes .waves-container .wave:nth-child(4) p {
     left: 39%;
     top: 125%;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(4) .vertical-line {
+  .scroll .routes .waves-container .wave:nth-child(4) .vertical-line {
     left: 50%;
     bottom: 0;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(5) {
+  .scroll .routes .waves-container .wave:nth-child(5) {
     transform: translate(-520px, 140px);
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(5) p {
+  .scroll .routes .waves-container .wave:nth-child(5) p {
     left: 40%;
     bottom: 122%;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(5) .vertical-line {
+  .scroll .routes .waves-container .wave:nth-child(5) .vertical-line {
     left: 50%;
     top: 0;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(6) {
+  .scroll .routes .waves-container .wave:nth-child(6) {
     top: -120px;
     transform: translateX(-650px);
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(6) p {
+  .scroll .routes .waves-container .wave:nth-child(6) p {
     left: 41%;
     top: 118%;
   }
-  .horizontal-scroll .routes .waves-container .wave:nth-child(6) .vertical-line {
+  .scroll .routes .waves-container .wave:nth-child(6) .vertical-line {
     left: 50%;
     bottom: 0;
   }
@@ -332,24 +314,6 @@ a:hover {
        object-fit: cover;
   }
   .section .text-container {
-    width: 100%;
-    padding: 16px 0;
-  }
-
-  .section-vertical {
-    flex-direction: column;
-    padding: 0 10px 0;
-  }
-  .section-vertical .image-container {
-    width: 100%;
-  }
-  .section-vertical .image-container img {
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .section-vertical .text-container {
     width: 100%;
     padding: 16px 0;
   }
@@ -385,10 +349,6 @@ a:hover {
 
   .full-width {
     height: 200px;
-  }
-
-  footer {
-    position: relative !important;
   }
 }
 header {
@@ -720,39 +680,37 @@ footer a:hover i {
   color: #efe8e0;
 }
 
-.horizontal-scroll {
+.scroll {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   z-index: -100 !important;
 }
-.horizontal-scroll .intro {
+.scroll .intro {
   padding: 0 5%;
   min-width: 30%;
 }
-.horizontal-scroll .intro h1 {
+.scroll .intro h1 {
   padding-bottom: 8px;
 }
-.horizontal-scroll .intro p {
+.scroll .intro p {
   margin-bottom: 40px;
 }
-.horizontal-scroll .waves-container {
-  top: 50%;
-  transform: translateY(-50%);
+.scroll .waves-container {
   cursor: url("../images/cursor-scrolling-home.svg"), auto;
   z-index: 0;
   display: flex;
 }
-.horizontal-scroll .waves-container .wave {
+.scroll .waves-container .wave {
   position: relative;
 }
-.horizontal-scroll .waves-container .wave img {
+.scroll .waves-container .wave img {
   opacity: 0.5;
   position: relative;
   z-index: -10;
   filter: grayscale(100%);
 }
-.horizontal-scroll .waves-container .wave p {
+.scroll .waves-container .wave p {
   position: absolute;
   z-index: 10;
   transform: rotate(270deg);
@@ -761,94 +719,94 @@ footer a:hover i {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.horizontal-scroll .waves-container .wave:hover {
+.scroll .waves-container .wave:hover {
   cursor: url("../images/cursor-scrolling-home.svg"), auto;
 }
-.horizontal-scroll .waves-container .wave:hover p {
+.scroll .waves-container .wave:hover p {
   color: white;
   transition: 1s;
 }
-.horizontal-scroll .waves-container .wave:hover img {
+.scroll .waves-container .wave:hover img {
   filter: none;
   transition: 1s;
   opacity: 1;
 }
-.horizontal-scroll .waves-container .wave:hover .vertical-line {
+.scroll .waves-container .wave:hover .vertical-line {
   border-left: 1px solid white;
   transition: 1s;
 }
-.horizontal-scroll .waves-container .wave:nth-child(1) {
+.scroll .waves-container .wave:nth-child(1) {
   transform: translateY(260px);
 }
-.horizontal-scroll .waves-container .wave:nth-child(1) p {
+.scroll .waves-container .wave:nth-child(1) p {
   left: 44%;
   bottom: 115%;
   text-align: left;
 }
-.horizontal-scroll .waves-container .wave:nth-child(1) .vertical-line {
+.scroll .waves-container .wave:nth-child(1) .vertical-line {
   left: 50%;
   top: 0;
 }
-.horizontal-scroll .waves-container .wave:nth-child(2) {
+.scroll .waves-container .wave:nth-child(2) {
   top: 0;
   transform: translateX(-130px);
 }
-.horizontal-scroll .waves-container .wave:nth-child(2) p {
+.scroll .waves-container .wave:nth-child(2) p {
   left: 43%;
   top: 115%;
   text-align: left;
 }
-.horizontal-scroll .waves-container .wave:nth-child(2) .vertical-line {
+.scroll .waves-container .wave:nth-child(2) .vertical-line {
   left: 50%;
   bottom: 0;
 }
-.horizontal-scroll .waves-container .wave:nth-child(3) {
+.scroll .waves-container .wave:nth-child(3) {
   transform: translate(-260px, 260px);
 }
-.horizontal-scroll .waves-container .wave:nth-child(3) p {
+.scroll .waves-container .wave:nth-child(3) p {
   left: 39%;
   bottom: 125%;
   text-align: left;
 }
-.horizontal-scroll .waves-container .wave:nth-child(3) .vertical-line {
+.scroll .waves-container .wave:nth-child(3) .vertical-line {
   left: 50%;
   top: 0;
 }
-.horizontal-scroll .waves-container .wave:nth-child(4) {
+.scroll .waves-container .wave:nth-child(4) {
   top: 0;
   transform: translateX(-390px);
 }
-.horizontal-scroll .waves-container .wave:nth-child(4) p {
+.scroll .waves-container .wave:nth-child(4) p {
   left: 40%;
   top: 120%;
   text-align: left;
 }
-.horizontal-scroll .waves-container .wave:nth-child(4) .vertical-line {
+.scroll .waves-container .wave:nth-child(4) .vertical-line {
   left: 50%;
   bottom: 0;
 }
-.horizontal-scroll .waves-container .wave:nth-child(5) {
+.scroll .waves-container .wave:nth-child(5) {
   transform: translate(-520px, 260px);
 }
-.horizontal-scroll .waves-container .wave:nth-child(5) p {
+.scroll .waves-container .wave:nth-child(5) p {
   left: 39%;
   bottom: 125%;
   text-align: left;
 }
-.horizontal-scroll .waves-container .wave:nth-child(5) .vertical-line {
+.scroll .waves-container .wave:nth-child(5) .vertical-line {
   left: 50%;
   top: 0;
 }
-.horizontal-scroll .waves-container .wave:nth-child(6) {
+.scroll .waves-container .wave:nth-child(6) {
   top: 0;
   transform: translateX(-650px);
 }
-.horizontal-scroll .waves-container .wave:nth-child(6) p {
+.scroll .waves-container .wave:nth-child(6) p {
   left: 40%;
   top: 120%;
   text-align: left;
 }
-.horizontal-scroll .waves-container .wave:nth-child(6) .vertical-line {
+.scroll .waves-container .wave:nth-child(6) .vertical-line {
   left: 50%;
   bottom: 0;
 }
