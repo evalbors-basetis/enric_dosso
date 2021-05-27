@@ -11,35 +11,25 @@
     overflow-x: hidden !important;
 
     header {
-      .original {
-        display: none !important;
-      }
-      .icon {
-        display: inline-flex;
-      }
-      .responsive {
-        overflow-y: hidden !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        background-color: $blue-darken;
-        flex-direction: column;
-        nav {
-          flex-direction: column;
-          .menu-items {
-            flex-direction: column;
-            top: 50%;
-            transform: translateY(50%);
-          }
+      nav {
+        .original {
+          display: none !important;
+        }
+  
+        .icon {
+          display: inline-flex;
+        }
+  
+        .menu-items {
+          display: none;
+        }
+  
+        .btn_menu {
+          display: inline-flex;
+          cursor: pointer;
         }
       }
 
-      .menu-items {
-        display: none;
-      }
-      .btn_menu {
-        display: inline-flex;
-        cursor: pointer;
-      }
     }
 
     main {
@@ -54,7 +44,7 @@
 
   }
 
-  .horizontal-scroll {
+  .scroll {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -169,22 +159,7 @@
       padding: 16px 0;
     }
   }
-  .section-vertical {
-    flex-direction: column;
-    padding: 0 10px 0;
-    .image-container {
-      width: 100%;
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-    }
-    .text-container {
-      width: 100%;
-      padding: 16px 0;
-    }
-  }
+
   .inside-pages {
     .sidenav {
       display: none;
@@ -222,7 +197,4 @@
     height: 200px;
   }
 
-  footer {
-    position: relative !important;
-  }
 }
