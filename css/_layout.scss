@@ -2,20 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.inside-pages {
-  overflow-x:hidden;
-  background-color: $blue-light;
-  background-image: url("../images/background-waves.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  
-}
-
 main {
-  top: 50%;
-  transform: translateY(50%);
-  padding: 0 5%;
+  padding: 0 5% 0 0;
   .intro {    
     width: 30%;
     h1 {
@@ -23,6 +11,20 @@ main {
     }
   }
 }
+.inside-pages {
+  overflow-x:hidden;
+  background-color: $blue-light;
+  background-image: url("../images/background-waves.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  .ruta-pages{
+    top: 50%;
+    transform: translateY(50%);
+  }
+}
+
+
 
 i{
   padding-right: 8px;
@@ -97,7 +99,6 @@ a{
     }
   }
 }
-
 
 .title {
   &__left {

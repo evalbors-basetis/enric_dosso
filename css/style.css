@@ -46,6 +46,16 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding: 0 5% 0 0;
+}
+main .intro {
+  width: 30%;
+}
+main .intro h1 {
+  padding-bottom: 16px;
+}
+
 .inside-pages {
   overflow-x: hidden;
   background-color: #E5EEF5;
@@ -54,17 +64,9 @@ html {
   background-position: center center;
   background-attachment: fixed;
 }
-
-main {
+.inside-pages .ruta-pages {
   top: 50%;
   transform: translateY(50%);
-  padding: 0 5%;
-}
-main .intro {
-  width: 30%;
-}
-main .intro h1 {
-  padding-bottom: 16px;
 }
 
 i {
@@ -192,11 +194,12 @@ a:hover {
 .inside-pages main {
     z-index: 0 !important;
     transform: none !important;
+    padding: 0;
   }
   .home main .intro,
 .inside-pages main .intro {
     width: 90%;
-    padding-top: 72px;
+    padding-top: 72px !important;
     margin: auto;
   }
 
@@ -204,10 +207,10 @@ a:hover {
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100% !important;
   }
   .scroll .intro {
     width: 80%;
-    margin-top: 64px;
   }
   .scroll .intro h1 {
     padding-bottom: 16px;
@@ -680,10 +683,11 @@ footer a:hover i {
   color: #efe8e0;
 }
 .home .scroll {
+  cursor: url("../images/cursor-scrolling-home.svg"), auto;
+  height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  z-index: -100 !important;
 }
 .home .scroll .intro {
   padding: 0 5%;
@@ -696,20 +700,24 @@ footer a:hover i {
   margin-bottom: 40px;
 }
 .home .scroll .waves-container {
-  cursor: url("../images/cursor-scrolling-home.svg"), auto;
   z-index: 0;
   display: flex;
 }
 .home .scroll .waves-container .wave {
   position: relative;
 }
-.home .scroll .waves-container .wave img {
+.home .scroll .waves-container .wave .wave-box {
+  max-width: 250px;
+  height: auto;
+  position: absolute;
+}
+.home .scroll .waves-container .wave .wave-box img {
   opacity: 0.5;
   position: relative;
   z-index: -10;
   filter: grayscale(100%);
 }
-.home .scroll .waves-container .wave p {
+.home .scroll .waves-container .wave .wave-box p {
   position: absolute;
   z-index: 10;
   transform: rotate(270deg);
@@ -734,80 +742,74 @@ footer a:hover i {
   border-left: 1px solid white;
   transition: 1s;
 }
-.home .scroll .waves-container .wave:nth-child(1) {
-  transform: translateY(260px);
-}
 .home .scroll .waves-container .wave:nth-child(1) p {
-  left: 44%;
+  left: 85%;
   bottom: 115%;
-  text-align: left;
 }
 .home .scroll .waves-container .wave:nth-child(1) .vertical-line {
-  left: 50%;
+  left: 100%;
   top: 0;
 }
 .home .scroll .waves-container .wave:nth-child(2) {
-  top: 0;
-  transform: translateX(-130px);
+  left: 395px;
+  bottom: 270px;
 }
 .home .scroll .waves-container .wave:nth-child(2) p {
-  left: 43%;
+  left: 90%;
   top: 115%;
-  text-align: left;
 }
 .home .scroll .waves-container .wave:nth-child(2) .vertical-line {
-  left: 50%;
+  left: 105%;
   bottom: 0;
 }
 .home .scroll .waves-container .wave:nth-child(3) {
-  transform: translate(-260px, 260px);
+  left: 790px;
 }
 .home .scroll .waves-container .wave:nth-child(3) p {
-  left: 39%;
-  bottom: 125%;
-  text-align: left;
+  left: 88%;
+  bottom: 123%;
 }
 .home .scroll .waves-container .wave:nth-child(3) .vertical-line {
-  left: 50%;
+  left: 110%;
   top: 0;
 }
 .home .scroll .waves-container .wave:nth-child(4) {
-  top: 0;
-  transform: translateX(-390px);
+  left: 1185px;
+  bottom: 270px;
 }
 .home .scroll .waves-container .wave:nth-child(4) p {
-  left: 40%;
-  top: 120%;
-  text-align: left;
+  left: 84%;
+  top: 123%;
 }
 .home .scroll .waves-container .wave:nth-child(4) .vertical-line {
-  left: 50%;
+  left: 105%;
   bottom: 0;
 }
 .home .scroll .waves-container .wave:nth-child(5) {
-  transform: translate(-520px, 260px);
+  left: 1580px;
 }
 .home .scroll .waves-container .wave:nth-child(5) p {
-  left: 39%;
-  bottom: 125%;
-  text-align: left;
+  left: 88%;
+  bottom: 123%;
 }
 .home .scroll .waves-container .wave:nth-child(5) .vertical-line {
-  left: 50%;
+  left: 110%;
   top: 0;
 }
 .home .scroll .waves-container .wave:nth-child(6) {
-  top: 0;
-  transform: translateX(-650px);
+  left: 1980px;
+  bottom: 270px;
 }
 .home .scroll .waves-container .wave:nth-child(6) p {
-  left: 40%;
-  top: 120%;
-  text-align: left;
+  left: 84%;
+  top: 123%;
 }
 .home .scroll .waves-container .wave:nth-child(6) .vertical-line {
-  left: 50%;
+  left: 105%;
   bottom: 0;
+}
+.home .scroll .waves-container .wave:nth-child(6) img {
+  margin-right: 5vh;
 }
 
 .vertical-line {
