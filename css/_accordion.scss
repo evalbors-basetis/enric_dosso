@@ -1,6 +1,6 @@
 .accordion {
   z-index: -50;
-  padding: 8px 0 0 0;
+  padding: 16px 0 0 0;
   display: flex;
   align-items: center;
   font-family: $font-sans-serif;
@@ -14,16 +14,17 @@
   outline: none;
   background-color: transparent;
   transition: all ease-in-out 2s;
-
-  :hover {
-    .static {
-      opacity: 0;
-    }
-  }
-  p{
+  a {
     font-size: 16px;
     color: $brown;
-    padding: 4px 8px 0 0;
+    padding: 0 8px 0 0;
+  }
+  &:hover {
+    transition: none !important;
+    a,
+    i {
+      color: $blue;
+    }
   }
 }
 
@@ -31,6 +32,7 @@
   position: relative;
   display: none;
   overflow: hidden;
+  padding: 16px 0;
   p {
     font-family: $font-serif;
     font-weight: 500;

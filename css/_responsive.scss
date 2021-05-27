@@ -1,6 +1,7 @@
 /* TABLET + MOBILE */
-.hide, .icon{
-display: none;
+.hide,
+.icon {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -8,37 +9,39 @@ display: none;
   .inside-pages {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
-    
-    .original{
-      display: none !important;
-    }
-    .icon{
-      display: inline-flex;
-    }
-    .responsive {
-      overflow-y: hidden !important;
-      width: 100vw !important;
-      height: 100vh !important;
-      background-color: $blue-darken;
-      flex-direction: column;
-      nav {
+
+    header {
+      .original {
+        display: none !important;
+      }
+      .icon {
+        display: inline-flex;
+      }
+      .responsive {
+        overflow-y: hidden !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        background-color: $blue-darken;
         flex-direction: column;
-        .menu-items {
+        nav {
           flex-direction: column;
-          top: 50%;
-          transform: translateY(50%);
+          .menu-items {
+            flex-direction: column;
+            top: 50%;
+            transform: translateY(50%);
+          }
         }
       }
 
+      .menu-items {
+        display: none;
+      }
+      .btn_menu {
+        display: inline-flex;
+        cursor: pointer;
+      }
     }
 
-    .menu-items {
-      display: none;
-    }
-    .btn_menu {
-      display: inline-flex;
-      cursor: pointer;
-    }
     main {
       z-index: 0 !important;
       transform: none !important;
@@ -48,6 +51,7 @@ display: none;
         margin: auto;
       }
     }
+
   }
 
   .horizontal-scroll {
@@ -216,5 +220,9 @@ display: none;
 
   .full-width {
     height: 200px;
+  }
+
+  footer {
+    position: relative !important;
   }
 }
