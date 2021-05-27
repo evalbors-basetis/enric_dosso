@@ -1,6 +1,6 @@
 .accordion {
   z-index: -50;
-  padding: 24px 0 8px 0;
+  padding: 8px 0 0 0;
   display: flex;
   align-items: center;
   font-family: $font-sans-serif;
@@ -12,7 +12,6 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px;
   background-color: transparent;
   transition: all ease-in-out 2s;
 
@@ -24,7 +23,7 @@
   p{
     font-size: 16px;
     color: $brown;
-    padding-right: 8px;
+    padding: 4px 8px 0 0;
   }
 }
 
