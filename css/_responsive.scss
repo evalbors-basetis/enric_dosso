@@ -1,13 +1,19 @@
 /* TABLET + MOBILE */
+.hide, .icon{
+display: none;
+}
 
 @media screen and (max-width: 768px) {
   .home,
   .inside-pages {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
-    .logo-home {
-      width: auto;
-      height: 75%;
+    
+    .original{
+      display: none !important;
+    }
+    .icon{
+      display: inline-flex;
     }
     .responsive {
       overflow-y: hidden !important;
@@ -22,9 +28,6 @@
           top: 50%;
           transform: translateY(50%);
         }
-      }
-      .hide{
-        display: none;
       }
 
     }
