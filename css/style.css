@@ -194,11 +194,12 @@ a:hover {
 .inside-pages main {
     z-index: 0 !important;
     transform: none !important;
+    padding: 0;
   }
   .home main .intro,
 .inside-pages main .intro {
     width: 90%;
-    padding-top: 72px;
+    padding-top: 72px !important;
     margin: auto;
   }
 
@@ -206,10 +207,10 @@ a:hover {
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100% !important;
   }
   .scroll .intro {
     width: 80%;
-    margin-top: 64px;
   }
   .scroll .intro h1 {
     padding-bottom: 16px;
