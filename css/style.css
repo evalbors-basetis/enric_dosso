@@ -160,16 +160,23 @@ a:hover {
 }
 
 /* TABLET + MOBILE */
+.hide, .icon {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .home,
 .inside-pages {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
   }
-  .home .logo-home,
-.inside-pages .logo-home {
-    width: auto;
-    height: 75%;
+  .home .original,
+.inside-pages .original {
+    display: none !important;
+  }
+  .home .icon,
+.inside-pages .icon {
+    display: inline-flex;
   }
   .home .responsive,
 .inside-pages .responsive {
@@ -188,10 +195,6 @@ a:hover {
     flex-direction: column;
     top: 50%;
     transform: translateY(50%);
-  }
-  .home .responsive .hide,
-.inside-pages .responsive .hide {
-    display: none;
   }
   .home .menu-items,
 .inside-pages .menu-items {
