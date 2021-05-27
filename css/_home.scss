@@ -5,9 +5,7 @@
   h1 {
     color: $cream;
   }
-}
-
-.horizontal-scroll {
+  .scroll {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -24,8 +22,6 @@
   }
  
   .waves-container {
-    top: 50%;
-    transform: translateY(-50%); 
     cursor: url("../images/cursor-scrolling-home.svg"), auto;
     z-index: 0;
     display: flex;
@@ -143,6 +139,9 @@
     }
   }
 }
+}
+
+
 
 .vertical-line {
   z-index: 30;

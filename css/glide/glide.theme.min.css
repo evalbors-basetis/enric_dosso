@@ -46,7 +46,7 @@
   font-style: italic;
   color: #8d6331;
   font-style: 16px;
-  background-color: #efe8e0;
+  background-color: transparent;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -61,14 +61,14 @@
   outline: none;
 }
 .glide__bullet:hover {
-  background-color: #8d6331;
-  border: 1px solid #8d6331;
+  background-color: #2a599f;
+  border: 1px solid #2a599f;
   color: #fff;
 }
 .glide__bullet:focus {
   color: #fff;
   border: 1px solid #8d6331;
-  background-color: rgba(#efe8e0, 0.5);
+  background-color: #E5EEF5;
 }
 .glide__bullet--active {
   background-color: #8d6331;
