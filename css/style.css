@@ -19,7 +19,7 @@ h3 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 5vw;
 }
 
 h2 {
@@ -28,18 +28,14 @@ h2 {
 
 p {
   font-size: 18px !important;
-}
-
-p,
-small {
   font-family: "futura-pt";
   color: #2a599f;
   line-height: 1.4;
 }
 
-.back-type {
-  font-weight: lighter;
-  font-size: 80px;
+small {
+  font-family: "futura-pt";
+  font-size: 14px;
 }
 
 html {
@@ -50,7 +46,8 @@ main {
   padding: 0 5% 0 0;
 }
 main .intro {
-  width: 30%;
+  width: 50%;
+  padding: 0 5%;
 }
 main .intro h1 {
   padding-bottom: 16px;
@@ -161,13 +158,19 @@ a:hover {
   font-weight: 600;
 }
 
-/* TABLET + MOBILE */
 .hide,
 .icon {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+/* XL DESKTOP */
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+/* TABLET + MOBILE */
+@media screen and (max-width: 900px) {
   .home,
 .inside-pages {
     overflow-y: scroll !important;
@@ -198,7 +201,7 @@ a:hover {
   }
   .home main .intro,
 .inside-pages main .intro {
-    width: 90%;
+    width: 90% !important;
     padding-top: 72px !important;
     margin: auto;
   }
@@ -218,15 +221,12 @@ a:hover {
   .scroll .routes {
     margin-top: 56px;
     position: relative;
-    transform: scale(0.8) rotate(90deg);
+    transform: scale(0.9) rotate(90deg);
     display: flex;
     align-items: center;
   }
   .scroll .routes .waves-container {
     position: absolute;
-  }
-  .scroll .routes .waves-container .wave:nth-child(1) {
-    transform: translateY(140px);
   }
   .scroll .routes .waves-container .wave:nth-child(1) p {
     left: 44%;
@@ -236,10 +236,6 @@ a:hover {
     left: 50%;
     top: 0;
   }
-  .scroll .routes .waves-container .wave:nth-child(2) {
-    top: -120px;
-    transform: translateX(-130px);
-  }
   .scroll .routes .waves-container .wave:nth-child(2) p {
     left: 43%;
     top: 115%;
@@ -247,9 +243,6 @@ a:hover {
   .scroll .routes .waves-container .wave:nth-child(2) .vertical-line {
     left: 50%;
     bottom: 0;
-  }
-  .scroll .routes .waves-container .wave:nth-child(3) {
-    transform: translate(-260px, 140px);
   }
   .scroll .routes .waves-container .wave:nth-child(3) p {
     left: 39%;
@@ -259,10 +252,6 @@ a:hover {
     left: 50%;
     top: 0;
   }
-  .scroll .routes .waves-container .wave:nth-child(4) {
-    top: -120px;
-    transform: translateX(-390px);
-  }
   .scroll .routes .waves-container .wave:nth-child(4) p {
     left: 39%;
     top: 125%;
@@ -271,9 +260,6 @@ a:hover {
     left: 50%;
     bottom: 0;
   }
-  .scroll .routes .waves-container .wave:nth-child(5) {
-    transform: translate(-520px, 140px);
-  }
   .scroll .routes .waves-container .wave:nth-child(5) p {
     left: 40%;
     bottom: 122%;
@@ -281,10 +267,6 @@ a:hover {
   .scroll .routes .waves-container .wave:nth-child(5) .vertical-line {
     left: 50%;
     top: 0;
-  }
-  .scroll .routes .waves-container .wave:nth-child(6) {
-    top: -120px;
-    transform: translateX(-650px);
   }
   .scroll .routes .waves-container .wave:nth-child(6) p {
     left: 41%;
@@ -334,11 +316,7 @@ a:hover {
 /* MOBILE */
 @media screen and (max-width: 480px) {
   p {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 32px;
+    font-size: 16px;
   }
 
   main {
@@ -350,19 +328,32 @@ a:hover {
     padding: 20px 0;
   }
 
-  .full-width {
-    height: 200px;
+  .routes {
+    transform: scale(0.5) rotate(90deg) !important;
   }
+  .routes p {
+    transform: scale(1.8) rotate(270deg) !important;
+  }
+  .routes .vertical-line {
+    transform: scale(0.7);
+  }
+
+  /* 
+   .full-width {
+     height: 200px;
+   }
+  */
 }
 header {
   z-index: 600 !important;
   width: 100vw;
-  padding: 32px;
+  padding-bottom: 40px;
 }
 header .fixed {
   position: fixed;
 }
 header nav {
+  padding: 32px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -450,6 +441,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer small {
+  color: #efe8e0 !important;
+  font-family: "futura-pt";
+  font-size: 14px !important;
 }
 footer a i {
   color: #8d6331;
@@ -691,7 +687,7 @@ footer a:hover i {
 }
 .home .scroll .intro {
   padding: 0 5%;
-  min-width: 30%;
+  width: 30%;
 }
 .home .scroll .intro h1 {
   padding-bottom: 8px;

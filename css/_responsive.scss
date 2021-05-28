@@ -1,16 +1,26 @@
-/* TABLET + MOBILE */
+
 .hide,
 .icon {
   display: none;
 }
+/* XL DESKTOP */
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 72px;
+    // la tipografía en h1 es responsive pero a partir
+    // de un ancho concreto que ya no crezca más...
+  }
+}
 
-@media screen and (max-width: 768px) {
+/* TABLET + MOBILE */
+@media screen and (max-width: 900px) {
   .home,
   .inside-pages {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
 
     header {
+
       nav {
         .original {
           display: none !important;
@@ -37,7 +47,7 @@
       transform: none !important;
       padding: 0;
       .intro {
-        width: 90%;
+        width: 90% !important;
         padding-top: 72px !important;
         margin: auto;
       }
@@ -60,13 +70,12 @@
     .routes {
       margin-top: 56px;
       position: relative;
-      transform: scale(0.8) rotate(90deg);
+      transform: scale(0.9) rotate(90deg);
       display: flex;
       align-items: center;
       .waves-container {
         position: absolute;
         .wave:nth-child(1) {
-          transform: translateY(140px);
           p {
             left: 44%;
             bottom: 115%;
@@ -77,8 +86,7 @@
           }
         }
         .wave:nth-child(2) {
-          top: -120px;
-          transform: translateX(-130px);
+ 
           p {
             left: 43%;
             top: 115%;
@@ -89,7 +97,6 @@
           }
         }
         .wave:nth-child(3) {
-          transform: translate(-260px, 140px);
           p {
             left: 39%;
             bottom: 125%;
@@ -100,8 +107,7 @@
           }
         }
         .wave:nth-child(4) {
-          top: -120px;
-          transform: translateX(-390px);
+
           p {
             left: 39%;
             top: 125%;
@@ -112,7 +118,6 @@
           }
         }
         .wave:nth-child(5) {
-          transform: translate(-520px, 140px);
           p {
             left: 40%;
             bottom: 122%;
@@ -123,8 +128,6 @@
           }
         }
         .wave:nth-child(6) {
-          top: -120px;
-          transform: translateX(-650px);
           p {
             left: 41%;
             top: 118%;
@@ -178,11 +181,7 @@
 
 @media screen and (max-width: 480px) {
   p {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 32px;
+    font-size: 16px;
   }
 
   main {
@@ -194,8 +193,19 @@
     padding: 20px 0;
   }
 
+  .routes {
+    transform: scale(0.5) rotate(90deg) !important;
+    p{
+      transform: scale(1.8) rotate(270deg) !important;
+    }
+    .vertical-line{
+      transform: scale(0.7);
+    }
+
+  }
+  /* 
   .full-width {
     height: 200px;
   }
-
+ */
 }
