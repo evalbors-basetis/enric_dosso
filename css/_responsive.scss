@@ -20,7 +20,6 @@
     overflow-x: hidden !important;
 
     header {
-
       nav {
         .original {
           display: none !important;
@@ -48,7 +47,7 @@
       padding: 0;
       .intro {
         width: 90% !important;
-        padding-top: 72px !important;
+        // padding-top: 72px !important;
         margin: auto;
       }
     }
@@ -56,6 +55,7 @@
   }
 
   .scroll {
+    padding-top: 0 !important;
     position: relative;
     display: flex;
     flex-direction: column;

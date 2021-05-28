@@ -58,7 +58,7 @@ main .intro h1 {
 }
 
 .inside-pages {
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: #E5EEF5;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
@@ -74,15 +74,21 @@ main .intro h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .inside-pages .ruta-pages .sidenav {
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 15%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: transparent;
 }
 
@@ -144,27 +150,24 @@ main .intro h1 {
 }
 
 .inside-pages .ruta-pages .container-carrousel {
-  overflow-y: hidden;
   width: 85%;
-  height: 100vh;
 }
 
 .inside-pages .ruta-pages .container-carrousel .carrousel {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
-  max-height: 100vh !important;
 }
 
-.inside-pages .ruta-pages .container-cover {
-  width: 85%;
-  float: right;
-  overflow-y: hidden;
-}
-
-.inside-pages footer small {
-  color: #2a599f !important;
-}
-
-.section {
+.inside-pages .ruta-pages .container-carrousel .carrousel .section {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,37 +180,54 @@ main .intro h1 {
           align-items: flex-start;
 }
 
-.section .text-container {
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .text-container {
+  width: 40%;
   padding: 40px;
 }
 
-.section .text-container p {
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .text-container p {
   font-size: 24px;
   padding-bottom: 16px;
 }
 
-.section .text-container h1 {
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .text-container h1 {
   padding-bottom: 16px;
 }
 
-.section .text-container .btn {
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .text-container .btn {
   position: relative;
   margin: 40px 0 !important;
 }
 
-.section .image-container {
-  position: relative;
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .text-container__horizontal {
+  width: 70%;
 }
 
-.section .image-container img {
-  max-width: 60vw;
-  max-height: 70vh;
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .image-container {
+  width: 60%;
+  position: relative;
+  overflow-y: auto;
+  width: 100vh;
+  height: auto;
+  overflow: scroll !important;
+}
+
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .image-container img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.section .image-container .link-map a {
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .image-container .link-map {
+  position: relative;
+  padding: 8px;
+}
+
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .image-container .link-map a {
   color: #8d6331;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
   font-weight: 500;
   font-family: "futura-pt";
   font-size: 16px;
@@ -215,12 +235,83 @@ main .intro h1 {
   cursor: pointer;
 }
 
-.section .image-container .link-map a:hover {
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .image-container .link-map a:hover {
   color: #2a599f;
 }
 
-.section .image-container .link-map a:hover i {
+.inside-pages .ruta-pages .container-carrousel .carrousel .section .image-container .link-map a:hover i {
   color: #2a599f;
+}
+
+.inside-pages .ruta-pages .container-carrousel .carrousel .portrait {
+  width: 40% !important;
+  height: 100vh;
+  overflow: scroll !important;
+}
+
+.inside-pages .container-cover {
+  overflow-x: hidden;
+  width: 85%;
+  height: 100vh;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inside-pages .container-cover .section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inside-pages .container-cover .section .text-container {
+  width: 50%;
+  padding: 40px;
+}
+
+.inside-pages .container-cover .section .text-container p {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+.inside-pages .container-cover .section .text-container h1 {
+  padding-bottom: 16px;
+}
+
+.inside-pages .container-cover .section .text-container .btn {
+  position: relative;
+  margin: 40px 0 !important;
+}
+
+.inside-pages .container-cover .section .image-container {
+  width: 50%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inside-pages .container-cover .section .image-container image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer small {
+  color: #2a599f !important;
 }
 
 i {
@@ -329,10 +420,10 @@ a:hover {
   .home main .intro,
   .inside-pages main .intro {
     width: 90% !important;
-    padding-top: 72px !important;
     margin: auto;
   }
   .scroll {
+    padding-top: 0 !important;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -822,7 +913,7 @@ footer a:hover i {
 }
 
 .home .scroll {
-  padding-top: 40px;
+  padding-top: 5vh;
   cursor: url("../images/cursor-scrolling-home.svg"), auto;
   height: 100vh;
   display: -webkit-box;
