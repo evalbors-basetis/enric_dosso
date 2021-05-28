@@ -65,6 +65,62 @@ main .intro h1 {
   top: 50%;
   transform: translateY(50%);
 }
+.inside-pages .ruta-pages .container-carrousel {
+  width: 90%;
+  height: 100vh;
+  float: right;
+}
+.inside-pages .ruta-pages .container-carrousel .carrousel {
+  position: relative;
+  max-height: 100vh !important;
+}
+.inside-pages footer small {
+  color: #2a599f !important;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section .text-container {
+  padding: 40px;
+}
+.section .text-container p {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+.section .text-container h1 {
+  padding-bottom: 16px;
+}
+.section .text-container .btn {
+  position: relative;
+  margin: 40px 0 !important;
+}
+.section .image-container {
+  position: relative;
+}
+.section .image-container img {
+  width: auto;
+  max-height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .image-container .link-map a {
+  color: #8d6331;
+  font-weight: 500;
+  font-family: "futura-pt";
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.section .image-container .link-map a:hover {
+  color: #2a599f;
+}
+.section .image-container .link-map a:hover i {
+  color: #2a599f;
+}
 
 i {
   padding-right: 8px;
@@ -95,46 +151,6 @@ a:hover {
   text-decoration: none;
   background-color: #2a599f;
   transition: 0.5s;
-}
-
-.section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.section .text-container {
-  padding: 40px;
-}
-.section .text-container p {
-  font-size: 24px;
-  padding-bottom: 8px;
-}
-.section .text-container h1 {
-  padding-bottom: 24px;
-}
-.section .image-container {
-  position: relative;
-}
-.section .image-container img {
-  width: auto;
-  max-height: 70vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.section .image-container .link-map a {
-  color: #8d6331;
-  font-weight: 500;
-  font-family: "futura-pt";
-  font-size: 16px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.section .image-container .link-map a:hover {
-  color: #2a599f;
-}
-.section .image-container .link-map a:hover i {
-  color: #2a599f;
 }
 
 .title__left {
@@ -587,16 +603,6 @@ footer a:hover i {
   -webkit-animation-name: transitionInTop;
           animation-name: transitionInTop;
   padding-bottom: 40px;
-}
-
-.container-carrousel {
-  width: 90%;
-  height: 100vh;
-  float: right;
-}
-.container-carrousel .carrousel {
-  position: relative;
-  max-height: 100vh !important;
 }
 
 .glide__arrows .glide__arrow {
