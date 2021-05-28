@@ -4,14 +4,22 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 72px;
+    // la tipografía en h1 es responsive pero a partir
+    // de un ancho concreto que ya no crezca más...
+  }
+}
+
+@media screen and (max-width: 900px) {
   .home,
   .inside-pages {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
 
     header {
-      
+
       nav {
         .original {
           display: none !important;
@@ -38,7 +46,7 @@
       transform: none !important;
       padding: 0;
       .intro {
-        width: 90%;
+        width: 90% !important;
         padding-top: 72px !important;
         margin: auto;
       }
