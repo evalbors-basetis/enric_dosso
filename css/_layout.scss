@@ -12,6 +12,7 @@ main {
     }
   }
 }
+
 .inside-pages {
   overflow-x:hidden;
   background-color: $blue-light;
@@ -19,44 +20,28 @@ main {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+
   .ruta-pages{
     top: 50%;
     transform: translateY(50%);
+    .container-carrousel {
+      width: 90%;
+      height: 100vh;
+      float: right;
+      .carrousel {
+        position: relative;
+        max-height: 100vh !important;
+      }
+    }
+  }
+  footer{
+    small {
+      color: $blue !important;
+    }
   }
 }
 
 
-
-i{
-  padding-right: 8px;
-}
-a{
-  color: $brown;
-  &:hover{
-    color: $blue;
-
-  }
-}
-.btn {
-  cursor: pointer;
-  display: inline;
-  padding: 12px 40px;
-  color: $cream;
-  background-color: $brown;
-  font-family: $font-sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-radius:40px;
-  font-size: 16px;
-  letter-spacing: 1px;
-
-  &:hover{
-    color: $cream;
-    text-decoration: none;
-    background-color:$blue;
-    transition: 0.5s;
-  }
-}
 
 .section {
   width: 100%;
@@ -68,10 +53,15 @@ a{
     padding: 40px;
     p {
       font-size: 24px;
-      padding-bottom: 8px;
+      padding-bottom: 16px;
     }
     h1{
-      padding-bottom: 24px;
+      padding-bottom: 16px;
+    }
+    .btn{
+      position: relative;
+      margin: 40px 0 !important;
+      // puse un br xq no me funciona el margin
     }
   }
 
@@ -98,6 +88,39 @@ a{
       }
       }
     }
+  }
+}
+
+i{
+  padding-right: 8px;
+}
+
+a{
+  color: $brown;
+  &:hover{
+    color: $blue;
+
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: inline;
+  padding: 12px 40px;
+  color: $cream;
+  background-color: $brown;
+  font-family: $font-sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius:40px;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  &:hover{
+    color: $cream;
+    text-decoration: none;
+    background-color:$blue;
+    transition: 0.5s;
   }
 }
 
