@@ -68,7 +68,7 @@
 .glide__bullet:focus {
   color: #fff;
   border: 1px solid #8d6331;
-  background-color: #E5EEF5;
+  background-color: #8d6331;
 }
 .glide__bullet--active {
   background-color: #8d6331;

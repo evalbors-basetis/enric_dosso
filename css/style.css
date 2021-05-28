@@ -19,7 +19,7 @@ h3 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 4.5vw;
 }
 
 h2 {
@@ -28,18 +28,14 @@ h2 {
 
 p {
   font-size: 18px !important;
-}
-
-p,
-small {
   font-family: "futura-pt";
   color: #2a599f;
   line-height: 1.4;
 }
 
-.back-type {
-  font-weight: lighter;
-  font-size: 80px;
+small {
+  font-family: "futura-pt";
+  font-size: 14px;
 }
 
 html {
@@ -357,12 +353,13 @@ a:hover {
 header {
   z-index: 600 !important;
   width: 100vw;
-  padding: 32px;
+  padding-bottom: 40px;
 }
 header .fixed {
   position: fixed;
 }
 header nav {
+  padding: 32px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -450,6 +447,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer small {
+  color: #efe8e0 !important;
+  font-family: "futura-pt";
+  font-size: 14px !important;
 }
 footer a i {
   color: #8d6331;
