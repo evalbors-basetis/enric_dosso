@@ -1,5 +1,4 @@
 header {
-  z-index: 600 !important;
   width: 100vw;
   // padding-bottom: 40px;
   .fixed {
@@ -7,6 +6,7 @@ header {
   }
 
   nav {
+    z-index: 999 !important;  
     padding: 32px;
     width: 100vw;
     display: flex;
