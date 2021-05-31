@@ -526,6 +526,7 @@ a:hover {
   .inside-pages .container-carrousel .section .text-container {
     width: 90% !important;
     margin: auto;
+    padding: 20px 0 !important;
   }
   .inside-pages .container-carrousel .section .portrait {
     max-width: 80% !important;
