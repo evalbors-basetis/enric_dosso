@@ -1,41 +1,7 @@
-.glide__arrow {
-  position: absolute;
-  display: block;
-  top: 50%;
-  z-index: 2;
-  color: white;
-  text-transform: uppercase;
-  padding: 9px 12px;
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
-  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-  opacity: 1;
-  cursor: pointer;
-  transition: opacity 150ms ease, border 300ms ease-in-out;
-  transform: translateY(-50%);
-  line-height: 1;
-}
-.glide__arrow:focus {
-  outline: none;
-}
-.glide__arrow:hover {
-  border-color: white;
-}
-.glide__arrow--left {
-  left: 2em;
-}
-.glide__arrow--right {
-  right: 2em;
-}
-.glide__arrow--disabled {
-  opacity: 0.33;
-}
 .glide__bullets {
-  position: sticky;
-  z-index: 2;
-  bottom: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
   left: 50%;
   display: inline-flex;
   list-style: none;
@@ -46,7 +12,7 @@
   font-style: italic;
   color: #8d6331;
   font-style: 16px;
-  background-color: rgba(#E5EEF5, 0.75);;
+  background-color: rgba(229, 238, 245, 0.75);;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -55,24 +21,22 @@
   transition: all 300ms ease-in-out;
   cursor: pointer;
   line-height: 0;
-  margin: 0 0.5em;
-}
-.glide__bullet:focus {
-  outline: none;
+  margin: 1em 0.5em;
 }
 .glide__bullet:hover {
-  background-color: #2a599f;
-  border: 1px solid #2a599f;
+  background-color: #8d6331;
+  border: 1px solid #8d6331;
   color: #fff;
 }
 .glide__bullet:focus {
   color: #fff;
   border: 1px solid #8d6331;
   background-color: #8d6331;
+  outline: none;
 }
 .glide__bullet--active {
-  background-color: #2a599f;
-  border: 1px solid #2a599f;
+  background-color: #8d6331;
+  border: 1px solid #8d6331;
   color: #fff;
 }
 .glide--swipeable {

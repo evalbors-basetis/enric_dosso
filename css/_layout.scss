@@ -3,8 +3,9 @@ html {
 }
 
 main {
+  z-index: 100;
   padding: 0 5% 0 0;
-  .intro {    
+  .intro {
     width: 50%;
     padding: 0 5%;
     h1 {
@@ -14,92 +15,202 @@ main {
 }
 
 .inside-pages {
-  overflow-x:hidden;
+  overflow: hidden;
   background-color: $blue-light;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-
-  .ruta-pages{
-    top: 50%;
-    transform: translateY(50%);
-    .container-carrousel {
-      width: 90%;
+  .ruta-pages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .sidenav {
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15%;
       height: 100vh;
-      float: right;
-      .carrousel {
-        position: relative;
-        max-height: 100vh !important;
-      }
-    }
-  }
-  footer{
-    small {
-      color: $blue !important;
-    }
-  }
-}
-
-
-
-.section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  .text-container {
-    padding: 40px;
-    p {
-      font-size: 24px;
-      padding-bottom: 16px;
-    }
-    h1{
-      padding-bottom: 16px;
-    }
-    .btn{
-      position: relative;
-      margin: 40px 0 !important;
-      // puse un br xq no me funciona el margin
-    }
-  }
-
-  .image-container {
-    position: relative;
-    img {
-      width: auto;
-      max-height: 70vh;
-      object-fit: cover;
-    }
-    .link-map {
-      a {
-        color: $brown;
-        font-weight: 500;
-        font-family: $font-sans-serif;
-        font-size: 16px;
-        text-transform: uppercase;
-        cursor: pointer;
-      &:hover{
-        color: $blue;
-        i{
-          color: $blue;
+      // position: fixed;
+      background-color: transparent;
+      // top: -50%;
+      // transform: translateY(50%);
+      .menu-ruta {
+        small {
+          color: $brown;
+          font-family: $font-sans-serif;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding-left: 8px;
+        }
+        a:hover,
+        .selected {
+          small {
+            color: $blue;
+            transition: 0.2s;
+          }
+          .little-wave {
+            svg {
+              circle {
+                stroke: $blue;
+                transition: 0.2s;
+              }
+            }
+          }
+        }
+        .little-wave {
+          display: flex;
+          align-items: center;
+        }
+        .ruta:nth-child(2) {
+          transform: translate(26px, -16px);
+        }
+        .ruta:nth-child(3) {
+          transform: translate(0, -32px);
+        }
+        .ruta:nth-child(4) {
+          transform: translate(26px, -48px);
+        }
+        .ruta:nth-child(5) {
+          transform: translate(0, -64px);
+        }
+        .ruta:nth-child(6) {
+          transform: translate(26px, -80px);
         }
       }
+    }
+    .container-carrousel {
+      width: 85%;
+      .carrousel {
+        padding-top: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        .section {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          .text-container {
+            width: 40%;
+            padding: 40px;
+            p {
+              font-size: 24px;
+              padding-bottom: 16px;
+            }
+            h1 {
+              padding-bottom: 16px;
+            }
+            .btn {
+              position: relative;
+              margin: 40px 0 !important;
+              // puse un br xq no me funciona el margin
+            }
+            &__horizontal {
+              width: 70%;
+            }
+          }
+          .image-container {
+            width: 60%;
+            position: relative;
+            overflow-y: auto;
+            width: 100vh;
+            height: auto;
+            overflow: scroll !important;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            .link-map {
+              position: relative;
+              padding: 8px;
+              
+              a {
+                color: $brown;
+                transform: rotate(270deg);
+                font-weight: 500;
+                font-family: $font-sans-serif;
+                font-size: 16px;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                  color: $blue;
+                  i {
+                    color: $blue;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .portrait {
+          width: 40% !important;
+          height: 100vh;
+          overflow: scroll !important;
+        }
+      }
+    }
+  }
+  .container-cover {
+    overflow-x: hidden;
+    width: 85%;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text-container {
+        width: 50%;
+        padding: 40px;
+        p {
+          font-size: 24px;
+          padding-bottom: 16px;
+        }
+        h1 {
+          padding-bottom: 16px;
+        }
+        .btn {
+          position: relative;
+          margin: 40px 0 !important;
+          // puse un br xq no me funciona el margin
+        }
+      }
+      .image-container {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        image {
+          object-fit: cover;
+        }
       }
     }
   }
 }
 
-i{
+footer {
+  small {
+    color: $blue !important;
+  }
+}
+
+i {
   padding-right: 8px;
 }
 
-a{
+a {
   color: $brown;
-  &:hover{
+  &:hover {
     color: $blue;
-
   }
 }
 
@@ -112,14 +223,14 @@ a{
   font-family: $font-sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  border-radius:40px;
+  border-radius: 40px;
   font-size: 16px;
   letter-spacing: 1px;
 
-  &:hover{
+  &:hover {
     color: $cream;
     text-decoration: none;
-    background-color:$blue;
+    background-color: $blue;
     transition: 0.5s;
   }
 }
@@ -146,4 +257,3 @@ a{
   text-transform: uppercase;
   font-weight: 600;
 }
-
