@@ -5,7 +5,8 @@
   h1 {
     color: $cream;
   }
-  .scroll {
+  .scroll { 
+    padding-top: 5vh;
     cursor: url("../images/cursor-scrolling-home.svg"), auto;
     height: 100vh;
     display: flex;
