@@ -1,4 +1,3 @@
-
 .hide,
 .icon {
   display: none;
@@ -24,34 +23,34 @@
         .original {
           display: none !important;
         }
-  
+
         .icon {
           display: inline-flex;
         }
-  
+
         .menu-items {
           display: none;
         }
-  
+
         .btn_menu {
           display: inline-flex;
           cursor: pointer;
         }
       }
-
     }
 
     main {
+      position: absolute;
+      top: 12vh;
       z-index: 0 !important;
       transform: none !important;
       padding: 0;
       .intro {
         width: 90% !important;
         // padding-top: 72px !important;
-        margin: auto;
+        margin: 32px;
       }
     }
-
   }
 
   .scroll {
@@ -86,7 +85,6 @@
           }
         }
         .wave:nth-child(2) {
- 
           p {
             left: 43%;
             top: 115%;
@@ -107,7 +105,6 @@
           }
         }
         .wave:nth-child(4) {
-
           p {
             left: 39%;
             top: 125%;
@@ -140,18 +137,16 @@
       }
     }
   }
-  
 
   .inside-pages {
     .sidenav {
-      display: none;
+      display: none !important;
     }
     .container-carrousel {
       width: 100% !important;
       height: 100%;
       .section {
         flex-direction: column;
-        float: center;    
         .image-container {
           padding-bottom: 32px;
           max-width: 100vw !important;
@@ -159,17 +154,18 @@
             width: 100% !important;
             height: 100%;
             object-fit: cover;
-        }
+          }
         }
         .text-container {
           width: 90%;
           height: auto;
           margin: auto;
-          padding:0;
+          padding: 0;
         }
       }
     }
   }
+
 }
 
 /* MOBILE */
@@ -177,6 +173,9 @@
 @media screen and (max-width: 480px) {
   p {
     font-size: 16px;
+  }
+  h1 {
+    font-size: 30px !important ;
   }
 
   main {
@@ -190,13 +189,12 @@
 
   .routes {
     transform: scale(0.5) rotate(90deg) !important;
-    p{
+    p {
       transform: scale(1.8) rotate(270deg) !important;
     }
-    .vertical-line{
+    .vertical-line {
       transform: scale(0.7);
     }
-
   }
   /* 
   .full-width {

@@ -412,6 +412,8 @@ a:hover {
   }
   .home main,
   .inside-pages main {
+    position: absolute;
+    top: 12vh;
     z-index: 0 !important;
     -webkit-transform: none !important;
             transform: none !important;
@@ -420,7 +422,7 @@ a:hover {
   .home main .intro,
   .inside-pages main .intro {
     width: 90% !important;
-    margin: auto;
+    margin: 32px;
   }
   .scroll {
     padding-top: 0 !important;
@@ -504,7 +506,7 @@ a:hover {
     bottom: 0;
   }
   .inside-pages .sidenav {
-    display: none;
+    display: none !important;
   }
   .inside-pages .container-carrousel {
     width: 100% !important;
@@ -515,7 +517,6 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    float: center;
   }
   .inside-pages .container-carrousel .section .image-container {
     padding-bottom: 32px;
@@ -539,6 +540,9 @@ a:hover {
 @media screen and (max-width: 480px) {
   p {
     font-size: 16px;
+  }
+  h1 {
+    font-size: 30px !important;
   }
   main {
     margin: 0 20px;
