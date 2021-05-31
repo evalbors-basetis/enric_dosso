@@ -149,7 +149,7 @@ main {
           }
         }
         .portrait {
-          width: 40% !important;
+          max-width: 30vw;
           height: 100vh;
           overflow: scroll !important;
         }

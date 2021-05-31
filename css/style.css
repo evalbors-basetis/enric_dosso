@@ -244,7 +244,7 @@ main .intro h1 {
 }
 
 .inside-pages .ruta-pages .container-carrousel .carrousel .portrait {
-  width: 40% !important;
+  max-width: 30vw;
   height: 100vh;
   overflow: scroll !important;
 }
@@ -509,30 +509,43 @@ a:hover {
     display: none !important;
   }
   .inside-pages .container-carrousel {
-    width: 100% !important;
+    width: 100%;
     height: 100%;
+  }
+  .inside-pages .container-carrousel .carrousel {
+    padding-top: 0 !important;
   }
   .inside-pages .container-carrousel .section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
-  .inside-pages .container-carrousel .section .image-container {
-    padding-bottom: 32px;
-    max-width: 100vw !important;
-  }
-  .inside-pages .container-carrousel .section .image-container img {
-    width: 100% !important;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+  .inside-pages .container-carrousel .section .image-container,
   .inside-pages .container-carrousel .section .text-container {
-    width: 90%;
-    height: auto;
+    width: 90% !important;
     margin: auto;
-    padding: 0;
+  }
+  .inside-pages .container-carrousel .section .portrait {
+    max-width: 80% !important;
+    margin: auto;
+    height: 100vh;
+    overflow: scroll !important;
+  }
+  .inside-pages .container-cover {
+    width: 100%;
+    height: 100%;
+  }
+  .inside-pages .container-cover .section {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .inside-pages .container-cover .section .image-container,
+  .inside-pages .container-cover .section .text-container {
+    width: 90%;
   }
 }
 
