@@ -180,6 +180,28 @@
       }
     }
   }
+
+  .tabs {
+    flex-direction: column;
+    .nav-tabs,
+    .tab-content {
+      width: 100% !important;
+      padding-right: 0 !important;
+      #ul {
+        display: inline !important;
+        .nav-item{
+          margin: 0 8px !important;
+          width: 50% !important;
+        }
+      }
+    }
+  }
+  .intro_full-width{
+    p {
+      width: 90vw !important;
+      margin: auto;
+    }
+  }
 }
 
 /* MOBILE */
