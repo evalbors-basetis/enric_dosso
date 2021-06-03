@@ -4,18 +4,38 @@ html {
 
 main {
   z-index: 100;
-  padding: 0 5% 0 0;
+  // padding: 0 5% 0 0;
   .intro {
     width: 50%;
-    padding: 0 5%;
+    padding: 0 10%;
     h1 {
+      font-size: 5vw;
       padding-bottom: 16px;
+      font-weight: lighter;
     }
   }
+  .intro_full-width{
+    width: 100%;
+    padding: 10% 5% 0 5%;
+    h1 {
+      font-size: 5vw;
+      padding-bottom: 16px;
+      font-weight: lighter;
+    }
+    p {
+      width: 60vw;
+    }
+  }
+  
 }
-
-.inside-pages {
+.flex{
+  display: flex;
+}
+.no_scroll{
   overflow: hidden;
+}
+.inside-pages {
+width: 100vw;
   background-color: $blue-light;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
@@ -31,7 +51,7 @@ main {
       justify-content: center;
       align-items: center;
       width: 15%;
-      height: 100vh;
+      height: calc(100vh -10%);
       // position: fixed;
       background-color: transparent;
       // top: -50%;
@@ -99,7 +119,6 @@ main {
             padding: 40px;
             p {
               font-size: 24px;
-              padding-bottom: 16px;
             }
             h1 {
               padding-bottom: 16px;
@@ -149,7 +168,7 @@ main {
           }
         }
         .portrait {
-          width: 40% !important;
+          max-width: 30vw;
           height: 100vh;
           overflow: scroll !important;
         }
@@ -195,7 +214,20 @@ main {
       }
     }
   }
+ /*  .full-width{
+    .intro{
+      width: 100%;
+    }
+  } */
+
 }
+
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 footer {
   small {

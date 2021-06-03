@@ -3,6 +3,7 @@ header {
   // padding-bottom: 40px;
   .fixed {
     position: fixed;
+    width: 100vw;
   }
 
   nav {
@@ -20,7 +21,8 @@ header {
       font-family: $font-sans-serif;
       font-size: 16px;
       text-transform: uppercase;
-      margin: 0 56px 0 0;
+      // margin: 0 56px 0 0;
+      // PERSONALIZA FUNCIONA SIN ESTE MARGIN EL RESTO NO
       li {
         padding: 16px;
 
@@ -110,9 +112,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   small{
-    color: $cream !important;
+    color: $blue !important;
     font-family: $font-sans-serif;
     font-size: 14px !important;
+  }
+  .cream {
+    color: $cream !important;
   }
   a {
     i {
