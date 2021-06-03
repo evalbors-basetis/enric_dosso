@@ -12,7 +12,7 @@ class MyHeader extends HTMLElement {
           <li class="dropdown">
             <a class="" href="javascript:void(0)" class="dropbtn">La ruta</a>
             <div class="dropdown-content">
-              <a href="vinebre.html">Vinebre</a>
+              <a href="vinebre-presentation.html">Vinebre</a>
               <a href="#">Tortosa</a>
               <a href="#">Montserrat</a>
               <a href="#">Tarragona</a>
