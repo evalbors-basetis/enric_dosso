@@ -4,7 +4,7 @@ class MyFooter extends HTMLElement {
     this.innerHTML = `
     <footer>
    
-        <small>Enric d’Osso® 2021</small>
+        <small class="">Enric d’Osso® 2021</small>
      
       <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
     </footer>

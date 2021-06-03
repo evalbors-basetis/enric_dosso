@@ -7,13 +7,26 @@ main {
   // padding: 0 5% 0 0;
   .intro {
     width: 50%;
-    padding: 0 5%;
+    padding: 0 10%;
     h1 {
       font-size: 5vw;
       padding-bottom: 16px;
       font-weight: lighter;
     }
   }
+  .intro_full-width{
+    width: 100%;
+    padding: 10% 5% 0 5%;
+    h1 {
+      font-size: 5vw;
+      padding-bottom: 16px;
+      font-weight: lighter;
+    }
+    p {
+      width: 60vw;
+    }
+  }
+  
 }
 .flex{
   display: flex;
@@ -38,7 +51,7 @@ width: 100vw;
       justify-content: center;
       align-items: center;
       width: 15%;
-      height: 100vh;
+      height: calc(100vh -10%);
       // position: fixed;
       background-color: transparent;
       // top: -50%;

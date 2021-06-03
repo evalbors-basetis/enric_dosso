@@ -6,11 +6,12 @@
   padding: 0 5%;
 
   #myTab {
-    flex-direction: column !important;
+    flex-direction: column;
   }
   .nav,
   .nav-tabs {
-    width: 40% !important;
+    width: 50%;
+    padding-right: 5%;
     border: none !important;
     .nav-link {
       padding: 8px 0;
@@ -39,7 +40,7 @@
   }
   .tab-content {
     border-bottom: 0px solid #dee2e6;
-    width: 40% !important;
+    width: 50%;
     .item {
       p {
         margin: 4px 0 !important;
