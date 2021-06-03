@@ -151,7 +151,10 @@
       .section {
         width: 100%;
         flex-direction: column !important;
-        .image-container,
+        .image-container {
+          width: 90% !important;
+          margin: auto;
+        }
         .text-container {
           width: 90% !important;
           margin: auto;
