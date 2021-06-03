@@ -532,12 +532,8 @@ a:hover {
    }
   */
 }
-header {
-  width: 100vw;
-}
 header .fixed {
-  position: fixed;
-  width: 100vw;
+  position: fixed !important;
 }
 header nav {
   z-index: 999 !important;
@@ -618,6 +614,10 @@ header nav .btn_menu a:hover i {
 header nav .btn_menu #close {
   position: absolute;
   display: none;
+}
+
+.navbar {
+  padding: 32px !important;
 }
 
 footer {

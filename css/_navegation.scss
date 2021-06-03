@@ -1,9 +1,8 @@
 header {
-  width: 100vw;
+  // width: 100vw;
   // padding-bottom: 40px;
   .fixed {
-    position: fixed;
-    width: 100vw;
+    position: fixed !important;
   }
 
   nav {
@@ -101,6 +100,10 @@ header {
     }
   }
 }
+.navbar{
+  padding: 32px !important;
+}
+
 
 footer {
   z-index: 100;
