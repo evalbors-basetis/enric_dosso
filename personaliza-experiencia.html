@@ -13,51 +13,76 @@
       src="https://kit.fontawesome.com/38498bb387.js"
       crossorigin="anonymous"
     ></script>
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
   </head>
   <body class="inside-pages">
-    <header>
-      <nav>
-        <a class="logo" href="index.html">
-          <img class="logo-home" src="images/logo-responsive.svg" alt="" />
-        </a>
-        <ul class="menu-items">
-          <li><a class="" href="el-proyecto.html">El proyecto</a></li>
-          <li class="dropdown">
-            <a class="" href="javascript:void(0)" class="dropbtn">La ruta</a>
-            <div class="dropdown-content">
-              <a href="vinebre.html">Vinebre</a>
-              <a href="#">Tortosa</a>
-              <a href="#">Montserrat</a>
-              <a href="#">Tarragona</a>
-              <a href="#">Barcelona</a>
-              <a href="#">Castellón</a>
-            </div>
-          </li>
-          <li><a class="active" href="personaliza-experiencia.html">Personaliza tu experiencia</a></li>
-        </ul>
-        <span class="btn_menu">
-          <a href="">
-            <i class="fa fa-bars"></i>
-          </a>
-        </span>
-      </nav>
-    </header>
+    <my-header></my-header>
 
     <main class="">
-      <div class="intro">
-        <h1>Personaliza tu experiencia</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus
-          ante, tempor eget leo nec, vehicula luctus erat. Vestibulum fermentum,
-          orci vitae porta congue, metus turpis vestibulum libero, et aliquam
-          est purus eleifend purus. Donec placerat magna lacinia, condimentum
-          nisl eu, bibendum eros. Sed eu nulla vitae nulla tristique varius.
-        </p>
+      <div >
+        <div class="intro_full-width">
+          <h1>Personaliza tu experiencia</h1>
+        </div>
+        <div class="tabs">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                Propuesta de interioridad
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                Propuesta de didáctica
+              </a>
+            </li>
+          </ul>    
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="item">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida elementum lectus sit amet lacinia. Aenean faucibus, lacus in vestibulum ultricies, lacus dui pulvinar mi, a maximus tortor arcu sed risus. </p>
+              <a href="">Descargar<i class="fas fa-download"></i></a>
+              </div>
+              <div class="item">
+                <p>Estibulum et ligula sit amet ligula feugiat sollicitudin. Cras molestie eros ut est vestibulum faucibus. </p>
+              <a href="">Descargar<i class="fas fa-download"></i></a>
+              </div>
+              <div class="item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+              <a href="">Descargar<i class="fas fa-download"></i></a>
+              </div>
+              <div class="item">
+                <p>Estibulum et ligula sit amet ligula feugiat sollicitudin. Cras molestie eros ut est vestibulum faucibus. </p>
+              <a href="">Descargar<i class="fas fa-download"></i></a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="item">
+                <p>
+                  Ut molestie consequat tellus eu interdum. Quisque purus lorem, semper sed turpis in, accumsan aliquam velit. Integer odio metus, hendrerit eu fermentum ut, convallis ac massa. Etiam facilisis purus ac tortor suscipit, sit amet pharetra arcu mollis. </p>
+              <a href="">Descargar<i class="fas fa-download"></i></a>
+              </div>
+              <div class="item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+              <a href="">Descargar<i class="fas fa-download"></i></a>
+              </div>
+              <div class="item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+              <a href="">Descargar<i class="fas fa-download"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+     
     </main>
 
-    <my-footer></my-footer>
   </body>
+  <script src="js/header.js"></script>
 
   <script src="js/footer.js"></script>
   </script>

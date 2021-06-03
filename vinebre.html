@@ -89,40 +89,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="inside-pages">
-    <header>
-      <nav class="fixed">
-        <a class="logo" href="index.html">
-          <img class="logo-home" src="images/logo-responsive.svg" alt="" />
-        </a>
-        <ul class="menu-items">
-          <li><a class="" href="el-proyecto.html">El proyecto</a></li>
-          <li class="dropdown">
-            <a class="active" href="javascript:void(0)" class="dropbtn"
-              >La ruta</a
-            >
-            <div class="dropdown-content">
-              <a class="active-n2" href="vinebre-presentation.html">Vinebre</a>
-              <a href="#">Tortosa</a>
-              <a href="#">Montserrat</a>
-              <a href="#">Tarragona</a>
-              <a href="#">Barcelona</a>
-              <a href="#">Castellón</a>
-            </div>
-          </li>
-          <li>
-            <a class="" href="personaliza-experiencia.html"
-              >Personaliza tu experiencia</a
-            >
-          </li>
-        </ul>
-        <span class="btn_menu">
-          <a href="">
-            <i class="fa fa-bars"></i>
-          </a>
-        </span>
-      </nav>
-    </header>
+  <body class="inside-pages no_scroll">
+    <my-header></my-header>
+
     <main class="ruta-pages">
       <div class="sidenav">
         <ul class="menu-ruta">
@@ -237,7 +206,7 @@
               <ul class="glide__slides">
                 <li class="glide__slide">
                   <div class="section">
-                    <div class="image-container portrait">
+                    <div class="image-container portrait mobile">
                       <img
                         src="https://images.unsplash.com/photo-1534409574970-1447ca9fb754?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                         alt=""
@@ -399,10 +368,10 @@
 
     <!-- <my-footer></my-footer> -->
   </body>
-
-  <script src="js/footer.js"></script>
+  <script src="js/header.js"></script>
+  <!-- <script src="js/footer.js"></script> -->
   <script src="js/accordion.js"></script>
-  <script src="js/content.js"></script>
+  <!-- <script src="js/content.js"></script> -->
 
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script>
