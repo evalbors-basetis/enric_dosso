@@ -2,87 +2,269 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: $cream;
-}
-
-header {
-  .logo-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    //border-bottom: 1px solid $blue;
-  }
-
-  .logo-right {
-    text-align: right;
-    padding: 20px;
-    a {
-      padding: 10px;
+main {
+  z-index: 100;
+  // padding: 0 5% 0 0;
+  .intro {
+    width: 50%;
+    padding: 0 10%;
+    h1 {
+      font-size: 5vw;
+      padding-bottom: 16px;
+      font-weight: lighter;
     }
   }
+  .intro_full-width{
+    width: 100%;
+    padding: 10% 5% 0 5%;
+    h1 {
+      font-size: 5vw;
+      padding-bottom: 16px;
+      font-weight: lighter;
+    }
+    p {
+      width: 60vw;
+    }
+  }
+  
 }
-
+.flex{
+  display: flex;
+}
+.no_scroll{
+  overflow: hidden;
+}
 .inside-pages {
-  background-color: $cream;
+width: 100vw;
+  background-color: $blue-light;
+  background-image: url("../images/background-waves.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  .ruta-pages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .sidenav {
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15%;
+      height: calc(100vh -10%);
+      // position: fixed;
+      background-color: transparent;
+      // top: -50%;
+      // transform: translateY(50%);
+      .menu-ruta {
+        small {
+          color: $brown;
+          font-family: $font-sans-serif;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding-left: 8px;
+        }
+        a:hover,
+        .selected {
+          small {
+            color: $blue;
+            transition: 0.2s;
+          }
+          .little-wave {
+            svg {
+              circle {
+                stroke: $blue;
+                transition: 0.2s;
+              }
+            }
+          }
+        }
+        .little-wave {
+          display: flex;
+          align-items: center;
+        }
+        .ruta:nth-child(2) {
+          transform: translate(26px, -16px);
+        }
+        .ruta:nth-child(3) {
+          transform: translate(0, -32px);
+        }
+        .ruta:nth-child(4) {
+          transform: translate(26px, -48px);
+        }
+        .ruta:nth-child(5) {
+          transform: translate(0, -64px);
+        }
+        .ruta:nth-child(6) {
+          transform: translate(26px, -80px);
+        }
+      }
+    }
+    .container-carrousel {
+      width: 85%;
+      .carrousel {
+        padding-top: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        .section {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          .text-container {
+            width: 40%;
+            padding: 40px;
+            p {
+              font-size: 24px;
+            }
+            h1 {
+              padding-bottom: 16px;
+            }
+            .btn {
+              position: relative;
+              margin: 40px 0 !important;
+              // puse un br xq no me funciona el margin
+            }
+            &__horizontal {
+              width: 70%;
+            }
+          }
+          .image-container {
+            width: 60%;
+            position: relative;
+            overflow-y: auto;
+            width: 100vh;
+            height: auto;
+            overflow: scroll !important;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            .link-map {
+              position: relative;
+              padding: 8px;
+              
+              a {
+                color: $brown;
+                transform: rotate(270deg);
+                font-weight: 500;
+                font-family: $font-sans-serif;
+                font-size: 16px;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                  color: $blue;
+                  i {
+                    color: $blue;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .portrait {
+          max-width: 30vw;
+          height: 100vh;
+          overflow: scroll !important;
+        }
+      }
+    }
+  }
+  .container-cover {
+    overflow-x: hidden;
+    width: 85%;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text-container {
+        width: 50%;
+        padding: 40px;
+        p {
+          font-size: 24px;
+          padding-bottom: 16px;
+        }
+        h1 {
+          padding-bottom: 16px;
+        }
+        .btn {
+          position: relative;
+          margin: 40px 0 !important;
+          // puse un br xq no me funciona el margin
+        }
+      }
+      .image-container {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        image {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+ /*  .full-width{
+    .intro{
+      width: 100%;
+    }
+  } */
+
 }
 
-.section {
-  width: 100%;
+.center-content{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  //padding: 0 5%;
-  //padding: 0 2vw;
-  .text-container {
-    width: 40%;
-    padding-left: 40px;
-    p {
-      padding: 5% 3%;
-      font-size: 18px !important;
-    }
-  }
+  align-items: center;
+}
 
-  .image-container {
-    position: relative;
-    img {
-      width: auto;
-      height: 60vh;
-      object-fit: cover;
-    }
-    .link-map {
-      height: 40px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 60px;
-      left: -80px;
-      .vertical-line {
-        height: 40px;
-        top: 80px;
-      }
-      a {
-        transform: rotate(270deg);
-        color: $brown;
-        font-weight: 600;
-        font-family: $font-sans-serif;
-        font-size: 16px;
-        text-transform: uppercase;
-        padding: 0 0 0 8px;
-      }
-    }
+
+footer {
+  small {
+    color: $blue !important;
   }
 }
 
-.menu-mobile {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid $blue;
+i {
+  padding-right: 8px;
+}
+
+a {
+  color: $brown;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: inline;
+  padding: 12px 40px;
+  color: $cream;
+  background-color: $brown;
+  font-family: $font-sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 40px;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: $cream;
+    text-decoration: none;
+    background-color: $blue;
+    transition: 0.5s;
+  }
 }
 
 .title {
@@ -106,18 +288,4 @@ header {
   letter-spacing: 0;
   text-transform: uppercase;
   font-weight: 600;
-}
-
-footer {
-  padding: 20px;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  img {
-    margin-right: 40px;
-    // he tenido que añadir este margin
-  }
 }

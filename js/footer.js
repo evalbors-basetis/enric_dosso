@@ -3,10 +3,10 @@ class MyFooter extends HTMLElement {
     super();
     this.innerHTML = `
     <footer>
-      <p>
-        Enric d’Osso® 2021
-      </p> 
-      <img src="images/instagram-icon.svg" alt="">
+   
+        <small class="">Enric d’Osso® 2021</small>
+     
+      <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
     </footer>
   `
   ;

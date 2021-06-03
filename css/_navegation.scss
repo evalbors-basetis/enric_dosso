@@ -1,210 +1,138 @@
 header {
   width: 100vw;
-  .logo-center{
-    padding: 8px 0;
+  // padding-bottom: 40px;
+  .fixed {
+    position: fixed;
+    width: 100vw;
   }
-}
 
-.menu {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  li {
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid $brown;
-  }
-  a {
-    font-family: $font-sans-serif;
-    font-size: 14px;
-    color: $brown;
-    line-height: 44px;
-    height: 44px;
-    width: 100%;
-    cursor: pointer;
-    text-transform: uppercase;
+  nav {
+    z-index: 999 !important;  
+    padding: 32px;
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    &:hover {
-      color: $brown-darken;
-      letter-spacing: 1px;
-      transition: ease 0.5s;
-      border-top: 4px solid $brown-darken;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    }
-  }
-  .menu-selected {
-    color: $brown-darken;
-    pointer-events: none;
-    letter-spacing: 1px;
-    border-top: 4px solid $brown;
-  }
-}
-
-.menu-ruta {
-  position: absolute;
-  top: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  li {
-    position: relative;
-    display: inline;
-    align-items: start;
-    text-align: right;
-    
-
-    .little-wave {
-      position: absolute;
+    .menu-items {
+      opacity: 1;
       display: flex;
-      align-items: center;
-    }
-    a {
-      transform: rotate(180deg);
-      writing-mode: vertical-lr;
+      justify-content: space-between;
       font-family: $font-sans-serif;
       font-size: 16px;
-      line-height: 0;
       text-transform: uppercase;
-      
-      p {
-        color: $brown;
-        padding-bottom: 8px;
-        font-size: 16px;
-      }
-      :hover{
-        p{
-          color: $brown-darken;
+      // margin: 0 56px 0 0;
+      // PERSONALIZA FUNCIONA SIN ESTE MARGIN EL RESTO NO
+      li {
+        padding: 16px;
+
+        a {
+          font-size: 16px;
+          color: $brown;
+          letter-spacing: 1px;
+          i {
+            padding: 0 0 0 8px;
+            color: $brown;
+          }
+          &:hover {
+            transition: 0.2s;
+            color: $blue;
+            border-bottom: none;
+          }
         }
-        circle {
-          stroke: $brown-darken;
+
+        .active {
+          color: $blue;
+          border-bottom: 1px solid $blue;
+        }
+        .active-n2 {
+          color: $blue;
+        }
+      }
+      .dropdown:hover {
+        .dropdown-content {
+          display: block;
+        }
+      }
+
+      .dark-mode {
+        .dropdown-content {
+          background-color: $blue-darken;
+        }
+      }
+      .dropdown-content {
+        z-index: 800;
+        display: none;
+        position: absolute;
+        background-color: #E5EEF5;
+        padding: 16px 24px;
+        transform: translateX(-24px);
+        a {
+          display: block;
+          font-size: 16px;
+          padding-top: 8px;
+          text-transform: none;
+          letter-spacing: 0;
         }
       }
     }
-  
-    .menu-selected {
-      p{
-        color: $blue;
+    .btn_menu {
+      display: none;
+      position: fixed;
+      right: 0;
+      top: 0;
+      a {
+        i {
+          font-size: 24px;
+          padding: 44px;
+          color: $brown;
+        }
+        &:hover {
+          i {
+            color: $blue;
+            transition: 0.5s;
+          }
+        }
       }
-      circle {
-        stroke: $blue;
+      #close {
+        position: absolute;
+        display: none;
       }
     }
-
-  }
-  .vinebre {
-    left: 0;
-    bottom: 0;
-  }
-  .tortosa {
-    right: -53px;
-    top: -70px;
-  }
-  .montserrat {
-    right: -26px;
-    top: -125px;
-  }
-  .tarragona {
-    right: 2px;
-    top: -95px;
-  }
-  .barcelona {
-    right: 29px;
-    top: -117px;
-  }
-  .castellon {
-    right: 56px;
-    top: -84px;
   }
 }
 
-/* HAMBURGUESA */
-/* estilo */
-
-input#abrir-cerrar {
-  visibility: hidden;
-  position: absolute;
-  top: -9999px;
-}
-
-.toggle-button {
-  display: block;
-  width: 88px;
-  height: 88px;
-  position: relative;
-  cursor: pointer;
-  box-sizing: border-box;
-  border-left: 1px solid $blue;
-}
-
-/* transición suave */
-
-.toggle-button:before,
-.toggle-button:after {
-  position: absolute;
-  display: block;
-  content: " ";
-  width: calc(100% / 2);
-  box-sizing: border-box;
-  left: calc(100% / 3.5);
-  transition: all 0.2s ease-out;
-}
-
-.toggle-button:before {
-  top: calc(100% / 3);
-  height: calc(100% / 6);
-  border-top: 2px solid $blue;
-  border-bottom: 2px solid $blue;
-  background-color: transparent;
-}
-
-.toggle-button:after {
-  height: 2px;
-  background-color: $blue;
-  bottom: calc(100% / 3);
-}
-
-/* comportamiento del botón */
-
-input#abrir-cerrar:checked + .toggle-button:before,
-input#abrir-cerrar:checked + .toggle-button:after {
-  top: calc(100% / 2);
-  height: 2px;
-  border-bottom: 0;
-}
-
-input#abrir-cerrar:checked + .toggle-button:before {
-  transform: rotate(45deg);
-}
-
-input#abrir-cerrar:checked + .toggle-button:after {
-  transform: rotate(-45deg);
-}
-
-/* posicionar, mostrar y ocultar */
-
-.abrir,
-.cerrar {
-  position: absolute;
-  top: 0;
-  right: 0;
+footer {
+  z-index: 100;
+  padding: 20px;
+  width: 100vw;
+  position: fixed;
   bottom: 0;
-  left: 0;
-  text-indent: -9999px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  small{
+    color: $blue !important;
+    font-family: $font-sans-serif;
+    font-size: 14px !important;
+  }
+  .cream {
+    color: $cream !important;
+  }
+  a {
+    i {
+      color: $brown;
+      margin-right: 40px;
+      // he tenido que añadir este margin y no sé muy bien xq
+      font-size: 32px;
+    }
+    &:hover {
+      i {
+        transition: 0.2s;
+          color: $blue;
+      }
+    }
+  }
 }
 
-.abrir {
-  display: block;
-}
 
-.cerrar {
-  display: none;
-}
-
-input#abrir-cerrar:checked + .toggle-button .abrir {
-  display: none;
-}
-
-input#abrir-cerrar:checked + .toggle-button .cerrar {
-  display: block;
-}

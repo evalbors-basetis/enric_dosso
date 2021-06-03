@@ -1,5 +1,6 @@
 .accordion {
   z-index: -50;
+  padding: 16px 0 0 0;
   display: flex;
   align-items: center;
   font-family: $font-sans-serif;
@@ -11,39 +12,32 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px;
-  transition: 0.4s;
-  background-color: $cream;
-  .icon {
-    width: 24px;
-    height: auto;
-    margin-left: 8px;
+  background-color: transparent;
+  transition: all ease-in-out 2s;
+  a {
+    font-size: 16px;
+    color: $brown;
+    padding: 0 8px 0 0;
   }
-  img {
-    width: 40px;
-    height: auto;
-  }
-  .static {
-    position: absolute;
-    background-color: $cream;
-  }
-  :hover {
-    .static {
-      opacity: 0;
+  &:hover {
+    transition: none !important;
+    a,
+    i {
+      color: $blue;
     }
   }
 }
 
 .panel {
+  position: relative;
   display: none;
-  overflow: hidden;
-
+  height: auto;
+  padding: 16px 0 0 0;
   p {
-    padding: 0 0 0 40px;
     font-family: $font-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: $brown-darken;
-    font-size: 16px;
+    font-size: 16px !important;
     transition: 0.4s;
   }
 }
