@@ -51,10 +51,9 @@ width: 100vw;
       justify-content: center;
       align-items: center;
       width: 15%;
-      height: calc(100vh -10%);
+      // height: calc(100vh -10%) !important;
       // position: fixed;
       background-color: transparent;
-      // top: -50%;
       // transform: translateY(50%);
       .menu-ruta {
         small {
@@ -123,8 +122,8 @@ width: 100vw;
             h1 {
               padding-bottom: 16px;
             }
-            .btn {
-              position: relative;
+            .cta {
+              position: relative !important;
               margin: 40px 0 !important;
               // puse un br xq no me funciona el margin
             }
@@ -245,8 +244,15 @@ a {
     color: $blue;
   }
 }
+.text-link {
+  color: $brown !important;
+  &:hover {
+    text-decoration: none !important;
+    color: $blue !important;
+  }
+}
 
-.btn {
+.cta {
   cursor: pointer;
   display: inline;
   padding: 12px 40px;
