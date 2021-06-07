@@ -22,11 +22,11 @@ header {
         background-color: #ddd;
         color: black;
       }
-      a, a.active {
+      a,
+      a.active {
         background-color: #04aa6d;
         color: white;
       }
-  
     }
   }
 
@@ -124,31 +124,6 @@ header {
       }
     }
   }
-  .topnav {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      &:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      &.active {
-        background-color: #04aa6d;
-        color: white;
-      }
-    }
-    .icon {
-      display: none;
-    }
-  }
 }
 
 footer {
@@ -182,4 +157,66 @@ footer {
       }
     }
   }
+}
+
+// bootstrap fixings
+.navbar {
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  // margin: 0 56px 0 0;
+  // PERSONALIZA FUNCIONA SIN ESTE MARGIN EL RESTO NO
+  li {
+    padding: 8px;
+
+    a {
+      font-size: 16px;
+      color: $brown;
+      letter-spacing: 1px;
+      i {
+        padding: 0 0 0 8px;
+        color: $brown;
+      }
+      &:hover {
+        transition: 0.2s;
+        color: $blue;
+        border-bottom: none;
+      }
+    }
+
+    .active {
+      color: $blue;
+      border-bottom: 1px solid $blue;
+    }
+    .active-n2 {
+      color: $blue;
+    }
+  }
+  .dropdown-item {
+    padding: 0.5em 1em;
+  }
+  .dropdown-menu {
+    margin-top: -5px !important;
+    // padding-bottom: 0 !important;
+    background-color: $cream !important;
+    border: none !important;
+  }
+
+  button{
+    padding: 0 !important;
+
+    .navbar-toggler{
+      color: $brown !important;
+      border: none !important;
+    }
+    i{
+      color: $brown !important;
+      //padding: 0 !important;
+    }
+  }
+ 
+
 }

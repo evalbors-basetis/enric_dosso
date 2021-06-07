@@ -14,7 +14,7 @@ main {
       font-weight: lighter;
     }
   }
-  .intro_full-width{
+  .intro_full-width {
     width: 100%;
     padding: 10% 5% 0 5%;
     h1 {
@@ -26,21 +26,33 @@ main {
       width: 60vw;
     }
   }
-  
 }
-.flex{
+.flex {
   display: flex;
 }
-.no_scroll{
+.no_scroll {
   overflow: hidden;
 }
+
+.home {
+  header {
+    .icon,
+    .logo-inside-pages {
+      display: none;
+    }
+  }
+}
+
 .inside-pages {
-width: 100vw;
+  width: 100vw;
   background-color: $blue-light;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  .logo-inside-pages {
+    display: inline-flex;
+  }
   .ruta-pages {
     width: 100%;
     display: flex;
@@ -49,7 +61,8 @@ width: 100vw;
       z-index: 100;
       display: flex;
       justify-content: center;
-      align-items: center;
+      //valign-items: center;
+      margin-top: 400px;
       width: 15%;
       // height: calc(100vh -10%) !important;
       // position: fixed;
@@ -146,7 +159,7 @@ width: 100vw;
             .link-map {
               position: relative;
               padding: 8px;
-              
+
               a {
                 color: $brown;
                 transform: rotate(270deg);
@@ -167,8 +180,8 @@ width: 100vw;
           }
         }
         .portrait {
-          max-width: 30vw;
-          height: 100vh;
+          max-width: 25vw;
+          height: 90vh;
           overflow: scroll !important;
         }
       }
@@ -213,20 +226,22 @@ width: 100vw;
       }
     }
   }
- /*  .full-width{
+  .icon,
+  .original {
+    display: none;
+  }
+  /*  .full-width{
     .intro{
       width: 100%;
     }
   } */
-
 }
 
-.center-content{
+.center-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 footer {
   small {
