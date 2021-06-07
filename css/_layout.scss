@@ -256,7 +256,8 @@ i {
 a {
   color: $brown;
   &:hover {
-    color: $blue;
+    color: $blue !important;
+    text-decoration: none !important;
   }
 }
 .text-link {
