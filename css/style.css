@@ -105,7 +105,7 @@ main .intro_full-width p {
   z-index: 100;
   display: flex;
   justify-content: center;
-  margin-top: 400px;
+  margin-top: 20vw;
   width: 15%;
   background-color: transparent;
 }
@@ -757,7 +757,7 @@ footer a:hover i {
 }
 .navbar .dropdown-menu {
   margin-top: -5px !important;
-  background-color: #efe8e0 !important;
+  background-color: #E5EEF5 !important;
   border: none !important;
 }
 .navbar button {
