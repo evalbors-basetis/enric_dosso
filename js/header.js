@@ -36,7 +36,7 @@ class MyHeader extends HTMLElement {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link text-link" href="#">El proyecto</a>
+              <a class="nav-link text-link" href="el-proyecto.html">El proyecto</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -62,7 +62,7 @@ class MyHeader extends HTMLElement {
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-link" href="#">Personaliza tu experiencia</a>
+              <a class="nav-link text-link" href="personaliza-experiencia.html">Personaliza tu experiencia</a>
             </li>
           </ul>
         </div>
