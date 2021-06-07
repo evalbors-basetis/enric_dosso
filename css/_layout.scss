@@ -147,10 +147,10 @@ main {
           .image-container {
             width: 60%;
             position: relative;
-            overflow-y: auto;
+            // overflow-y: auto;
             width: 100vh;
             height: auto;
-            overflow: scroll !important;
+            overflow: none !important;
             img {
               width: 100%;
               height: 100%;
@@ -158,8 +158,8 @@ main {
             }
             .link-map {
               position: relative;
-              padding: 8px;
-
+              padding: 8px 0;
+              // margin-bottom: 24px !important;
               a {
                 color: $brown;
                 transform: rotate(270deg);
@@ -168,6 +168,7 @@ main {
                 font-size: 16px;
                 text-transform: uppercase;
                 cursor: pointer;
+                line-height: 24px;
 
                 &:hover {
                   color: $blue;
@@ -182,7 +183,7 @@ main {
         .portrait {
           max-width: 25vw;
           height: 90vh;
-          overflow: scroll !important;
+          overflow: none !important;
         }
       }
     }
@@ -230,11 +231,6 @@ main {
   .original {
     display: none;
   }
-  /*  .full-width{
-    .intro{
-      width: 100%;
-    }
-  } */
 }
 
 .center-content {
@@ -282,7 +278,7 @@ a {
   letter-spacing: 1px;
 
   &:hover {
-    color: $cream;
+    color: $cream !important;
     text-decoration: none;
     background-color: $blue;
     transition: 0.5s;
