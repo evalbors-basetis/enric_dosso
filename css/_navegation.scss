@@ -201,7 +201,6 @@ footer {
   .dropdown-menu {
     margin-top: -5px !important;
     // padding-bottom: 0 !important;
-    background-color: $blue-light !important;
     border: none !important;
     z-index: 9999 !important;
   }
@@ -220,4 +219,18 @@ footer {
   }
  
 
+}
+
+
+.home{
+  .dropdown-menu {
+    background-color: $blue-darken !important;
+  }
+}
+
+
+.inside-pages{
+  .dropdown-menu {
+    background-color: $blue-light !important;
+  }
 }
