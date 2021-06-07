@@ -78,7 +78,7 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
-    <title>HEADER</title>
+    <title>Navbar</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- fontawesome -->
     <script
@@ -87,11 +87,28 @@
     ></script>
     <!-- cursor -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  
+
   <body class="home">
     <header>
-      <div class="topnav" id="myTopnav">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed">
         <a class="logo" href="index.html">
           <img
             class="logo-home original"
@@ -103,27 +120,61 @@
             src="images/logo-responsive-background-dark.svg"
             alt=""
           />
+          <img
+          class="logo-inside-pages"
+          src="images/logo-responsive.svg"
+          alt=""
+        />
+          
         </a>
-        <div class="menu">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-link" href="#">El proyecto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                La ruta
+              </a>
+              <div
+                class="dropdown-menu text-link"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="vinebre-presentation.html">Vinebre</a>
+                <a class="dropdown-item" href="#">Tortosa</a>
+                <a class="dropdown-item" href="#">Montserrat</a>
+                <a class="dropdown-item" href="#">Tarragona</a>
+                <a class="dropdown-item" href="#">Barcelona</a>
+                <a class="dropdown-item" href="#">Castellón</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-link" href="#">Personaliza tu experiencia</a>
+            </li>
+          </ul>
         </div>
-      </div>
+        
+      </nav>
     </header>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
+
   </body>
 </html>
