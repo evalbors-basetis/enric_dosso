@@ -14,7 +14,7 @@ main {
       font-weight: lighter;
     }
   }
-  .intro_full-width{
+  .intro_full-width {
     width: 100%;
     padding: 10% 5% 0 5%;
     h1 {
@@ -26,21 +26,33 @@ main {
       width: 60vw;
     }
   }
-  
 }
-.flex{
+.flex {
   display: flex;
 }
-.no_scroll{
+.no_scroll {
   overflow: hidden;
 }
+
+.home {
+  header {
+    .icon,
+    .logo-inside-pages {
+      display: none;
+    }
+  }
+}
+
 .inside-pages {
-width: 100vw;
+  width: 100vw;
   background-color: $blue-light;
   background-image: url("../images/background-waves.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  .logo-inside-pages {
+    display: inline-flex;
+  }
   .ruta-pages {
     width: 100%;
     display: flex;
@@ -49,12 +61,12 @@ width: 100vw;
       z-index: 100;
       display: flex;
       justify-content: center;
-      align-items: center;
+      //valign-items: center;
+      margin-top: 20vw;
       width: 15%;
-      height: calc(100vh -10%);
+      // height: calc(100vh -10%) !important;
       // position: fixed;
       background-color: transparent;
-      // top: -50%;
       // transform: translateY(50%);
       .menu-ruta {
         small {
@@ -123,22 +135,19 @@ width: 100vw;
             h1 {
               padding-bottom: 16px;
             }
-            .btn {
-              position: relative;
+            .cta {
+              position: relative !important;
               margin: 40px 0 !important;
               // puse un br xq no me funciona el margin
-            }
-            &__horizontal {
-              width: 70%;
             }
           }
           .image-container {
             width: 60%;
             position: relative;
-            overflow-y: auto;
+            // overflow-y: auto;
             width: 100vh;
             height: auto;
-            overflow: scroll !important;
+            overflow: none !important;
             img {
               width: 100%;
               height: 100%;
@@ -146,16 +155,17 @@ width: 100vw;
             }
             .link-map {
               position: relative;
-              padding: 8px;
-              
+              padding: 8px 0;
+              // margin-bottom: 24px !important;
               a {
                 color: $brown;
-                transform: rotate(270deg);
+                //transform: rotate(270deg);
                 font-weight: 500;
                 font-family: $font-sans-serif;
                 font-size: 16px;
                 text-transform: uppercase;
                 cursor: pointer;
+                line-height: 24px;
 
                 &:hover {
                   color: $blue;
@@ -168,13 +178,14 @@ width: 100vw;
           }
         }
         .portrait {
-          max-width: 30vw;
-          height: 100vh;
-          overflow: scroll !important;
+          max-width: 25vw;
+          height: 90vh;
+          overflow: none !important;
         }
       }
     }
   }
+  // padre de secction en Vinebre presentation
   .container-cover {
     overflow-x: hidden;
     width: 85%;
@@ -214,20 +225,17 @@ width: 100vw;
       }
     }
   }
- /*  .full-width{
-    .intro{
-      width: 100%;
-    }
-  } */
-
+  .icon,
+  .original {
+    display: none;
+  }
 }
 
-.center-content{
+.center-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 footer {
   small {
@@ -242,11 +250,19 @@ i {
 a {
   color: $brown;
   &:hover {
-    color: $blue;
+    color: $blue !important;
+    text-decoration: none !important;
+  }
+}
+.text-link {
+  color: $brown !important;
+  &:hover {
+    text-decoration: none !important;
+    color: $blue !important;
   }
 }
 
-.btn {
+.cta {
   cursor: pointer;
   display: inline;
   padding: 12px 40px;
@@ -260,7 +276,7 @@ a {
   letter-spacing: 1px;
 
   &:hover {
-    color: $cream;
+    color: $cream !important;
     text-decoration: none;
     background-color: $blue;
     transition: 0.5s;

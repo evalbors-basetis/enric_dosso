@@ -56,10 +56,15 @@
     ></script>
     <!-- cursor -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <!-- bootstrap  -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+      
   </head>
 
   <body class="home">
-    <header class="fixed" id="header-responsive">
+    <!-- <header class="fixed" id="header-responsive">
       <nav class="fixed">
         <a class="logo" href="index.html">
           <img
@@ -101,8 +106,8 @@
           </li>
         </ul>
       </nav>
-    </header>
-
+    </header> -->
+    <my-header></my-header>
     <main>
       <div class="scroll">
        <div class="intro">
@@ -110,16 +115,16 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             lacus ante, tempor eget leo nec,
-            <a href="el-proyecto.html">proyecto</a> vehicula luctus erat.
+            <a class="text-link" href="el-proyecto.html">proyecto</a> vehicula luctus erat.
             Vestibulum fermentum, orci vitae porta congue, metus turpis
             vestibulum libero, et aliquam est purus eleifend purus.
-            <a href="personaliza-experiencia.html"
+            <a class="text-link" href="personaliza-experiencia.html"
               >Personaliza tu experiencia</a
             >
             lacinia, condimentum nisl eu, bibendum eros. Sed eu nulla vitae
             nulla tristique varius.
           </p>
-          <a class="btn" href="vinebre-presentation.html">Empezar la ruta</a>
+          <a class="cta" href="vinebre-presentation.html">Empezar la ruta</a>
         </div>
         <div class="routes">
           <div class="waves-container">
@@ -175,12 +180,14 @@
     </main>
 
     <footer>
-   
-      <small class="cream">Enric d’Osso® 2021</small>
-   
-    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+      <div class="d-flex align-items-center justify-content-between">
+        <small class="cream">Enric d’Osso® 2021</small>
+        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      
   </footer>
   </body>
 
-  <script src="js/menu-responsive.js"></script>
+  <script src="js/header.js"></script>
+
 </html>
