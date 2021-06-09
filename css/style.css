@@ -232,10 +232,6 @@ main .intro_full-width p {
   margin: 40px 0 !important;
 }
 
-.inside-pages .ruta-pages .container-carrousel .carrousel .section .text-container__horizontal {
-  width: 70%;
-}
-
 .inside-pages .ruta-pages .container-carrousel .carrousel .section .image-container {
   width: 60%;
   position: relative;
@@ -258,8 +254,6 @@ main .intro_full-width p {
 
 .inside-pages .ruta-pages .container-carrousel .carrousel .section .image-container .link-map a {
   color: #8d6331;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
   font-weight: 500;
   font-family: "futura-pt";
   font-size: 16px;
@@ -563,7 +557,6 @@ a:hover {
     bottom: 0;
   }
   .inside-pages {
-    overflow-y: scroll !important;
     overflow-x: hidden !important;
   }
   .inside-pages header .icon,
@@ -595,10 +588,14 @@ a:hover {
   }
   .inside-pages .container-carrousel {
     width: 100%;
-    height: 100%;
   }
   .inside-pages .container-carrousel .carrousel {
     padding-top: 0 !important;
+  }
+  .inside-pages .container-carrousel .carrousel .glide__slide {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .inside-pages .container-carrousel .section {
     width: 100% !important;
@@ -606,13 +603,12 @@ a:hover {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    padding-bottom: 72px;
   }
   .inside-pages .container-carrousel .section .image-container {
     width: 100% !important;
-    margin: auto;
   }
   .inside-pages .container-carrousel .section .text-container {
-    margin: auto;
     padding: 20px 0 !important;
   }
   .inside-pages .container-carrousel .section .portrait {
@@ -664,7 +660,7 @@ a:hover {
     width: 90%;
   }
   .inside-pages main .container-cover h1 {
-    padding-top: 10vh !important;
+    padding-top: 15vh !important;
   }
   .inside-pages main .section {
     -webkit-box-orient: vertical;
@@ -686,11 +682,13 @@ a:hover {
   }
   .inside-pages main .section .image-container {
     width: 100% !important;
-    padding: 40px 0 !important;
     overflow: none !important;
   }
   .inside-pages main .section .image-container p {
     margin: 0 !important;
+  }
+  .no_scroll {
+    overflow-y: scroll !important;
   }
 }
 
@@ -725,9 +723,6 @@ a:hover {
   }
   h1 {
     font-size: 30px !important;
-  }
-  main {
-    margin: 0 20px;
   }
   .main-title {
     text-align: center;
