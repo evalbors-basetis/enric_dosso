@@ -475,6 +475,144 @@ a:hover {
     width: 90% !important;
     margin: 32px;
   }
+  .inside-pages {
+    overflow-x: hidden !important;
+  }
+  .inside-pages header .icon,
+  .inside-pages header .original {
+    display: none !important;
+  }
+  .inside-pages header .logo-inside-pages {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+  .inside-pages header .menu-items {
+    display: none;
+  }
+  .inside-pages header .btn_menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    cursor: pointer;
+  }
+  .inside-pages header .navbar {
+    background-color: #E5EEF5 !important;
+  }
+  .inside-pages header .navbar ul {
+    padding-top: 32px;
+  }
+  .inside-pages .sidenav {
+    display: none !important;
+  }
+  .inside-pages .container-carrousel {
+    width: 100%;
+  }
+  .inside-pages .container-carrousel .carrousel {
+    padding-top: 0 !important;
+  }
+  .inside-pages .container-carrousel .carrousel .glide__slide {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .inside-pages .container-carrousel .section {
+    width: 100% !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding-bottom: 72px;
+  }
+  .inside-pages .container-carrousel .section .image-container {
+    width: 100% !important;
+  }
+  .inside-pages .container-carrousel .section .text-container {
+    padding: 20px 0 !important;
+  }
+  .inside-pages .container-carrousel .section .portrait {
+    margin: auto 20px !important;
+    max-width: 100vw !important;
+    height: auto;
+  }
+  .inside-pages .container-carrousel .section .portrait img {
+    width: 100% !important;
+    height: 100%;
+  }
+  .inside-pages .intro_full-width h1 {
+    padding: 5vh 16px 0 0;
+  }
+  .inside-pages .intro_full-width p {
+    width: 60vw;
+  }
+  .inside-pages .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inside-pages .tabs .nav-tabs,
+  .inside-pages .tabs .tab-content {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+  .inside-pages .tabs #myTab {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    margin-bottom: 8px;
+  }
+  .inside-pages .tabs #myTab li {
+    padding-right: 24px !important;
+  }
+  .inside-pages .sidenav {
+    display: none !important;
+  }
+  .inside-pages main .container-cover {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .inside-pages main .container-cover .section {
+    width: 90%;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .inside-pages main .container-cover .section .image-container,
+  .inside-pages main .container-cover .section .text-container {
+    width: 90%;
+  }
+  .inside-pages main .container-cover h1 {
+    padding-top: 15vh !important;
+  }
+  .inside-pages main .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    height: 100%;
+  }
+  .inside-pages main .section .text-container {
+    width: 100% !important;
+    padding: 0 !important;
+    overflow: none !important;
+  }
+  .inside-pages main .section .text-container p {
+    margin: 0 !important;
+  }
+  .inside-pages main .section .image-container {
+    width: 100% !important;
+    overflow: none !important;
+  }
+  .inside-pages main .section .image-container p {
+    margin: 0 !important;
+  }
   .scroll {
     padding-top: 0 !important;
     position: relative;
@@ -556,137 +694,6 @@ a:hover {
     left: 50%;
     bottom: 0;
   }
-  .inside-pages {
-    overflow-x: hidden !important;
-  }
-  .inside-pages header .icon,
-  .inside-pages header .original {
-    display: none !important;
-  }
-  .inside-pages header .logo-inside-pages {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
-    display: inline-flex !important;
-  }
-  .inside-pages header .menu-items {
-    display: none;
-  }
-  .inside-pages header .btn_menu {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    cursor: pointer;
-  }
-  .inside-pages header .navbar {
-    background-color: #E5EEF5 !important;
-  }
-  .inside-pages header .navbar ul {
-    padding-top: 32px;
-  }
-  .inside-pages .sidenav {
-    display: none !important;
-  }
-  .inside-pages .container-carrousel {
-    width: 100%;
-  }
-  .inside-pages .container-carrousel .carrousel {
-    padding-top: 0 !important;
-  }
-  .inside-pages .container-carrousel .carrousel .glide__slide {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .inside-pages .container-carrousel .section {
-    width: 100% !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    padding-bottom: 72px;
-  }
-  .inside-pages .container-carrousel .section .image-container {
-    width: 100% !important;
-  }
-  .inside-pages .container-carrousel .section .text-container {
-    padding: 20px 0 !important;
-  }
-  .inside-pages .container-carrousel .section .portrait {
-    margin: auto 20px !important;
-    max-width: 100vw !important;
-    height: auto;
-  }
-  .inside-pages .container-carrousel .section .portrait img {
-    width: 100% !important;
-    height: 100%;
-  }
-  .inside-pages .tabs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .inside-pages .tabs .nav-tabs,
-  .inside-pages .tabs .tab-content {
-    width: 100% !important;
-    padding-right: 0 !important;
-  }
-  .inside-pages .tabs .nav-tabs #ul,
-  .inside-pages .tabs .tab-content #ul {
-    display: inline !important;
-  }
-  .inside-pages .tabs .nav-tabs #ul .nav-item,
-  .inside-pages .tabs .tab-content #ul .nav-item {
-    margin: 0 8px !important;
-    width: 50% !important;
-  }
-  .inside-pages .sidenav {
-    display: none !important;
-  }
-  .inside-pages main .container-cover {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-  }
-  .inside-pages main .container-cover .section {
-    width: 90%;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-  }
-  .inside-pages main .container-cover .section .image-container,
-  .inside-pages main .container-cover .section .text-container {
-    width: 90%;
-  }
-  .inside-pages main .container-cover h1 {
-    padding-top: 15vh !important;
-  }
-  .inside-pages main .section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
-    height: 100%;
-  }
-  .inside-pages main .section .text-container {
-    width: 100% !important;
-    padding: 0 !important;
-    overflow: none !important;
-  }
-  .inside-pages main .section .text-container p {
-    margin: 0 !important;
-  }
-  .inside-pages main .section .image-container {
-    width: 100% !important;
-    overflow: none !important;
-  }
-  .inside-pages main .section .image-container p {
-    margin: 0 !important;
-  }
   .no_scroll {
     overflow-y: scroll !important;
   }
@@ -714,6 +721,15 @@ a:hover {
     display: block;
     text-align: left;
   }
+  #myTab a {
+    font-size: 15px !important;
+  }
+  #myTab .nav-item {
+    width: 50% !important;
+  }
+  /* h1 {
+    font-size: 40px !important ;
+  } */
 }
 
 /* MOBILE */
@@ -722,8 +738,11 @@ a:hover {
     font-size: 16px;
   }
   h1 {
-    font-size: 30px !important;
+    font-size: 32px !important;
   }
+  /* main {
+    margin: 0 20px;
+  } */
   .main-title {
     text-align: center;
     padding: 20px 0;
