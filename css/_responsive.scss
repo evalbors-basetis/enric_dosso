@@ -120,11 +120,12 @@
     }
 
     .intro_full-width {
+      width: 100% !important;
       h1 {
         padding: 5vh 16px 0 0;
       }
       p {
-        width: 60vw;
+        width: 80vw;
       }
     }
 
@@ -330,6 +331,7 @@
   }
   h1 {
     font-size: 32px !important ;
+    padding-top: 17vh !important;
   }
 
   /* main {

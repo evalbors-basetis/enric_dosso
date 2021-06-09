@@ -539,11 +539,14 @@ a:hover {
     width: 100% !important;
     height: 100%;
   }
+  .inside-pages .intro_full-width {
+    width: 100% !important;
+  }
   .inside-pages .intro_full-width h1 {
     padding: 5vh 16px 0 0;
   }
   .inside-pages .intro_full-width p {
-    width: 60vw;
+    width: 80vw;
   }
   .inside-pages .tabs {
     -webkit-box-orient: vertical;
@@ -739,6 +742,7 @@ a:hover {
   }
   h1 {
     font-size: 32px !important;
+    padding-top: 17vh !important;
   }
   /* main {
     margin: 0 20px;
