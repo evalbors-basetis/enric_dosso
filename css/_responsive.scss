@@ -140,7 +140,7 @@
   }
 
   .inside-pages {
-    overflow-y: scroll !important;
+    // overflow-y: scroll !important;
     overflow-x: hidden !important;
     header {
       .icon,
@@ -170,20 +170,24 @@
     }
     .container-carrousel {
       width: 100%;
-      height: 100%;
+      // height: 100%;
+      // overflow-y: auto !important;
       .carrousel {
         padding-top: 0 !important;
+        .glide__slide{
+          height: fit-content;
+        }
       }
       .section {
         width: 100% !important;
         flex-direction: column !important;
+        padding-bottom: 72px;
         .image-container {
           width: 100% !important;
-          margin: auto;
         }
         .text-container {
           // width: 90% !important;
-          margin: auto;
+          // margin: auto;
           padding: 20px 0 !important;
         }
         .portrait {
@@ -232,7 +236,7 @@
         }
 
         h1 {
-          padding-top: 10vh !important;
+          padding-top: 15vh !important;
         }
       }
       .section {
@@ -249,7 +253,7 @@
         }
         .image-container {
           width: 100% !important;
-          padding: 40px 0 !important;
+          // padding: 40px 0 !important;
           overflow: none !important;
           p {
             margin: 0 !important;
@@ -258,7 +262,9 @@
       }
     }
   }
-  
+  .no_scroll{
+    overflow-y: scroll !important;
+  }
 }
 
 /* TABLET */
@@ -300,9 +306,9 @@
     font-size: 30px !important ;
   }
 
-  main {
-    margin: 0 20px;
-  }
+  // main {
+    // margin: 0 20px;
+  // }
 
   .main-title {
     text-align: center;
