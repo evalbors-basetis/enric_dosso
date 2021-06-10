@@ -1142,7 +1142,6 @@ body main {
 
 .home {
   background-color: #0A3254;
-  overflow-y: hidden;
 }
 
 .home p,
@@ -1152,7 +1151,6 @@ body main {
 
 .home .scroll {
   padding-top: 5vh;
-  cursor: url("../images/cursor-scrolling-home.svg"), auto;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1325,11 +1323,221 @@ body main {
   margin-right: 5vh;
 }
 
+.horizontal {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+}
+
 .vertical-line {
   z-index: 30;
   position: absolute;
   border-left: 1px solid #8d6331;
   height: 200px;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1200vw;
+  -webkit-transform: rotate(90deg) translateY(-100vh);
+          transform: rotate(90deg) translateY(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.waves-container {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(90deg) translateX(40vh);
+          transform: rotate(90deg) translateX(40vh);
+}
+
+.waves-container .wave {
+  position: relative;
+}
+
+.waves-container .wave .wave-box {
+  max-width: 250px;
+  height: auto;
+  position: absolute;
+}
+
+.waves-container .wave .wave-box img {
+  opacity: 0.5;
+  position: relative;
+  z-index: -10;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.waves-container .wave .wave-box p {
+  position: absolute;
+  z-index: 10;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-family: "futura-pt";
+  color: #8d6331;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.waves-container .wave:hover {
+  cursor: url("../images/cursor-scrolling-home.svg"), auto;
+}
+
+.waves-container .wave:hover p {
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.waves-container .wave:hover img {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+.waves-container .wave:hover .vertical-line {
+  border-left: 1px solid white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.waves-container .wave:nth-child(1) p {
+  left: 85%;
+  bottom: 115%;
+}
+
+.waves-container .wave:nth-child(1) .vertical-line {
+  left: 100%;
+  top: 0;
+}
+
+.waves-container .wave:nth-child(2) {
+  left: 395px;
+  bottom: 270px;
+}
+
+.waves-container .wave:nth-child(2) p {
+  left: 90%;
+  top: 115%;
+}
+
+.waves-container .wave:nth-child(2) .vertical-line {
+  left: 105%;
+  bottom: 0;
+}
+
+.waves-container .wave:nth-child(3) {
+  left: 790px;
+}
+
+.waves-container .wave:nth-child(3) p {
+  left: 88%;
+  bottom: 123%;
+}
+
+.waves-container .wave:nth-child(3) .vertical-line {
+  left: 110%;
+  top: 0;
+}
+
+.waves-container .wave:nth-child(4) {
+  left: 1185px;
+  bottom: 270px;
+}
+
+.waves-container .wave:nth-child(4) p {
+  left: 84%;
+  top: 123%;
+}
+
+.waves-container .wave:nth-child(4) .vertical-line {
+  left: 105%;
+  bottom: 0;
+}
+
+.waves-container .wave:nth-child(5) {
+  left: 1580px;
+}
+
+.waves-container .wave:nth-child(5) p {
+  left: 88%;
+  bottom: 123%;
+}
+
+.waves-container .wave:nth-child(5) .vertical-line {
+  left: 110%;
+  top: 0;
+}
+
+.waves-container .wave:nth-child(6) {
+  left: 1980px;
+  bottom: 270px;
+}
+
+.waves-container .wave:nth-child(6) p {
+  left: 84%;
+  top: 123%;
+}
+
+.waves-container .wave:nth-child(6) .vertical-line {
+  left: 105%;
+  bottom: 0;
+}
+
+.waves-container .wave:nth-child(6) img {
+  margin-right: 5vh;
+}
+
+.text-intro {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  max-width: 70%;
+  padding: 12% 0 0 0;
+}
+
+.text-intro h1 {
+  font-size: 5vw;
+  padding-bottom: 16px;
+  font-weight: lighter;
+}
+
+.text-intro p {
+  padding-bottom: 24px;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  -webkit-transform: rotate(-90deg) translateX(-100vh);
+          transform: rotate(-90deg) translateX(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .tabs {
