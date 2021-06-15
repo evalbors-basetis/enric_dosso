@@ -5,149 +5,30 @@
   h1 {
     color: $cream;
   }
-
-  .scroll {
-    padding-top: 5vh;
-    // cursor: url("../images/cursor-scrolling-home.svg"), auto;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    .intro {
-      padding: 0 5%;
-      width: 40%;
-      h1 {
-        padding-bottom: 8px;
-      }
-      p {
-        margin-bottom: 40px;
-      }
-    }
-
-    .waves-container {
-      z-index: 0;
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    .wrapper {
       display: flex;
-      .wave {
-        position: relative;
-        .wave-box {
-          max-width: 250px;
-          height: auto;
-          position: absolute;
-          img {
-            opacity: 0.5;
-            position: relative;
-            z-index: -10;
-            filter: grayscale(100%);
-          }
-          p {
-            position: absolute;
-            z-index: 10;
-            transform: rotate(270deg);
-            font-family: $font-sans-serif;
-            color: $brown;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-          }
-        }
-      }
-
-      .wave:hover {
-        cursor: url("../images/cursor-scrolling-home.svg"), auto;
-        p {
-          color: white;
-          transition: 1s;
-        }
-        img {
-          filter: none;
-          transition: 1s;
-          opacity: 1;
-        }
-        .vertical-line {
-          border-left: 1px solid white;
-          transition: 1s;
-        }
-      }
-
-      .wave:nth-child(1) {
-        p {
-          left: 85%;
-          bottom: 115%;
-        }
-        .vertical-line {
-          left: 100%;
-          top: 0;
-        }
-      }
-      .wave:nth-child(2) {
-        left: 395px;
-        bottom: 270px;
-        p {
-          left: 90%;
-          top: 115%;
-        }
-        .vertical-line {
-          left: 105%;
-          bottom: 0;
-        }
-      }
-      .wave:nth-child(3) {
-        left: 790px;
-        p {
-          left: 88%;
-          bottom: 123%;
-        }
-        .vertical-line {
-          left: 110%;
-          top: 0;
-        }
-      }
-      .wave:nth-child(4) {
-        left: 1185px;
-        bottom: 270px;
-        p {
-          left: 84%;
-          top: 123%;
-        }
-        .vertical-line {
-          left: 105%;
-          bottom: 0;
-        }
-      }
-      .wave:nth-child(5) {
-        left: 1580px;
-        p {
-          left: 88%;
-          bottom: 123%;
-        }
-        .vertical-line {
-          left: 110%;
-          top: 0;
-        }
-      }
-      .wave:nth-child(6) {
-        left: 1980px;
-        bottom: 270px;
-
-        p {
-          left: 84%;
-          top: 123%;
-        }
-        .vertical-line {
-          left: 105%;
-          bottom: 0;
-        }
-        img {
-          margin-right: 5vh;
-        }
-      }
+      flex-direction: row;
+      width: 1200vw;
+      transform: rotate(90deg) translateY(-100vh);
+      transform-origin: top left;
+      
     }
   }
 }
 
-.horizontal {
-  position: absolute;
-  height: 100%;
-  will-change: transform;
+.slide {
+  width: 100vw;
+  height: 100vh;
 }
 
 .vertical-line {
@@ -157,18 +38,6 @@
   height: 200px;
 }
 
-.slide {
-  width: 100vw;
-  height: 100vh;
-}
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 1200vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  
-}
 .waves-container {
   z-index: 0;
   display: flex;
@@ -198,7 +67,7 @@
   }
 
   .wave:hover {
-    cursor: url("../images/cursor-scrolling-home.svg"), auto;
+    // cursor: url("../images/cursor-scrolling-home.svg"), auto;
     p {
       color: white;
       transition: 1s;
@@ -303,17 +172,7 @@
   }
 }
 
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
+
 ::-webkit-scrollbar {
   display: none;
 }

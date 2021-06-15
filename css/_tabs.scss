@@ -1,20 +1,21 @@
 .tabs {
-  width: 100vw;
-  display: flex !important;
-  align-items: flex-start;
-  justify-content: space-between !important;
-  padding: 0 5%;
-
-  #myTab {
-    flex-direction: column;
+  overflow-y: scroll;
+  //width: 100vw;
+  //display: flex !important;
+  // align-items: flex-start;
+  // justify-content: space-between !important;
+  li{
+    width: 50%;
+    a{
+      padding:16px 0;
+      text-align: center;
+    }
   }
   .nav,
   .nav-tabs {
-    width: 50%;
     padding-right: 5%;
     border: none !important;
     .nav-link {
-      padding: 8px 0;
       border: none !important;
       color: $brown;
       text-transform: uppercase;
@@ -40,7 +41,8 @@
   }
   .tab-content {
     border-bottom: 0px solid #dee2e6;
-    width: 50%;
+    padding-top: 32px;
+    // width: 50%;
     .item {
       p {
         margin: 4px 0 !important;

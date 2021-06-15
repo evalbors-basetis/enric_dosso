@@ -137,11 +137,8 @@
         padding-right: 0 !important;
       }
       #myTab{
-        flex-direction: row !important;
         margin-bottom: 8px;
-        li{
-          padding-right: 24px !important;
-        }
+        
       }
     }
 
@@ -191,90 +188,106 @@
     }
   }
 
-  .scroll {
-    padding-top: 0 !important;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100% !important;
-    .intro {
-      width: 80%;
-      h1 {
-        padding-bottom: 16px;
-      }
-    }
-
-    .routes {
-      margin-top: 56px;
+  .outer-wrapper{
+    overflow-y: hidden !important;
+    overflow-x: scroll !important;
+    height: 100%;
+    width: 100%;
+    // transform: rotate(-90deg) translateX(-100vh);
+    .wraper {
+      padding-top: 0 !important;
       position: relative;
-      transform: scale(0.9) rotate(90deg);
-      display: flex;
-      align-items: center;
-      .waves-container {
-        position: absolute;
-        .wave:nth-child(1) {
-          p {
-            left: 44%;
-            bottom: 115%;
-          }
-          .vertical-line {
-            left: 50%;
-            top: 0;
-          }
+      flex-direction: column;
+      height: 100% !important;
+      width: 100%;
+      .text-intro {
+        transform: rotate(90deg);
+        width: 90vh !important;
+        max-width: none;
+       
+        h1 {
+          font-size: 5vw;
+          padding-bottom: 16px;
+          font-weight: lighter;
         }
-        .wave:nth-child(2) {
-          p {
-            left: 43%;
-            top: 115%;
-          }
-          .vertical-line {
-            left: 50%;
-            bottom: 0;
-          }
+        p{
+          padding-bottom: 24px;
         }
-        .wave:nth-child(3) {
-          p {
-            left: 39%;
-            bottom: 125%;
+      }
+  
+      .routes {
+        margin-top: 56px;
+        position: relative;
+        transform: scale(0.9) rotate(90deg);
+        display: flex;
+        align-items: center;
+        .waves-container {
+          position: absolute;
+          .wave:nth-child(1) {
+            p {
+              left: 44%;
+              bottom: 115%;
+            }
+            .vertical-line {
+              left: 50%;
+              top: 0;
+            }
           }
-          .vertical-line {
-            left: 50%;
-            top: 0;
+          .wave:nth-child(2) {
+            p {
+              left: 43%;
+              top: 115%;
+            }
+            .vertical-line {
+              left: 50%;
+              bottom: 0;
+            }
           }
-        }
-        .wave:nth-child(4) {
-          p {
-            left: 39%;
-            top: 125%;
+          .wave:nth-child(3) {
+            p {
+              left: 39%;
+              bottom: 125%;
+            }
+            .vertical-line {
+              left: 50%;
+              top: 0;
+            }
           }
-          .vertical-line {
-            left: 50%;
-            bottom: 0;
+          .wave:nth-child(4) {
+            p {
+              left: 39%;
+              top: 125%;
+            }
+            .vertical-line {
+              left: 50%;
+              bottom: 0;
+            }
           }
-        }
-        .wave:nth-child(5) {
-          p {
-            left: 40%;
-            bottom: 122%;
+          .wave:nth-child(5) {
+            p {
+              left: 40%;
+              bottom: 122%;
+            }
+            .vertical-line {
+              left: 50%;
+              top: 0;
+            }
           }
-          .vertical-line {
-            left: 50%;
-            top: 0;
-          }
-        }
-        .wave:nth-child(6) {
-          p {
-            left: 41%;
-            top: 118%;
-          }
-          .vertical-line {
-            left: 50%;
-            bottom: 0;
+          .wave:nth-child(6) {
+            p {
+              left: 41%;
+              top: 118%;
+            }
+            .vertical-line {
+              left: 50%;
+              bottom: 0;
+            }
           }
         }
       }
     }
   }
+  
 
   .no_scroll{
     overflow-y: scroll !important;

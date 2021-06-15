@@ -61,8 +61,28 @@ class MyHeader extends HTMLElement {
                 <a class="dropdown-item" href="#">Castellón</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-link" href="personaliza-experiencia.html">Personaliza tu experiencia</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Personaliza tu experiencia
+              </a>
+              <div
+                class="dropdown-menu text-link"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="personaliza-tu-experiencia.html">Vinebre</a>
+                <a class="dropdown-item" href="#">Tortosa</a>
+                <a class="dropdown-item" href="#">Montserrat</a>
+                <a class="dropdown-item" href="#">Tarragona</a>
+                <a class="dropdown-item" href="#">Barcelona</a>
+                <a class="dropdown-item" href="#">Castellón</a>
+              </div>
             </li>
           </ul>
         </div>
