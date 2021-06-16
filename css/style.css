@@ -1248,7 +1248,8 @@ body .transition_right-to-left {
           animation: runRightLeft ease-in-out 2s;
 }
 
-body .transition_left-to-right .text-container, body .transition_left-to-right img {
+body .transition_left-to-right .text-container,
+body .transition_left-to-right img {
   -webkit-animation: runLeftRight ease-in-out 1.5s;
           animation: runLeftRight ease-in-out 1.5s;
 }
@@ -1258,13 +1259,41 @@ body .cta-location {
           animation: locationAppear ease-in-out 2.5s;
 }
 
-body .later {
-  -webkit-animation: fadeInAnimation ease 1s;
-          animation: fadeInAnimation ease 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+body .floatting-element {
+  -webkit-animation-name: fadeInAnimation;
+          animation-name: fadeInAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  position: fixed;
+  right: 150px;
+  top: 80px;
+  z-index: 999;
+  font-family: "futura-pt";
+  text-transform: uppercase;
+}
+
+body .floatting-element .rotation-element {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+body .floatting-element .rotation-element svg {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  fill: currentColor;
+  color: #8d6331;
+}
+
+body .floatting-element:hover .rotation-element svg {
+  fill: #2a599f !important;
 }
 
 @-webkit-keyframes fadeInAnimation {
@@ -1362,6 +1391,28 @@ body .later {
   100% {
     opacity: 1;
     left: 0;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

@@ -7,32 +7,61 @@ body {
   video {
     animation: ease 2s;
   }
-  .transition_right-to-left{
+  .transition_right-to-left {
     animation: runRightLeft ease-in-out 2s;
   }
 
-  .transition_left-to-right{
-    .text-container, img{
+  .transition_left-to-right {
+    .text-container,
+    img {
       animation: runLeftRight ease-in-out 1.5s;
     }
   }
- .cta-location{
-    animation:locationAppear ease-in-out 2.5s;
-  }  
-  .later{
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  .cta-location {
+    animation: locationAppear ease-in-out 2.5s;
   }
+
+  .floatting-element {
+    animation-name: fadeInAnimation;
+    animation-duration: 3s;
+    position: fixed;
+    right: 150px;
+    top: 80px;
+    z-index: 999;
+    font-family: $font-sans-serif;
+    text-transform: uppercase;
+    .rotation-element {
+      animation-name: rotate;
+      animation-duration: 24s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      transform-origin: center center;
+      svg{
+        transform: scale(0.5);
+        fill: currentColor;
+        color: $brown;
+      }
+    }
+    &:hover{
+      .rotation-element {
+        //animation-play-state: paused;
+       svg{
+        fill: $blue !important;
+       }
+    }
+  }
+  
+  
+}
 }
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 @keyframes runRightLeft {
@@ -43,7 +72,7 @@ body {
   100% {
     transform: inherit;
     opacity: 1;
- }
+  }
 }
 @keyframes runLeftRight {
   0% {
@@ -53,9 +82,7 @@ body {
   100% {
     transform: inherit;
     opacity: 1;
-
- }
- 
+  }
 }
 
 @keyframes locationAppear {
@@ -69,5 +96,14 @@ body {
   100% {
     opacity: 1;
     left: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
