@@ -1,12 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="35px" height="46px" viewBox="0 0 35 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 5</title>
-    <g id="Visual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="F_02_template_vinebre_2" transform="translate(-32.000000, -32.000000)">
-            <g id="Group-5" transform="translate(32.000000, 32.000000)">
-                <path d="M17.5001998,13 C26.6066188,13 35,19.5671642 35,28.9253731 C35,38.9402985 27.6557914,46 17.5001998,46 C7.34420857,46 0,38.9402985 0,28.9253731 C0,19.5671642 8.39338122,13 17.5001998,13 Z M17.5001998,20.7985075 C12.5900718,20.7985075 8.56084916,24.6977612 8.56084916,28.9664179 C8.56084916,34.3022388 12.5900718,38.2014925 17.5001998,38.2014925 C22.4099282,38.2014925 26.4387512,34.3022388 26.4387512,28.9664179 C26.4387512,24.6977612 22.4099282,20.7985075 17.5001998,20.7985075 Z" id="Shape" fill="#F1E8E0"></path>
-                <polygon id="Path" fill="#9B632A" points="26 0 26 9 9 9 9 2.99987337"></polygon>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#0A3254;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#F1E8E0;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#9B632A;}
+</style>
+<rect class="st0" width="80" height="80"/>
+<g id="F_02_template_vinebre_2" transform="translate(-32.000000, -32.000000)">
+	<g id="Group-5" transform="translate(32.000000, 32.000000)">
+		<path id="Shape" class="st1" d="M40.1,32.1c7.4,0,14.3,5.3,14.3,12.9c0,8.2-6,13.8-14.3,13.8C31.9,58.6,25.8,53,25.8,45
+			C25.8,37.4,32.7,32.1,40.1,32.1z M40.1,38.4c-3.9,0-7.2,3.1-7.2,6.6c0,4.4,3.3,7.5,7.2,7.5s7.2-3.1,7.2-7.5
+			C47.3,41.5,44,38.4,40.1,38.4z"/>
+		<polygon id="Path" class="st2" points="47,21.4 47,28.7 33.2,28.7 33.2,23.9 		"/>
+	</g>
+</g>
 </svg>

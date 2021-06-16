@@ -17,7 +17,7 @@ class MyHeader extends HTMLElement {
           />
           <img
           class="logo-inside-pages"
-          src="images/logo-responsive.svg"
+          src="images/logo-responsive-background-dark.svg"
           alt=""
         />
         </a>

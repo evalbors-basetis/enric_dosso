@@ -108,6 +108,8 @@ main .intro_full-width p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 88px;
+  height: auto;
 }
 
 .inside-pages .ruta-pages {
@@ -528,7 +530,8 @@ a:hover {
   height: 100vh;
 }
 
-.split-screen .split img, .split-screen .split video {
+.split-screen .split img,
+.split-screen .split video {
   position: absolute;
   z-index: -30;
   width: 50vw;
@@ -554,7 +557,8 @@ a:hover {
   margin: 80px 160px 80px 80px;
 }
 
-.split-screen .left-side .text-container h1, .split-screen .left-side .text-container h2,
+.split-screen .left-side .text-container h1,
+.split-screen .left-side .text-container h2,
 .split-screen .left-side .text-container p {
   color: #efe8e0 !important;
 }
@@ -592,9 +596,10 @@ a:hover {
 }
 
 .split-screen .right-side .text-container {
+  overflow-y: scroll !important;
   background-color: #efe8e0;
-  padding: 80px;
-  min-height: 70vh;
+  padding: 8%;
+  height: 70vh;
 }
 
 .split-screen .right-side .text-container h1,
@@ -1106,6 +1111,10 @@ header nav .btn_menu #close {
   display: none;
 }
 
+header .original {
+  padding: 1rem;
+}
+
 footer {
   z-index: 100;
   padding: 20px;
@@ -1155,6 +1164,7 @@ footer a:hover i {
   font-family: "futura-pt";
   font-size: 16px;
   text-transform: uppercase;
+  padding: 0 1rem 0 0 !important;
 }
 
 .navbar li {
@@ -1216,7 +1226,7 @@ footer a:hover i {
 }
 
 .inside-pages .dropdown-menu {
-  background-color: #E5EEF5 !important;
+  background-color: #0A3254 !important;
 }
 
 body main {
