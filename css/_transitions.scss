@@ -44,7 +44,7 @@ body {
     }
     &:hover{
       .rotation-element {
-        //animation-play-state: paused;
+        animation-play-state: paused;
        svg{
         fill: $blue !important;
        }

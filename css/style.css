@@ -1292,6 +1292,11 @@ body .floatting-element .rotation-element svg {
   color: #8d6331;
 }
 
+body .floatting-element:hover .rotation-element {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
 body .floatting-element:hover .rotation-element svg {
   fill: #2a599f !important;
 }
