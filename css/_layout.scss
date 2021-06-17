@@ -293,7 +293,6 @@ a {
     opacity: 1;
     width: 60vw;
     transform: translateX(80px);
-
     .pic_horizontal {
       height: 100%;
       img {
@@ -428,7 +427,7 @@ a {
       overflow-y: scroll !important;
       background-color: $cream;
       padding: 8%;
-      height: 70vh;
+      
       h1,
       p {
         color: $blue;
@@ -437,6 +436,10 @@ a {
     }
     .translate-in-y {
       transform: translateX(-80px);
+    }
+    // altura para las compos simples
+    .simple{
+      height: 75vh;
     }
   }
 }
