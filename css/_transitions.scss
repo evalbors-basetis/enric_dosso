@@ -19,7 +19,7 @@ body {
     }
   }
   .cta-location {
-    animation: locationAppear ease-in-out 2.5s;
+    animation: runRightLeft ease-in-out 3s;
   }
   .return{
     animation: fadeInAnimation ease-in-out 1.5s;
@@ -30,7 +30,7 @@ body {
     animation-duration: 3s;
     position: fixed;
     right: 10%;
-    top: 5%;
+    top: 15%;
     z-index: 999;
     font-family: $font-sans-serif;
     text-transform: uppercase;

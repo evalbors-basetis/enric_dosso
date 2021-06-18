@@ -32,7 +32,7 @@ header {
 
   nav {
     z-index: 999 !important;
-    padding: 32px;
+    //padding: 32px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -124,7 +124,7 @@ header {
       }
     }
   }
-  .original{
+  .original {
     padding: 1rem;
   }
 }
@@ -171,8 +171,6 @@ footer {
   font-size: 16px;
   text-transform: uppercase;
   padding: 0 1rem 0 0 !important;
-  // margin: 0 56px 0 0;
-  // PERSONALIZA FUNCIONA SIN ESTE MARGIN EL RESTO NO
   li {
     padding: 8px;
 
@@ -200,7 +198,7 @@ footer {
     }
   }
   .dropdown-item {
-    padding: 0.5em 1em;
+    padding: 0.5em;
   }
   .dropdown-menu {
     margin-top: -5px !important;
@@ -209,31 +207,33 @@ footer {
     z-index: 9999 !important;
   }
 
-  button{
+  button {
     padding: 0 !important;
+    margin: 0;
+    width: 88px;
+    height: 88px;
+    background-color: $blue-darken;
+    border-radius: 0;
+    margin-right: -20px;
 
-    .navbar-toggler{
+    .navbar-toggler {
       color: $brown !important;
       border: none !important;
     }
-    i{
+    i {
       color: $brown !important;
-      //padding: 0 !important;
+      padding: 30px !important;
     }
   }
- 
-
 }
 
-
-.home{
+.home {
   .dropdown-menu {
     background-color: $blue-darken !important;
   }
 }
 
-
-.inside-pages{
+.inside-pages {
   .dropdown-menu {
     background-color: $blue-darken !important;
   }

@@ -30,8 +30,8 @@ class MyHeader extends HTMLElement {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fa fa-bars" aria-hidden="true"></i>
-          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fa fa-bars" aria-hidden="true open-menu"></i>
+          <!-- <i class="fas fa-times close-menu"></i> -->
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
