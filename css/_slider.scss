@@ -58,7 +58,7 @@
         float: right;
         .text-container {
           background-color: $cream;
-          padding: 80px;
+          padding: 15%;
           min-height: 70vh;
           h1,
           p {
@@ -99,14 +99,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 1%;
+  margin: 0 !important;
   li {
     display: flex;
     justify-items: center;
     align-items: center;
     margin: 12px;
     transition: opacity 0.5;
-
     a {
       font-family: $font-sans-serif;
       color: white;
@@ -127,7 +127,7 @@
 .return {
   animation: ease 2s !important;
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 88px;
   color: white;
   width: 88px;

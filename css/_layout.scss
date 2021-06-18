@@ -116,129 +116,15 @@ main {
         }
       }
     }
-    .container-carrousel {
-      width: 85%;
-      .carrousel {
-        padding-top: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        position: relative;
-        .section {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          .text-container {
-            width: 40%;
-            padding: 40px;
-            p {
-              font-size: 24px;
-            }
-            h1 {
-              padding-bottom: 16px;
-            }
-            .cta {
-              position: relative !important;
-              margin: 40px 0 !important;
-              // puse un br xq no me funciona el margin
-            }
-          }
-          .image-container {
-            width: 60%;
-            position: relative;
-            // overflow-y: auto;
-            width: 100vh;
-            height: auto;
-            overflow: none !important;
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-            .link-map {
-              position: relative;
-              padding: 8px 0;
-              // margin-bottom: 24px !important;
-              a {
-                color: $brown;
-                //transform: rotate(270deg);
-                font-weight: 500;
-                font-family: $font-sans-serif;
-                font-size: 16px;
-                text-transform: uppercase;
-                cursor: pointer;
-                line-height: 24px;
-
-                &:hover {
-                  color: $blue;
-                  i {
-                    color: $blue;
-                  }
-                }
-              }
-            }
-          }
-        }
-        .portrait {
-          max-width: 25vw;
-          height: 90vh;
-          overflow: none !important;
-        }
-      }
-    }
+ 
   }
-  // padre de secction en Vinebre presentation
-  .container-cover {
-    overflow-x: hidden;
-    width: 85%;
-    height: 100vh;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .section {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .text-container {
-        width: 50%;
-        padding: 40px;
-        p {
-          font-size: 24px;
-          padding-bottom: 16px;
-        }
-        h1 {
-          padding-bottom: 16px;
-        }
-        .btn {
-          position: relative;
-          margin: 40px 0 !important;
-          // puse un br xq no me funciona el margin
-        }
-      }
-      .image-container {
-        width: 50%;
-        height: 500px;
-        display: flex;
-        image {
-          object-fit: cover;
-        }
-      }
-    }
-  }
+  
   .icon,
   .original {
     display: none;
   }
 }
 
-.center-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 footer {
   small {
@@ -332,7 +218,7 @@ a {
     justify-content: center;
     .text-container {
       z-index: 50;
-      margin: 80px 160px 80px 80px;
+      margin:  20% 30% 10% 10%;
       h1,
       h2,
       p {

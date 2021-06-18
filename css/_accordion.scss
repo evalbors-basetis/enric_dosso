@@ -1,43 +1,56 @@
-.accordion {
-  z-index: -50;
-  padding: 16px 0 0 0;
-  display: flex;
-  align-items: center;
-  font-family: $font-sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: $brown;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  background-color: transparent;
-  transition: all ease-in-out 2s;
+#accordion{
+z-index: 999 !important;
+padding-bottom: 40px;
+.accordion-item{
+  padding: 5px 0;
+}
+button{
   a {
-    font-size: 16px;
-    color: $brown;
-    padding: 0 8px 0 0;
-  }
-  &:hover {
-    transition: none !important;
-    a,
-    i {
-      color: $blue;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .fa-caret-down{
+      padding-left: 24px;
+      font-size: 15px;
     }
+  }
+  a:link {
+    color: $brown  !important;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: $brown !important;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: $blue!important;
+  }
+  
+  /* selected link */
+  a:active {
+    color:$brown !important;
   }
 }
 
-.panel {
-  position: relative;
-  display: none;
-  height: auto;
-  padding: 16px 0 0 0;
+}
+.btn-brown {
+  color: $brown !important;
+  font-family: $font-sans-serif !important;
+  text-transform: uppercase !important;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.panel-accordion{
   p {
-    font-family: $font-serif;
-    font-weight: 500;
-    color: $brown-darken;
-    font-size: 16px !important;
-    transition: 0.4s;
+    padding: 20px 0 !important;
+    font-family: $font-serif !important;
+    font-size: 18px !important;
+    color: $blue !important;
+  font-family: $font-sans-serif !important;
   }
 }
