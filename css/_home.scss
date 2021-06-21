@@ -5,6 +5,12 @@
   h1 {
     color: $cream;
   }
+  header {
+    .icon {
+      display: none;
+    }
+  }
+
   .outer-wrapper {
     width: 100vh;
     height: 100vw;
@@ -17,18 +23,34 @@
     -ms-overflow-style: none;
     .wrapper {
       display: flex;
+      align-items: center;
       flex-direction: row;
       width: 1200vw;
       transform: rotate(90deg) translateY(-100vh);
       transform-origin: top left;
-      
     }
   }
 }
 
 .slide {
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .text-intro {
+    padding: 10%;
+    transform: rotate(90deg);transform-origin: center center;
+
+  h1 {
+    font-size: 5vw;
+    padding-bottom: 16px;
+    font-weight: lighter;
+  }
+  p {
+    padding-bottom: 24px;
+  }
+}
+
 }
 
 .vertical-line {
@@ -154,21 +176,6 @@
     img {
       margin-right: 5vh;
     }
-  }
-}
-
-.text-intro {
-  transform: rotate(90deg);
-  max-width: 70%;
-  padding: 12% 0 0 0;
- 
-  h1 {
-    font-size: 5vw;
-    padding-bottom: 16px;
-    font-weight: lighter;
-  }
-  p{
-    padding-bottom: 24px;
   }
 }
 
