@@ -6,26 +6,40 @@
     // de un ancho concreto que ya no crezca más...
   }
 }
-
+/* SMALL DESKTOP & TABLET H */
+/* @media screen and (max-width: 1024px) {
+  .slide {
+    .text-intro {
+      width: 50vw !important;
+    }
+}
+} */
 /* SMALL DESKTOP & TABLET */
 @media screen and (max-width: 900px) {
   .nav-nav-link {
     float: right !important;
   }
   .home {
-    overflow-y: scroll !important;
-    overflow-x: hidden !important;
-
-    main {
-      position: absolute;
-      top: 12vh;
-      z-index: 0 !important;
+    .outer-wrapper {
+      margin-top: 90px !important;
+      width: 100% !important;
+      height: 100% !important;
+      display: flex;
+      align-items: flex-start !important;
+      justify-content: center;
       transform: none !important;
-      padding: 0;
-      .intro {
-        width: 90% !important;
-        // padding-top: 72px !important;
-        margin: 32px;
+      overflow-y: scroll !important;
+      overflow-x: hidden !important;
+      .slide {
+        transform-origin: none !important;
+        transform: none !important;
+        .text-intro {
+          width: 100vw;
+          padding: 5% !important;
+        }
+      }
+      .routes{
+        padding-bottom: 32px;
       }
     }
   }
@@ -164,7 +178,7 @@
     }
   }
 
-  .simple{
+  .simple {
     margin-top: 30% !important;
   }
 }
@@ -238,6 +252,19 @@
         }
       }
     }
+    .slide{
+      position: relative;
+    }
+    .waves-container{
+     margin-top: 40%;
+      transform: scale(0.7) rotate(90deg) !important;
+      p {
+        transform: scale(1.8) rotate(270deg) !important;
+      }
+      .vertical-line {
+        transform: scale(0.7);
+      }
+    }
   }
 }
 
@@ -256,15 +283,18 @@
     padding: 20px 0;
   }
 
-  .routes {
-    transform: scale(0.5) rotate(90deg) !important;
-    p {
-      transform: scale(1.8) rotate(270deg) !important;
+/*   .routes {
+    .slide{
+      transform: scale(0.5) rotate(90deg) !important;
+      p {
+        transform: scale(1.8) rotate(270deg) !important;
+      }
+      .vertical-line {
+        transform: scale(0.7);
+      }
     }
-    .vertical-line {
-      transform: scale(0.7);
-    }
-  }
+    
+  } */
 
   .floatting-element {
     right: 5%;

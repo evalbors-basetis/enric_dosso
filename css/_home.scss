@@ -21,14 +21,6 @@
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    .wrapper {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      width: 1200vw;
-      transform: rotate(90deg) translateY(-100vh);
-      transform-origin: top left;
-    }
   }
 }
 
@@ -36,34 +28,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotate(90deg) translateX(10vw);;
+  transform-origin: top top;
+  position: relative;
 
   .text-intro {
-    padding: 10%;
-    transform: rotate(90deg);transform-origin: center center;
-
-  h1 {
-    font-size: 5vw;
-    padding-bottom: 16px;
-    font-weight: lighter;
+    width: 40vw;
+    padding: 0 5%;
+    h1 {
+      font-size: 5vw;
+      padding-bottom: 16px;
+      font-weight: lighter;
+    }
+    p {
+      padding-bottom: 24px;
+    }
   }
-  p {
-    padding-bottom: 24px;
-  }
 }
-
-}
-
-.vertical-line {
-  z-index: 30;
-  position: absolute;
-  border-left: 1px solid $brown;
-  height: 200px;
-}
-
 .waves-container {
   z-index: 0;
   display: flex;
-  transform: rotate(90deg) translateX(40vh);
+  transform: rotate(90deg) translateX(40vw);
+  padding-left: 10%;
   .wave {
     position: relative;
     .wave-box {
@@ -179,6 +165,12 @@
   }
 }
 
+.vertical-line {
+  z-index: 30;
+  position: absolute;
+  border-left: 1px solid $brown;
+  height: 200px;
+}
 
 ::-webkit-scrollbar {
   display: none;
