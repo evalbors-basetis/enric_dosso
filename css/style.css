@@ -626,8 +626,8 @@ a:hover {
             transform: scale(0.7) rotate(90deg) !important;
   }
   .home .waves-container p {
-    -webkit-transform: scale(1.8) rotate(270deg) !important;
-            transform: scale(1.8) rotate(270deg) !important;
+    -webkit-transform: scale(1.4) rotate(270deg) !important;
+            transform: scale(1.4) rotate(270deg) !important;
   }
   .home .waves-container .vertical-line {
     -webkit-transform: scale(0.7);
