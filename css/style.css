@@ -361,7 +361,7 @@ a:hover {
           transform: translateX(-80px);
 }
 
-.split-screen .right-side .simple {
+.split-screen .right-side .simple, .split-screen .right-side .cover {
   height: 70vh;
 }
 
@@ -381,9 +381,19 @@ a:hover {
 }
 } */
 /* SMALL DESKTOP & TABLET */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .nav-nav-link {
     float: right !important;
+  }
+  header .navbar {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .home header .navbar ul {
+    padding: 32px;
+    width: auto;
+    float: right;
+    background-color: #0A3254 !important;
   }
   .home .outer-wrapper {
     margin-top: 90px !important;
@@ -518,12 +528,12 @@ a:hover {
     width: 80%;
   }
   .inside-pages main .split-screen .right-side .translate-in-y {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(-20vh);
+            transform: translateY(-20vh);
   }
   .inside-pages main .split-screen .right-side .simple {
     width: 90%;
-    min-height: 70vh;
+    height: 70vh;
   }
   .inside-pages main .split-screen .right-side .bottom {
     position: absolute;
@@ -557,7 +567,10 @@ a:hover {
     margin-top: -20% !important;
   }
   .simple {
-    margin-top: 30% !important;
+    margin-top: 30vh !important;
+  }
+  .cover {
+    margin-top: 50vh !important;
   }
 }
 
@@ -633,6 +646,9 @@ a:hover {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
+  .cover {
+    margin-top: 60vh !important;
+  }
 }
 
 /* MOBILE */
@@ -646,6 +662,9 @@ a:hover {
   .main-title {
     text-align: center;
     padding: 20px 0;
+  }
+  .cover {
+    margin-top: 30vh !important;
   }
   /*   .routes {
     .slide{
@@ -931,7 +950,6 @@ footer a:hover i {
   height: 88px;
   background-color: #0A3254;
   border-radius: 0;
-  margin-right: -20px;
 }
 
 .navbar button .navbar-toggler {
@@ -944,11 +962,7 @@ footer a:hover i {
   padding: 30px !important;
 }
 
-.home .dropdown-menu {
-  background-color: #0A3254 !important;
-}
-
-.inside-pages .dropdown-menu {
+.dropdown-menu {
   background-color: #0A3254 !important;
 }
 

@@ -15,11 +15,27 @@
 }
 } */
 /* SMALL DESKTOP & TABLET */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .nav-nav-link {
     float: right !important;
   }
+  header {
+    .navbar {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
   .home {
+    header {
+      .navbar {
+        ul {
+          padding: 32px;
+          width: auto;
+          float: right;
+          background-color: $blue-darken !important;
+        }
+      }
+    }
     .outer-wrapper {
       margin-top: 90px !important;
       width: 100% !important;
@@ -38,7 +54,7 @@
           padding: 5% !important;
         }
       }
-      .routes{
+      .routes {
         padding-bottom: 32px;
       }
     }
@@ -138,13 +154,14 @@
             width: 80%;
           }
           .translate-in-y {
-            transform: translateX(0);
+            transform: translateY(-20vh);
           }
           // altura para las compos simples
           .simple {
             width: 90%;
-            min-height: 70vh;
+            height: 70vh;
           }
+
           .bottom {
             position: absolute;
             left: 0;
@@ -179,7 +196,10 @@
   }
 
   .simple {
-    margin-top: 30% !important;
+    margin-top: 30vh !important;
+  }
+  .cover{
+    margin-top: 50vh !important;
   }
 }
 
@@ -252,11 +272,11 @@
         }
       }
     }
-    .slide{
+    .slide {
       position: relative;
     }
-    .waves-container{
-     margin-top: 40%;
+    .waves-container {
+      margin-top: 40%;
       transform: scale(0.7) rotate(90deg) !important;
       p {
         transform: scale(1.4) rotate(270deg) !important;
@@ -265,6 +285,9 @@
         transform: scale(0.7);
       }
     }
+  }
+  .cover{
+    margin-top: 60vh !important;
   }
 }
 
@@ -283,7 +306,11 @@
     padding: 20px 0;
   }
 
-/*   .routes {
+  .cover{
+    margin-top: 30vh !important;
+  }
+
+  /*   .routes {
     .slide{
       transform: scale(0.5) rotate(90deg) !important;
       p {

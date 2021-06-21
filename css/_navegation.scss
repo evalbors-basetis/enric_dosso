@@ -214,7 +214,7 @@ footer {
     height: 88px;
     background-color: $blue-darken;
     border-radius: 0;
-    margin-right: -20px;
+    //margin-right: -20px;
 
     .navbar-toggler {
       color: $brown !important;
@@ -227,14 +227,7 @@ footer {
   }
 }
 
-.home {
-  .dropdown-menu {
-    background-color: $blue-darken !important;
-  }
-}
 
-.inside-pages {
-  .dropdown-menu {
-    background-color: $blue-darken !important;
-  }
+.dropdown-menu {
+  background-color: $blue-darken !important;
 }
