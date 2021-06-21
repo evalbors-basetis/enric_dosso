@@ -270,6 +270,13 @@ a:hover {
 .split-screen .split {
   width: 50%;
   height: 100vh;
+  /* iframe {
+      position: absolute;
+      z-index: -30;
+      height: 100vh;
+      width: auto;
+      object-fit: cover;
+    } */
 }
 
 .split-screen .split img,
@@ -915,7 +922,7 @@ body main {
           animation-fill-mode: forwards;
 }
 
-body video {
+body video, body iframe {
   -webkit-animation: ease 2s;
           animation: ease 2s;
 }
