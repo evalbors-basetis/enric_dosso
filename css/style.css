@@ -362,7 +362,7 @@ a:hover {
 }
 
 .split-screen .right-side .simple, .split-screen .right-side .cover {
-  height: 70vh;
+  min-height: 70vh;
 }
 
 /* XL DESKTOP */
@@ -471,7 +471,8 @@ a:hover {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    overflow-y: scroll !important;
+    overflow-y: none !important;
+    height: 100vh !important;
   }
   .inside-pages main .split-screen .split {
     width: 100%;
@@ -559,12 +560,6 @@ a:hover {
     width: 90vw !important;
     margin-top: -20% !important;
   }
-  .simple {
-    margin-top: 30vh !important;
-  }
-  .cover {
-    margin-top: 50vh !important;
-  }
 }
 
 /* SMALL TABLET */
@@ -640,7 +635,7 @@ a:hover {
             transform: scale(0.7);
   }
   .cover {
-    margin-top: 60vh;
+    margin-top: none !important;
   }
 }
 
@@ -676,13 +671,16 @@ a:hover {
     top: 85% !important;
   }
   .floatting-element .rotation-element svg {
-    -webkit-transform: scale(0.2) !important;
-            transform: scale(0.2) !important;
+    -webkit-transform: scale(0.5) !important;
+            transform: scale(0.5) !important;
     fill: currentColor;
     color: #8d6331;
   }
   .left-side .text-container {
     margin: 40% 10% 10% 10% !important;
+  }
+  .cover {
+    margin-top: none !important;
   }
   .return {
     top: 0 !important;

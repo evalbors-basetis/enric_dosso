@@ -265,8 +265,8 @@ a {
       transform: translateX(-80px);
     }
     // altura para las compos simples
-    .simple, .cover{
-      height: 70vh;
+    .simple, .cover {
+      min-height: 70vh;
     }
   }
 }

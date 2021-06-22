@@ -102,7 +102,8 @@
 
       .split-screen {
         flex-direction: column !important;
-        overflow-y: scroll !important;
+        overflow-y: none !important;
+        height: 100vh !important;
         .split {
           width: 100%;
           height: auto !important;
@@ -143,6 +144,7 @@
           align-items: flex-end;
           z-index: 100;
           opacity: 1;
+          
           .text-container {
             width: 80%;
           }
@@ -189,12 +191,6 @@
     }
   }
 
-  .simple {
-    margin-top: 30vh !important;
-  }
-  .cover{
-    margin-top: 50vh !important;
-  }
 }
 
 /* SMALL TABLET */
@@ -281,7 +277,7 @@
     }
   }
   .cover{
-    margin-top: 60vh;
+    margin-top: none !important
   }
 }
 
@@ -322,7 +318,7 @@
     top: 85% !important;
     .rotation-element {
       svg {
-        transform: scale(0.2) !important;
+        transform: scale(0.5) !important;
         fill: currentColor;
         color: $brown;
       }
@@ -333,6 +329,9 @@
     .text-container {
       margin: 40% 10% 10% 10% !important;
     }
+  }
+  .cover{
+  margin-top: none !important
   }
 
   .return {
