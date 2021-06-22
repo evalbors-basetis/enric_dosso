@@ -419,6 +419,7 @@ a:hover {
     padding-bottom: 32px;
   }
   .inside-pages {
+    overflow-y: scroll !important;
     overflow-x: hidden !important;
   }
   .inside-pages header .icon,
@@ -463,15 +464,15 @@ a:hover {
     margin-bottom: 8px;
   }
   .inside-pages main .floatting-element {
-    right: 10%;
-    top: 65% !important;
+    right: 5%;
+    top: 65%;
   }
   .inside-pages main .split-screen {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    overflow-y: none !important;
+    overflow-y: scroll !important;
     height: 100vh !important;
   }
   .inside-pages main .split-screen .split {
@@ -519,6 +520,7 @@ a:hover {
   }
   .inside-pages main .split-screen .right-side .text-container {
     width: 80%;
+    height: auto;
   }
   .inside-pages main .split-screen .right-side .translate-in-y {
     -webkit-transform: translateY(20vh);
@@ -527,7 +529,6 @@ a:hover {
   .inside-pages main .split-screen .right-side .simple {
     margin-top: -20vh !important;
     width: 90%;
-    height: 70vh;
   }
   .inside-pages main .split-screen .right-side .bottom {
     position: absolute;
@@ -657,6 +658,19 @@ a:hover {
   .cover {
     margin-top: none !important;
   }
+  .floatting-element {
+    right: -10% !important;
+    top: 65%;
+  }
+  .floatting-element .rotation-element svg {
+    -webkit-transform: scale(0.4) !important;
+            transform: scale(0.4) !important;
+    fill: currentColor;
+    color: #8d6331;
+  }
+  .right-side .text-container {
+    padding-bottom: 200px !important;
+  }
 }
 
 /* MOBILE */
@@ -686,16 +700,6 @@ a:hover {
     }
     
   } */
-  .floatting-element {
-    right: 5%;
-    top: 85% !important;
-  }
-  .floatting-element .rotation-element svg {
-    -webkit-transform: scale(0.5) !important;
-            transform: scale(0.5) !important;
-    fill: currentColor;
-    color: #8d6331;
-  }
   .left-side .text-container {
     margin: 40% 10% 10% 10% !important;
   }
