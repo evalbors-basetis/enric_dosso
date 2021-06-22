@@ -6,16 +6,9 @@
     // de un ancho concreto que ya no crezca más...
   }
 }
-/* SMALL DESKTOP & TABLET H */
-/* @media screen and (max-width: 1024px) {
-  .slide {
-    .text-intro {
-      width: 50vw !important;
-    }
-}
-} */
+
 /* SMALL DESKTOP & TABLET */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .nav-nav-link {
     float: right !important;
   }
@@ -109,10 +102,10 @@
 
       .split-screen {
         flex-direction: column !important;
-        overflow-y: scroll;
+        overflow-y: scroll !important;
         .split {
           width: 100%;
-          height: auto;
+          height: auto !important;
           img,
           video {
             width: 100vw;
@@ -154,10 +147,11 @@
             width: 80%;
           }
           .translate-in-y {
-            transform: translateY(-20vh);
+            transform: translateY(20vh);
           }
           // altura para las compos simples
           .simple {
+            margin-top: -20vh !important;
             width: 90%;
             height: 70vh;
           }
@@ -287,7 +281,7 @@
     }
   }
   .cover{
-    margin-top: 60vh !important;
+    margin-top: 60vh;
   }
 }
 
@@ -307,7 +301,7 @@
   }
 
   .cover{
-    margin-top: 30vh !important;
+    position: relative;
   }
 
   /*   .routes {

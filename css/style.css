@@ -372,16 +372,8 @@ a:hover {
   }
 }
 
-/* SMALL DESKTOP & TABLET H */
-/* @media screen and (max-width: 1024px) {
-  .slide {
-    .text-intro {
-      width: 50vw !important;
-    }
-}
-} */
 /* SMALL DESKTOP & TABLET */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .nav-nav-link {
     float: right !important;
   }
@@ -479,11 +471,11 @@ a:hover {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
   }
   .inside-pages main .split-screen .split {
     width: 100%;
-    height: auto;
+    height: auto !important;
   }
   .inside-pages main .split-screen .split img,
   .inside-pages main .split-screen .split video {
@@ -528,10 +520,11 @@ a:hover {
     width: 80%;
   }
   .inside-pages main .split-screen .right-side .translate-in-y {
-    -webkit-transform: translateY(-20vh);
-            transform: translateY(-20vh);
+    -webkit-transform: translateY(20vh);
+            transform: translateY(20vh);
   }
   .inside-pages main .split-screen .right-side .simple {
+    margin-top: -20vh !important;
     width: 90%;
     height: 70vh;
   }
@@ -647,7 +640,7 @@ a:hover {
             transform: scale(0.7);
   }
   .cover {
-    margin-top: 60vh !important;
+    margin-top: 60vh;
   }
 }
 
@@ -664,7 +657,7 @@ a:hover {
     padding: 20px 0;
   }
   .cover {
-    margin-top: 30vh !important;
+    position: relative;
   }
   /*   .routes {
     .slide{
