@@ -101,10 +101,10 @@
       .split-screen {
         flex-direction: column !important;
         overflow-y: scroll !important;
-        height: 100vh !important;
+        height: 100% !important;
         .split {
           width: 100%;
-          height: auto !important;
+          height: 100% !important;
           img,
           video {
             width: 100vw;
@@ -142,6 +142,7 @@
           align-items: flex-end;
           z-index: 100;
           opacity: 1;
+          height: 100% !important;
           .text-container {
             width: 80%;
             height: auto;
@@ -155,13 +156,14 @@
             width: 90%;
             //height: 70vh;
           }
-
-          .bottom {
-            position: absolute;
-            left: 0;
-            top: 40%;
-            padding-bottom: 200px;
+          .cover {
+            margin-top: 20vh !important;
+            height: 80vh;
+            width: 90%;
+            padding-bottom: 200px !important;
           }
+
+              
         }
       }
     }
@@ -305,7 +307,7 @@
   }
   .right-side{
     .text-container{
-      padding-bottom: 200px !important ;
+      padding-bottom: 100px !important ;
 
     }
   }

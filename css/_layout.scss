@@ -194,6 +194,7 @@ a {
   display: flex;
   justify-content: center;
   overflow-y: hidden;
+  align-items: fle;
   .split {
     width: 50%;
     height: 100vh;
@@ -245,12 +246,15 @@ a {
     }
   }
   .right-side {
+    height: 100%;
     display: flex;
     align-items: flex-end;
     z-index: 100;
     opacity: 1;
 
     .text-container {
+      margin-top: 30vh;
+      height: 70vh;
       overflow-y: scroll !important;
       background-color: $cream;
       padding: 8%;
@@ -260,6 +264,7 @@ a {
         color: $blue;
         padding-bottom: 16px;
       }
+
     }
     .translate-in-y {
       transform: translateX(-80px);
@@ -267,6 +272,10 @@ a {
     // altura para las compos simples
     .simple, .cover {
       min-height: 70vh;
+    }
+    .tabs-container{
+      height: 70vh;
+      margin-top:30vh;
     }
   }
 }

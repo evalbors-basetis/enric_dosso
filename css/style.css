@@ -265,6 +265,9 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   overflow-y: hidden;
+  -webkit-box-align: fle;
+      -ms-flex-align: fle;
+          align-items: fle;
 }
 
 .split-screen .split {
@@ -334,6 +337,7 @@ a:hover {
 }
 
 .split-screen .right-side {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,6 +349,8 @@ a:hover {
 }
 
 .split-screen .right-side .text-container {
+  margin-top: 30vh;
+  height: 70vh;
   overflow-y: scroll !important;
   background-color: #efe8e0;
   padding: 8%;
@@ -363,6 +369,11 @@ a:hover {
 
 .split-screen .right-side .simple, .split-screen .right-side .cover {
   min-height: 70vh;
+}
+
+.split-screen .right-side .tabs-container {
+  height: 70vh;
+  margin-top: 30vh;
 }
 
 /* XL DESKTOP */
@@ -473,11 +484,11 @@ a:hover {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
     overflow-y: scroll !important;
-    height: 100vh !important;
+    height: 100% !important;
   }
   .inside-pages main .split-screen .split {
     width: 100%;
-    height: auto !important;
+    height: 100% !important;
   }
   .inside-pages main .split-screen .split img,
   .inside-pages main .split-screen .split video {
@@ -517,6 +528,7 @@ a:hover {
             align-items: flex-end;
     z-index: 100;
     opacity: 1;
+    height: 100% !important;
   }
   .inside-pages main .split-screen .right-side .text-container {
     width: 80%;
@@ -530,11 +542,11 @@ a:hover {
     margin-top: -20vh !important;
     width: 90%;
   }
-  .inside-pages main .split-screen .right-side .bottom {
-    position: absolute;
-    left: 0;
-    top: 40%;
-    padding-bottom: 200px;
+  .inside-pages main .split-screen .right-side .cover {
+    margin-top: 20vh !important;
+    height: 80vh;
+    width: 90%;
+    padding-bottom: 200px !important;
   }
   .vertical {
     -webkit-box-orient: vertical;
@@ -669,7 +681,7 @@ a:hover {
     color: #8d6331;
   }
   .right-side .text-container {
-    padding-bottom: 200px !important;
+    padding-bottom: 100px !important;
   }
 }
 
