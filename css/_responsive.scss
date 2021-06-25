@@ -93,10 +93,21 @@
     }
 
     main {
-      .floatting-element {
-        right: 5%;
-        top: 65%;
+
+  .floatting-element {
+    .rotation-element {
+      svg {
+        transform: scale(0.2) !important;
+        fill: currentColor;
+        color: $brown;
       }
+    }
+  } */
+ 
+   /*    .floatting-element {
+        right: 5%;
+        bottom: 5%;
+      } */
 
       .split-screen {
         flex-direction: column !important;
@@ -294,9 +305,9 @@
   .cover{
     margin-top: none !important
   }
-  .floatting-element {
+ /*  .floatting-element {
     right: -10% !important;
-    top: 65%;
+    bottom: 65%;
     .rotation-element {
       svg {
         transform: scale(0.4) !important;
@@ -304,7 +315,8 @@
         color: $brown;
       }
     }
-  }
+  } */
+ 
   .right-side{
     .text-container{
       padding-bottom: 100px !important ;

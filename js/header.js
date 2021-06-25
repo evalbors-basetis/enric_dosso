@@ -70,7 +70,7 @@ class MyHeader extends HTMLElement {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Personaliza tu experiencia
+                Vive la experiencia
               </a>
               <div
                 class="dropdown-menu text-link"
