@@ -198,7 +198,7 @@ a {
     width: 50%;
     height: 100vh;
     img,
-    video {
+    video, iframe {
       position: absolute;
       z-index: -30;
       width: 50vw;
