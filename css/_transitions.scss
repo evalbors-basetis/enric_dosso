@@ -4,7 +4,7 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
-  video, iframe {
+  video, iframe, img {
     animation: ease 2s;
   }
 
