@@ -283,7 +283,7 @@ a:hover {
 }
 
 .split-screen .split img,
-.split-screen .split video {
+.split-screen .split video, .split-screen .split iframe {
   position: absolute;
   z-index: -30;
   width: 50vw;
@@ -429,6 +429,14 @@ a:hover {
   .home .outer-wrapper .routes {
     padding-bottom: 32px;
   }
+  .home .wave-desktop {
+    display: none;
+  }
+  .home .wave-responsive {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
   .inside-pages {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
@@ -475,21 +483,16 @@ a:hover {
     margin-bottom: 8px;
   }
   .inside-pages main {
-    /*  .floatting-element {
-    right: -10% !important;
-    bottom: 65%;
-    .rotation-element {
-      svg {
-        transform: scale(0.4) !important;
-        fill: currentColor;
-        color: $brown;
-      }
-    }
-  } */
     /*    .floatting-element {
         right: 5%;
         bottom: 5%;
       } */
+  }
+  .inside-pages main .floatting-element .rotation-element svg {
+    -webkit-transform: scale(0.2) !important;
+            transform: scale(0.2) !important;
+    fill: currentColor;
+    color: #8d6331;
   }
   .inside-pages main .split-screen {
     -webkit-box-orient: vertical !important;
@@ -1016,7 +1019,7 @@ body main {
           animation-fill-mode: forwards;
 }
 
-body video, body iframe {
+body video, body iframe, body img {
   -webkit-animation: ease 2s;
           animation: ease 2s;
 }
@@ -1600,7 +1603,11 @@ body .floatting-element:hover .rotation-element svg {
   display: flex;
   -webkit-transform: rotate(90deg) translateX(40vw);
           transform: rotate(90deg) translateX(40vw);
-  padding-left: 10%;
+  margin: 8%;
+}
+
+.waves-container .wave-responsive {
+  display: none;
 }
 
 .waves-container .wave {
@@ -1653,8 +1660,8 @@ body .floatting-element:hover .rotation-element svg {
 }
 
 .waves-container .wave:nth-child(1) p {
-  left: 85%;
-  bottom: 115%;
+  left: 86%;
+  bottom: 110%;
 }
 
 .waves-container .wave:nth-child(1) .vertical-line {
@@ -1668,8 +1675,8 @@ body .floatting-element:hover .rotation-element svg {
 }
 
 .waves-container .wave:nth-child(2) p {
-  left: 90%;
-  top: 115%;
+  left: 83%;
+  top: 125%;
 }
 
 .waves-container .wave:nth-child(2) .vertical-line {
@@ -1682,8 +1689,8 @@ body .floatting-element:hover .rotation-element svg {
 }
 
 .waves-container .wave:nth-child(3) p {
-  left: 88%;
-  bottom: 123%;
+  left: 94%;
+  bottom: 110%;
 }
 
 .waves-container .wave:nth-child(3) .vertical-line {
@@ -1712,7 +1719,7 @@ body .floatting-element:hover .rotation-element svg {
 
 .waves-container .wave:nth-child(5) p {
   left: 88%;
-  bottom: 123%;
+  bottom: 115%;
 }
 
 .waves-container .wave:nth-child(5) .vertical-line {
@@ -1726,8 +1733,9 @@ body .floatting-element:hover .rotation-element svg {
 }
 
 .waves-container .wave:nth-child(6) p {
-  left: 84%;
-  top: 123%;
+  width: 100%;
+  left: 55%;
+  top: 125%;
 }
 
 .waves-container .wave:nth-child(6) .vertical-line {
@@ -1737,6 +1745,20 @@ body .floatting-element:hover .rotation-element svg {
 
 .waves-container .wave:nth-child(6) img {
   margin-right: 5vh;
+}
+
+.waves-container .wave:nth-child(7) {
+  left: 2380px;
+}
+
+.waves-container .wave:nth-child(7) p {
+  left: 100%;
+  bottom: 102%;
+}
+
+.waves-container .wave:nth-child(7) .vertical-line {
+  left: 110%;
+  top: 0;
 }
 
 .vertical-line {

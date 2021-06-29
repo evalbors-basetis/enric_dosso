@@ -54,11 +54,12 @@ class MyHeader extends HTMLElement {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <a class="dropdown-item" href="vinebre-presentation.html">Vinebre</a>
-                <a class="dropdown-item" href="#">Tortosa</a>
                 <a class="dropdown-item" href="#">Montserrat</a>
-                <a class="dropdown-item" href="#">Tarragona</a>
+                <a class="dropdown-item" href="#">Tortosa</a>
                 <a class="dropdown-item" href="#">Barcelona</a>
-                <a class="dropdown-item" href="#">Castellón</a>
+                <a class="dropdown-item" href="#">Tarragona</a>
+                <a class="dropdown-item" href="#">Desierto Las Palmas</a>
+                <a class="dropdown-item" href="#">Gilet</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -77,11 +78,12 @@ class MyHeader extends HTMLElement {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <a class="dropdown-item" href="personaliza-tu-experiencia.html">Vinebre</a>
-                <a class="dropdown-item" href="#">Tortosa</a>
                 <a class="dropdown-item" href="#">Montserrat</a>
-                <a class="dropdown-item" href="#">Tarragona</a>
+                <a class="dropdown-item" href="#">Tortosa</a>
                 <a class="dropdown-item" href="#">Barcelona</a>
-                <a class="dropdown-item" href="#">Castellón</a>
+                <a class="dropdown-item" href="#">Tarragona</a>
+                <a class="dropdown-item" href="#">Desierto Las Palmas</a>
+                <a class="dropdown-item" href="#">Gilet</a>
               </div>
             </li>
           </ul>

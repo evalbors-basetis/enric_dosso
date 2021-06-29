@@ -51,6 +51,12 @@
         padding-bottom: 32px;
       }
     }
+    .wave-desktop{
+      display: none;
+    }
+    .wave-responsive{
+      display: inline-flex !important;
+    }
   }
   .inside-pages {
     overflow-y: scroll !important;
@@ -102,7 +108,7 @@
         color: $brown;
       }
     }
-  } */
+  } 
  
    /*    .floatting-element {
         right: 5%;
