@@ -100,9 +100,11 @@
 
     main {
       .floatting-element {
+        top: -60px;
+        right: -60px;
         .rotation-element {
           svg {
-            transform: scale(0.2) !important;
+            transform: scale(0.4);
             fill: currentColor;
             color: $brown;
           }
@@ -179,7 +181,7 @@
             margin-top: 20vh !important;
             height: 80vh;
             width: 90%;
-            padding-bottom: 200px !important;
+            //padding-bottom: 200px !important;
           }
         }
       }
@@ -309,17 +311,10 @@
   .cover {
     margin-top: none !important;
   }
-  /*  .floatting-element {
-    right: -10% !important;
-    bottom: 65%;
-    .rotation-element {
-      svg {
-        transform: scale(0.4) !important;
-        fill: currentColor;
-        color: $brown;
-      }
-    }
-  } */
+  .floatting-element {
+    top: -100px;
+    right: -100px;
+  }
 
   .right-side {
     .text-container {
@@ -347,19 +342,6 @@
     position: relative;
   }
 
-  /*   .routes {
-    .slide{
-      transform: scale(0.5) rotate(90deg) !important;
-      p {
-        transform: scale(1.8) rotate(270deg) !important;
-      }
-      .vertical-line {
-        transform: scale(0.7);
-      }
-    }
-    
-  } */
-
   .left-side {
     .text-container {
       margin: 40% 10% 10% 10% !important;
@@ -375,5 +357,17 @@
   }
   .pic-gallery {
     margin-top: 88px;
+  }
+
+  .floatting-element {
+    top: -90px !important;
+    right: -90px !important;
+    .rotation-element {
+      svg {
+        transform: scale(0.3) !important;
+        fill: currentColor;
+        color: $brown;
+      }
+    }
   }
 }

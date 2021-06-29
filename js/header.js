@@ -77,7 +77,7 @@ class MyHeader extends HTMLElement {
                 class="dropdown-menu text-link"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="personaliza-tu-experiencia.html">Vinebre</a>
+                <a class="dropdown-item" href="vive-la-experiencia.html">Vinebre</a>
                 <a class="dropdown-item" href="#">Montserrat</a>
                 <a class="dropdown-item" href="#">Tortosa</a>
                 <a class="dropdown-item" href="#">Barcelona</a>
