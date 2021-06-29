@@ -520,7 +520,6 @@ a:hover {
   }
   .inside-pages main .split-screen .split .responsive-cover {
     width: 100vw;
-    height: 60vh;
     top: 0;
   }
   .inside-pages main .split-screen .left-side .text-container {
@@ -556,7 +555,7 @@ a:hover {
             align-items: flex-end;
     z-index: 100;
     opacity: 1;
-    height: 100% !important;
+    height: auto !important;
   }
   .inside-pages main .split-screen .right-side .text-container {
     width: 80%;
@@ -569,11 +568,11 @@ a:hover {
   .inside-pages main .split-screen .right-side .simple {
     margin-top: -20vh !important;
     width: 90%;
+    height: auto;
   }
   .inside-pages main .split-screen .right-side .cover {
-    margin-top: 20vh !important;
-    height: 80vh;
     width: 90%;
+    height: 100%;
   }
   .vertical {
     -webkit-box-orient: vertical;

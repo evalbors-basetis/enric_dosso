@@ -111,8 +111,6 @@
         }
       }
 
-
-
       .split-screen {
         flex-direction: column !important;
         overflow-y: scroll !important;
@@ -127,7 +125,7 @@
           }
           .responsive-cover{
             width: 100vw;
-            height: 60vh;
+            //height: 60vh;
             top:0;
           }
       
@@ -163,7 +161,7 @@
           align-items: flex-end;
           z-index: 100;
           opacity: 1;
-          height: 100% !important;
+          height: auto !important;
           .text-container {
             width: 80%;
             height: auto;
@@ -175,14 +173,15 @@
           .simple {
             margin-top: -20vh !important;
             width: 90%;
-            //height: 70vh;
+            height: auto;
           }
           .cover {
-            margin-top: 20vh !important;
-            height: 80vh;
+            //margin-top: 20vh !important;
+            //height: 80vh;
             width: 90%;
+            height: 100%;
             //padding-bottom: 200px !important;
-          }
+          } 
         }
       }
     }
