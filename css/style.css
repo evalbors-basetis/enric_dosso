@@ -292,6 +292,15 @@ a:hover {
      object-fit: cover;
 }
 
+.split-screen .split .responsive-cover {
+  position: absolute;
+  z-index: -30;
+  width: 50vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .split-screen .left-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,12 +491,6 @@ a:hover {
   .inside-pages .tabs #myTab {
     margin-bottom: 8px;
   }
-  .inside-pages main {
-    /*    .floatting-element {
-        right: 5%;
-        bottom: 5%;
-      } */
-  }
   .inside-pages main .floatting-element .rotation-element svg {
     -webkit-transform: scale(0.2) !important;
             transform: scale(0.2) !important;
@@ -509,7 +512,12 @@ a:hover {
   .inside-pages main .split-screen .split img,
   .inside-pages main .split-screen .split video {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
+  }
+  .inside-pages main .split-screen .split .responsive-cover {
+    width: 100vw;
+    height: 60vh;
+    top: 0;
   }
   .inside-pages main .split-screen .left-side .text-container {
     z-index: 50;

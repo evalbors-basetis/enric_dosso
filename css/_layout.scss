@@ -205,6 +205,14 @@ a {
       height: 100%;
       object-fit: cover;
     }
+    .responsive-cover{
+      position: absolute;
+      z-index: -30;
+      width: 50vw;
+      height: 100%;
+      object-fit: cover;
+    
+    }
     /* iframe {
       position: absolute;
       z-index: -30;
