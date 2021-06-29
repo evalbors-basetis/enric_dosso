@@ -1289,7 +1289,6 @@ body .floatting-element:hover .rotation-element svg {
 .slider li .vertical .right-side .text-container {
   background-color: #efe8e0;
   padding: 15%;
-  min-height: 70vh;
 }
 
 .slider li .vertical .right-side .text-container h1,
@@ -1369,7 +1368,6 @@ body .floatting-element:hover .rotation-element svg {
 .slider li .horizontal .right-side .text-container {
   background-color: #efe8e0;
   padding: 15%;
-  min-height: 70vh;
 }
 
 .slider li .horizontal .right-side .text-container h1,
@@ -1475,7 +1473,6 @@ body .floatting-element:hover .rotation-element svg {
 
 #accordion {
   z-index: 999 !important;
-  padding-bottom: 40px;
 }
 
 #accordion .accordion-item {
